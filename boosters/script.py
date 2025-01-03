@@ -179,19 +179,30 @@ class ROMProcessor:
                 file.write(f"Pack ID: {pack_id}, Card ID: {card_id}\n")
         print(f"Packs and cards written to {self.output_file}.")
 
-    # Modify the card packs (e.g., replacing cards in the first pack)
+# Modify the card packs (replace all pack IDs)
     def modify_card_packs(self, packs):
         print(f"Modifying card packs in {self.pack_file}...")
-        blue_eyes_ultimate_id = 32  # Blue-Eyes Ultimate Dragon ID in hex
+        new_pack_id = 771751940  # New pack ID (decimal representation of 0x01000004)
 
         if packs:
-            print("\nReplacing the first pack with Blue-Eyes Ultimate Dragon...")
-            pack_id, _ = packs[0]  # Keep the original pack ID
-            packs[0] = (pack_id, blue_eyes_ultimate_id)  # Replace card ID
+            print(f"\nReplacing all pack IDs with {new_pack_id}...")
+            for i in range(len(packs)):
+                _, card_id = packs[i]  # Keep the original card ID
+                packs[i] = (new_pack_id, card_id)  # Replace pack ID
+            print(f"Updated packs: {packs}")
         else:
             print("No packs to modify!")
 
         return packs
+    
+     # After modifying packs, write them back to card_pack.bin
+    def write_modified_packs_to_bin(self, packs):
+        print(f"Writing modified card packs to {self.pack_file}...")
+        with open(self.pack_file, "wb") as file:
+            for pack_id, card_id in packs:
+                file.write(pack_id.to_bytes(4, "little"))
+                file.write(card_id.to_bytes(4, "little"))
+        print(f"Modified packs written to {self.pack_file}.")
 
     # Repack the modified card packs into the original ROM
     def repack_rom(self):
@@ -224,5 +235,7 @@ if __name__ == "__main__":
     pack_mapping = processor.load_pack_mapping()
     card_packs = processor.read_card_packs()
     modified_packs = processor.modify_card_packs(card_packs)
+      # Write the modified packs back to the ROM file
+    processor.write_modified_packs_to_bin(modified_packs)
     processor.write_packs_to_txt(modified_packs)
     processor.repack_rom()
