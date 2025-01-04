@@ -324,13 +324,38 @@ class ROMProcessor:
         return modified_card_name
 
     
-     # After modifying packs, write them back to card_pack.bin
-    def write_modified_packs_to_bin(self, packs):
+    def write_modified_packs_to_bin(self, modified_packs):
         print(f"Writing modified card packs to {self.pack_file}...")
-        with open(self.pack_file, "wb") as file:
-            for pack_id, card_id, card_name in packs:
-                file.write(pack_id.to_bytes(4, "little"))
-                file.write(card_id.to_bytes(4, "little"))
+
+        with open(self.pack_file, "r+b") as file:  # Open in read-write binary mode
+            for new_pack_id, internal_id, card_name in modified_packs:
+                # Ensure the new pack ID is within the byte range (0-255)
+                if not (0 <= new_pack_id <= 255):
+                    raise ValueError(f"Invalid pack ID: {new_pack_id}. It must be between 0 and 255.")
+
+                # Calculate the offset for the current internal_id (8 bytes per entry)
+                pack_data_offset = 8 * internal_id
+
+                # Seek to the correct location in the file
+                file.seek(pack_data_offset)
+
+                # Read the current 8 bytes (the entire entry)
+                pack_data = file.read(8)
+
+                # Check the current data (debugging line)
+                print(f"Current data at offset {pack_data_offset}: {pack_data.hex()}")
+
+                # Modify the 4th byte (index 3) to the new pack ID
+                pack_data = bytearray(pack_data)  # Convert to bytearray for mutability
+                pack_data[3] = new_pack_id  # Update the pack ID byte
+
+                # Check the modified data (debugging line)
+                print(f"Modified data: {pack_data.hex()}")
+
+                # Seek back to the correct position and write the modified 8 bytes
+                file.seek(pack_data_offset)
+                file.write(pack_data)
+
         print(f"Modified packs written to {self.pack_file}.")
 
     # Write modified card names to a text file
