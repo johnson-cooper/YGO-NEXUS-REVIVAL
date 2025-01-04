@@ -19,33 +19,33 @@ class ROMProcessor:
         self.output_rom_file = output_rom_file
 
     def load_pack_mapping(self):
-            print(f"Loading card_name_e.bin from {self.card_name_file}...")
-            with open(self.card_name_file, "rb") as file:
-                card_name_data = file.read()
+        print(f"Loading card_name_e.bin from {self.card_name_file}...")
+        with open(self.card_name_file, "rb") as file:
+            card_name_data = file.read()
 
-            print(f"Loading card_indx_e.bin from {self.card_indx_file}...")
-            with open(self.card_indx_file, "rb") as file:
-                card_indx_data = file.read()
+        print(f"Loading card_indx_e.bin from {self.card_indx_file}...")
+        with open(self.card_indx_file, "rb") as file:
+            card_indx_data = file.read()
 
-            # Example: Now we need to map each card to its internal ID
-            konami_to_internal_id = {}
-            entry_size = 8  # Each entry is 8 bytes in the card_indx_e.bin
+        konami_to_internal_id = {}
+        entry_size = 8  # Each entry is 8 bytes in the card_indx_e.bin
 
-            # Iterate through the card_name_data and map each name to its internal ID
-            for i in range(0, len(card_name_data), entry_size):
-                # Get the card name (Konami code)
-                card_name_offset = i
-                card_name = card_name_data[card_name_offset:card_name_offset + 4].decode("utf-8", errors="ignore").strip()
+        # Iterate through the card_indx_data
+        for internal_id in range(0, len(card_indx_data), entry_size):
+            # Fetch the name offset
+            offsets = card_indx_data[internal_id:internal_id + entry_size]
+            name_offset = int.from_bytes(offsets[:4], "little")
 
-                # Calculate the internal ID by dividing the offset by the entry size
-                card_indx_offset = card_name_offset  # Assuming they are aligned
-                internal_id = card_indx_offset // entry_size
+            # Fetch the name
+            name_end = card_name_data.find(b"\x00", name_offset)  # Find null-terminator
+            if name_end == -1:
+                continue  # Skip if no null-terminator
+            card_name = card_name_data[name_offset:name_end].decode("utf-8", errors="ignore").strip()
 
-                # Add to the mapping
-                konami_to_internal_id[card_name] = internal_id 
+            konami_to_internal_id[card_name] = internal_id // entry_size
 
-            print(f"Loaded {len(konami_to_internal_id)} Konami code to internal ID mappings.")
-            return konami_to_internal_id
+        print(f"Loaded {len(konami_to_internal_id)} Konami code to internal ID mappings.")
+        return konami_to_internal_id
 
     # Read binary file
     def read_binary(self, file_path):
@@ -196,41 +196,35 @@ class ROMProcessor:
 
     def read_card_packs(self):
         print(f"Reading card packs from {self.pack_file}...")
-
         data = self.read_binary(self.pack_file)
+
         packs = []
-        
         total_packs = 0
         skipped_packs = 0
-        
+
         # Debug: Total size of the binary data
         print(f"Total bytes read: {len(data)}")
 
-        for i in range(0, len(data), 4):  # 4 bytes per pack (2 bytes for pack_id, 2 bytes for card_id)
-            if i + 4 <= len(data):
-                pack_id = int.from_bytes(data[i:i + 2], "little")  # First 2 bytes for pack ID
-                card_id = int.from_bytes(data[i + 2:i + 4], "little")  # Last 2 bytes for card ID
+        # Each entry is 8 bytes
+        for internal_id in range(0, len(data), 8):
+            pack_entry = data[internal_id:internal_id + 8]
+            if len(pack_entry) < 8:
+                continue  # Skip incomplete entries
 
-                # Fetch card name using the card ID
-                internal_id, card_name = self.get_internal_card_id(card_id)
+            pack_id = pack_entry[3]  # 4th byte is the pack ID
+            internal_id = internal_id // 8  # Calculate internal ID
+            _, card_name = self.get_internal_card_id(internal_id)
 
-                # Skip the pack if the card name is blank
-                if card_name.strip() == "":  # check if the card name is blank or only spaces
-                    skipped_packs += 1
-                    continue  # Skip to the next iteration
+            # Skip empty names
+            if not card_name.strip():
+                skipped_packs += 1
+                continue
 
-                # Add valid packs
-                packs.append((pack_id, internal_id, card_name))
-                total_packs += 1
+            packs.append((pack_id, internal_id, card_name))
+            total_packs += 1
 
-            else:
-                # Handle case where there may not be enough bytes for a full pack
-                print(f"Warning: Not enough data at position {i}")
-
-        # Debugging: print out some statistics about the process
         print(f"Total packs processed: {total_packs}")
         print(f"Total skipped packs: {skipped_packs}")
-        
         return packs
     
     def get_internal_card_id(self, card_id):
@@ -241,16 +235,18 @@ class ROMProcessor:
         card_indexes = self.read_binary(card_indx_file)
 
         # Calculate the offset for the given card ID
-        card_offset = card_id * 8  # Assuming each entry is 8 bytes
-        internal_id = card_id  # By default, card ID maps to internal ID directly
+        card_offset = card_id * 8  # Each entry is 8 bytes
+        if card_offset + 8 > len(card_indexes):
+            return card_id, "Unknown Card"
 
-        # Find the card name and internal ID
-        name_offset = int.from_bytes(card_indexes[card_offset:card_offset+4], "little")
-        name_start = name_offset
-        name_end = card_names.find(b"\x00", name_start)
-        card_name = card_names[name_start:name_end].decode("utf-8") if name_end != -1 else "Unknown Card"
+        offsets = card_indexes[card_offset:card_offset + 8]
+        name_offset = int.from_bytes(offsets[:4], "little")
 
-        return internal_id, card_name
+        # Fetch the name
+        name_end = card_names.find(b"\x00", name_offset)  # Find null-terminator
+        card_name = card_names[name_offset:name_end].decode("utf-8", errors="ignore").strip() if name_end != -1 else "Unknown Card"
+
+        return card_id, card_name
 
     # Write card packs to a text file
     def write_packs_to_txt(self, packs):
@@ -263,22 +259,37 @@ class ROMProcessor:
 
 
 
-    # Modify card packs (replace all pack IDs)
     def modify_card_packs(self, packs):
         print(f"Modifying card packs in {self.pack_file}...")
-        new_card_id = 759  # New pack ID (decimal representation of 0x01000004)
+
+        new_card_id = 759  # New internal ID (e.g., 759 = Imperial Order's internal ID in WC11)
 
         modified_packs = []  # List to store modified packs
 
         if packs:
             print(f"\nReplacing all pack IDs with {new_card_id}...")
+            
+            # Iterate over the packs and modify the necessary values
             for i in range(len(packs)):
                 pack_id, internal_id, card_name = packs[i]  # Unpack all three values
-                new_card_name = self.get_modified_card_name(new_card_id)  # This is where you get the new name based on internal ID
-                # Replace pack ID with the new one and add to modified_packs list
-                modified_packs.append((pack_id, new_card_id, new_card_name))
 
-           
+                # Get the modified card name based on the internal ID (You might need to adjust this logic)
+                new_card_name = self.get_modified_card_name(new_card_id)
+
+                # Now, fetch the internal ID and card name correctly by looking it up
+                # Fetch the card's name and description using internal ID
+                internal_id, card_name = self.get_internal_card_id(internal_id)
+
+                # Fetch the pack ID from the card_pack data (Note: this is stored as the 4th byte in the 8-byte entry)
+                pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
+                pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
+                
+                # The pack ID is stored in the 4th byte of the 8-byte data entry
+                new_pack_id = pack_data[3]  # This is the pack_id for the card
+
+                # Modify the pack entry by replacing the pack ID with the new one
+                modified_packs.append((new_pack_id, new_card_id, new_card_name))
+
         else:
             print("No packs to modify!")
 
