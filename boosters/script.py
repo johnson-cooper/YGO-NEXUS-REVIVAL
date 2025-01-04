@@ -48,13 +48,13 @@ class ROMProcessor:
 
     # Read binary file
     def read_binary(self, file_path):
-        print(f"Reading binary file: {file_path}...")
+       
         with open(file_path, "rb") as file:
             return bytearray(file.read())
 
     # Write binary file
     def write_binary(self, file_path, data):
-        print(f"Writing binary data to: {file_path}...")
+       
         with open(file_path, "wb") as file:
             file.write(data)
 
@@ -86,7 +86,7 @@ class ROMProcessor:
 
     def unpack_pac_file(self, pac_file, unpack_dir):
         try:
-            print(f"Unpacking PAC file {pac_file}...")
+            
             pac_data = self.read_binary(pac_file)
 
             # Process PAC file
@@ -184,7 +184,7 @@ class ROMProcessor:
                     with open(os.path.join(unpack_dir, cleanedFileName), "wb") as newFile:
                         newFile.write(pac_data[thisFrom:thisTo])
 
-                print(f"PAC file unpacked successfully to {unpack_dir}.")
+                print(f"PAC file unpacked successfully.")
             except Exception as e:
                 print(f"Error while unpacking PAC file: {e}")
 
@@ -193,24 +193,43 @@ class ROMProcessor:
 
     
 
-
-    # Read card packs from card_pack.bin, skipping any packs where pack ID or card ID equals 0
     def read_card_packs(self):
         print(f"Reading card packs from {self.pack_file}...")
 
         data = self.read_binary(self.pack_file)
         packs = []
         
-        for i in range(0, len(data), 8):  # 8 bytes per pack
-            if i + 8 <= len(data):
-                pack_id = int.from_bytes(data[i:i + 4], "little")
-                card_id = int.from_bytes(data[i + 4:i + 8], "little")
-                
-                # Skip any packs where pack ID or card ID equals 0
-                if pack_id != 0 and card_id != 0:
-                    internal_id, card_name = self.get_internal_card_id(card_id)
-                    packs.append((pack_id, internal_id, card_name))
+        total_packs = 0
+        skipped_packs = 0
+        
+        # Debug: Total size of the binary data
+        print(f"Total bytes read: {len(data)}")
 
+        for i in range(0, len(data), 4):  # 4 bytes per pack (2 bytes for pack_id, 2 bytes for card_id)
+            if i + 4 <= len(data):
+                pack_id = int.from_bytes(data[i:i + 2], "little")  # First 2 bytes for pack ID
+                card_id = int.from_bytes(data[i + 2:i + 4], "little")  # Last 2 bytes for card ID
+
+                # Fetch card name using the card ID
+                internal_id, card_name = self.get_internal_card_id(card_id)
+
+                # Skip the pack if the card name is blank
+                if card_name.strip() == "":  # check if the card name is blank or only spaces
+                    skipped_packs += 1
+                    continue  # Skip to the next iteration
+
+                # Add valid packs
+                packs.append((pack_id, internal_id, card_name))
+                total_packs += 1
+
+            else:
+                # Handle case where there may not be enough bytes for a full pack
+                print(f"Warning: Not enough data at position {i}")
+
+        # Debugging: print out some statistics about the process
+        print(f"Total packs processed: {total_packs}")
+        print(f"Total skipped packs: {skipped_packs}")
+        
         return packs
     
     def get_internal_card_id(self, card_id):
@@ -258,7 +277,7 @@ class ROMProcessor:
                 # Replace pack ID with the new one and add to modified_packs list
                 modified_packs.append((pack_id, new_card_id, new_card_name))
 
-            print(f"Updated packs: {modified_packs}")
+           
         else:
             print("No packs to modify!")
 
