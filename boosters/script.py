@@ -5,7 +5,7 @@ import math
 
 
 class ROMProcessor:
-    def __init__(self, ndstool_path, rom_file, work_dir, pac_file, pack_file, config_file, output_file, card_name_file, card_indx_file, modified_cardstxt ):
+    def __init__(self, ndstool_path, rom_file, work_dir, pac_file, pack_file, config_file, output_file, card_name_file, card_indx_file, modified_cardstxt, output_rom_file):
         self.ndstool_path = ndstool_path
         self.rom_file = rom_file
         self.work_dir = work_dir
@@ -16,6 +16,7 @@ class ROMProcessor:
         self.card_name_file = card_name_file
         self.card_indx_file = card_indx_file
         self.modified_cardstxt = modified_cardstxt 
+        self.output_rom_file = output_rom_file
 
     def load_pack_mapping(self):
             print(f"Loading card_name_e.bin from {self.card_name_file}...")
@@ -326,18 +327,7 @@ class ROMProcessor:
         print(f"Modified packs and cards written to {self.modified_cardstxt}.")
         
 
-    # Repack the modified card packs into the original ROM
-    def repack_rom(self):
-        print(f"Repacking the ROM...")
-        subprocess.run([self.ndstool_path, "-9", os.path.join(self.work_dir, "arm9.bin"),
-                        "-7", os.path.join(self.work_dir, "arm7.bin"),
-                        "-y9", os.path.join(self.work_dir, "y9.bin"),
-                        "-y7", os.path.join(self.work_dir, "y7.bin"),
-                        "-d", os.path.join(self.work_dir, "data"),
-                        "-y", os.path.join(self.work_dir, "overlay"),
-                        "-9", self.rom_file, "-7", self.rom_file])
 
-        print("ROM repacked successfully!")
 
 
 if __name__ == "__main__":
@@ -352,10 +342,11 @@ if __name__ == "__main__":
     CARD_NAME_FILE = os.path.join(WORK_DIR, "data/Data_arc_pac/bin2/card_name_e.bin")
     CARD_INDX_FILE = os.path.join(WORK_DIR, "data/Data_arc_pac/bin2/card_indx_e.bin")
     MODIFIED_PACKSTXT = "modifiedpacks.txt"
+    OUTPUT_ROM_FILE = "romhack.nds"
     
 
     # Create the ROMProcessor instance and start processing
-    processor = ROMProcessor(NDSTOOL_PATH, ROM_FILE, WORK_DIR, PAC_FILE, PACK_FILE, CONFIG_FILE, OUTPUT_FILE, CARD_NAME_FILE, CARD_INDX_FILE, MODIFIED_PACKSTXT)
+    processor = ROMProcessor(NDSTOOL_PATH, ROM_FILE, WORK_DIR, PAC_FILE, PACK_FILE, CONFIG_FILE, OUTPUT_FILE, CARD_NAME_FILE, CARD_INDX_FILE, MODIFIED_PACKSTXT, OUTPUT_ROM_FILE)
 
     processor.unpack_rom()
     pack_mapping = processor.load_pack_mapping()
@@ -364,4 +355,4 @@ if __name__ == "__main__":
     modified_packs = processor.modify_card_packs(packs)
     processor.write_modified_packs_to_bin(modified_packs)
     processor.write_modified_cards_to_txt(modified_packs)
-    processor.repack_rom()
+    
