@@ -262,33 +262,41 @@ class ROMProcessor:
     def modify_card_packs(self, packs):
         print(f"Modifying card packs in {self.pack_file}...")
 
-        new_card_id = 759  # New internal ID (e.g., 759 = Imperial Order's internal ID in WC11)
+        # Define the internal IDs and their new pack IDs
+        target_internal_id_1 = 759  # The internal ID for the first card
+        target_internal_id_2 = 251  # The internal ID for the second card
+        new_pack_id_1 = 2          # New pack ID for the card with internal ID 759
+        new_pack_id_2 = 1          # New pack ID for the card with internal ID 251
 
         modified_packs = []  # List to store modified packs
 
         if packs:
-            print(f"\nReplacing all pack IDs with {new_card_id}...")
-            
+            print(f"\nSwitching pack IDs for internal IDs {target_internal_id_1} and {target_internal_id_2}...")
+
             # Iterate over the packs and modify the necessary values
             for i in range(len(packs)):
                 pack_id, internal_id, card_name = packs[i]  # Unpack all three values
 
-                # Get the modified card name based on the internal ID (You might need to adjust this logic)
-                new_card_name = self.get_modified_card_name(new_card_id)
+                # Find the cards with internal ID 759 and 251
+                if internal_id == target_internal_id_1:
+                    # Fetch the pack data for internal ID 759 (target card)
+                    pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
+                    pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
+                    
+                    # Update the pack ID of card with internal ID 759 to new_pack_id_1
+                    pack_data[3] = new_pack_id_1  # Set the new pack_id at the 4th byte (index 3)
+                    modified_packs.append((new_pack_id_1, internal_id, card_name))  # Preserve internal ID and card name
 
-                # Now, fetch the internal ID and card name correctly by looking it up
-                # Fetch the card's name and description using internal ID
-                internal_id, card_name = self.get_internal_card_id(internal_id)
+                elif internal_id == target_internal_id_2:
+                    # Fetch the pack data for internal ID 251 (target card)
+                    pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
+                    pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
+                    
+                    # Update the pack ID of card with internal ID 251 to new_pack_id_2
+                    pack_data[3] = new_pack_id_2  # Set the new pack_id at the 4th byte (index 3)
+                    modified_packs.append((new_pack_id_2, internal_id, card_name))  # Preserve internal ID and card name
 
-                # Fetch the pack ID from the card_pack data (Note: this is stored as the 4th byte in the 8-byte entry)
-                pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
-                pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
-                
-                # The pack ID is stored in the 4th byte of the 8-byte data entry
-                new_pack_id = pack_data[3]  # This is the pack_id for the card
-
-                # Modify the pack entry by replacing the pack ID with the new one
-                modified_packs.append((new_pack_id, new_card_id, new_card_name))
+            print(f"Pack IDs switched for internal IDs {target_internal_id_1} and {target_internal_id_2}.")
 
         else:
             print("No packs to modify!")
