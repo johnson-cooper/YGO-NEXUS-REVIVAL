@@ -5,6 +5,32 @@ import os
 import subprocess
 import math
 
+# Function to sort cards based on selected option
+def sort_cards(cards, sort_by):
+    if sort_by == "Pack ID":
+        return sorted(cards, key=lambda card: card[0])
+    elif sort_by == "Internal ID":
+        return sorted(cards, key=lambda card: card[1])
+    elif sort_by == "Card Name":
+        return sorted(cards, key=lambda card: card[2].lower())  # Case insensitive
+    return cards  # Return unsorted if no valid option is selected
+
+# Function to load the cards into the text editor
+def load_cards_to_text_editor():
+    sort_by = dpg.get_value("sort_dropdown")  # Get the selected sorting option
+    sorted_cards = sort_cards(cards, sort_by)  # Sort the cards based on the selection
+
+    content = ""
+    for card in sorted_cards:
+        content += f"Pack ID: {card[0]}, Internal ID: {card[1]}, Card Name: {card[2]}\n"
+    
+    dpg.set_value("card_text_editor", content)  # Update the text editor with sorted cards
+
+# Function to handle the dropdown change event
+def on_sort_change(sender, app_data):
+    load_cards_to_text_editor()  # Reload cards based on the new sorting option
+
+
 def unpack_rom(rom_file, ndstool_path, work_dir):
     print(f"Unpacking ROM file: {rom_file}...")
     subprocess.run([ndstool_path, "-x", rom_file, "-9", os.path.join(work_dir, "arm9.bin"),
@@ -308,6 +334,8 @@ with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=1280
      # Button to patch the ROM by executing the script.py
     dpg.add_button(label="PATCH ROM", callback=patch_rom_callback)
     dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
+
+    dpg.add_combo(["Pack ID", "Internal ID", "Card Name"], label="Sort by", default_value="Pack ID", tag="sort_dropdown", callback=on_sort_change)
     
     # Scrollable text editor to display the file content
     dpg.add_input_text(tag="card_text_editor", multiline=True, readonly=False, height=-1, width=-1)
