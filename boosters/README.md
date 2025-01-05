@@ -6,6 +6,8 @@ This ROM editor allows you to modify and patch a ROM file by following a series 
 
 The ROM file must be named "rom.nds" in order for this to work.
 
+pip install -r requirements.txt
+
 ## Button Overview and Order
 
 The editor operates in a sequential process. Each button corresponds to a step in the editing and patching workflow. Below is an explanation of each button and its function:
