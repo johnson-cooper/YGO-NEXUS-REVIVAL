@@ -4,7 +4,7 @@
 
 This ROM editor allows you to modify and patch a ROM file by following a series of steps. The editor has 5 buttons that must be pressed in a specific order to ensure the correct changes are made and applied. Follow the instructions below to guide you through each step.
 
-The ROM file must be named "rom.nds" in order for this to work.
+The ROM file must be named "rom.nds" in the same directory in order for this to work.
 
 pip install -r requirements.txt
 
