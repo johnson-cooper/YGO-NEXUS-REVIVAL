@@ -83,7 +83,7 @@ if len(tableOfFileNames) != len(tableOfFiles):
     print("Error! " + str(len(tableOfFileNames)) + " file names but " + str(len(tableOfFiles)) + " files!")
     exit()
 
-outputPacFile = "repackedOutput.pac"
+outputPacFile = "bin2.pac"
 with open(outputPacFile, "wb") as newPac:
     newPac.write(bytE[0:fileNamesBeginning])
     newPac.write(fileNames[0:8])
