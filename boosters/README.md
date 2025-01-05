@@ -10,6 +10,8 @@ pip install -r requirements.txt
 
 for users without python, download the zip in this repository, and open !pack-editor.bat to run with embeddable python. 
 
+to prevent crashing the rom, make sure to replace only pack id.
+
 ## Button Overview and Order
 
 The editor operates in a sequential process. Each button corresponds to a step in the editing and patching workflow. Below is an explanation of each button and its function:
