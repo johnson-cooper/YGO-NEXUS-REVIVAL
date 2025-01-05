@@ -189,7 +189,10 @@ def save_to_temp_file(cards, temp_filename="temp_cards.txt"):
 # Check for over-limit cards
 # Function to check for over-limit cards and update the temporary file
 # Function to check for over-limit and under-limit cards and update the temporary file
+import re
+
 def update_temp_file_with_limits(original_counts, temp_filename="temp_cards.txt"):
+    # Open the file and read all lines
     with open(temp_filename, 'r') as file:
         lines = file.readlines()
     
@@ -205,20 +208,24 @@ def update_temp_file_with_limits(original_counts, temp_filename="temp_cards.txt"
                 pack_counts[pack_id] = 0
             pack_counts[pack_id] += 1
 
-    # Check for over-limit and under-limit, and mark the lines
+    # Check for over-limit and under-limit, and mark the lines accordingly
     for line in lines:
-        match = re.match(r"Pack ID: (\d+), Internal ID: (\d+), Card Name: (.+)", line.strip())
+        # Remove old markers if present
+        line = re.sub(r' \[.*\]', '', line.strip())  # This removes any previous markers like [OVER LIMIT]
+        
+        match = re.match(r"Pack ID: (\d+), Internal ID: (\d+), Card Name: (.+)", line)
         if match:
             pack_id = int(match.group(1))
             original_limit = original_counts.get(pack_id, 0)
+            # Check if the count is over, under, or within the limit
             if pack_counts[pack_id] > original_limit:
-                updated_lines.append(f"{line.strip()} [OVER LIMIT]\n")
+                updated_lines.append(f"{line} [OVER LIMIT]\n")
             elif pack_counts[pack_id] < original_limit:
-                updated_lines.append(f"{line.strip()} [UNDER LIMIT]\n")
+                updated_lines.append(f"{line} [UNDER LIMIT]\n")
             else:
-                updated_lines.append(line)
+                updated_lines.append(f"{line}\n")
 
-    # Write updated lines back to the temporary file
+    # Write the updated lines back to the file
     with open(temp_filename, 'w') as file:
         file.writelines(updated_lines)
 
