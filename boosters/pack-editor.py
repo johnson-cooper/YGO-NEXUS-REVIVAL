@@ -151,7 +151,7 @@ def on_unpack_button_click(sender, app_data):
     work_dir = "rom_work"  # Change this to your working directory
     os.makedirs(work_dir, exist_ok=True)
     unpack_rom(rom_file, ndstool_path, work_dir)
-    
+
 
 
 # Function to read the cards from the pack_and_cards.txt file
@@ -266,6 +266,9 @@ def save_project_callback():
 def patch_rom_callback():
     # Run the script.py
     subprocess.run(["python", "script.py"], check=True)
+def rebuild_rom_callback():
+    # Run the script.py
+    subprocess.run(["python", "repack.py"], check=True)    
 
 # Modified function for "Modify and Save to Config"
 def modify_and_save_to_config_callback():
@@ -297,6 +300,7 @@ with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=1280
     dpg.add_button(label="Modify and Save Changes to Config", callback=modify_and_save_to_config_callback)
      # Button to patch the ROM by executing the script.py
     dpg.add_button(label="PATCH ROM", callback=patch_rom_callback)
+    dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
     
     # Scrollable text editor to display the file content
     dpg.add_input_text(tag="card_text_editor", multiline=True, readonly=False, height=-1, width=-1)
