@@ -17,6 +17,15 @@ class ROMProcessor:
         self.card_indx_file = card_indx_file
         self.modified_cardstxt = modified_cardstxt 
         self.output_rom_file = output_rom_file
+        # Ensure the rom_work directory exists
+        self.create_work_directory()
+
+    def create_work_directory(self):
+        # Ensure the 'rom_work' directory exists
+        rom_work_dir = os.path.join(self.work_dir, 'rom_work')
+        os.makedirs(rom_work_dir, exist_ok=True)
+        print(f"'rom_work' directory is ready at: {rom_work_dir}")
+        self.rom_work_dir = rom_work_dir    
 
     def load_pack_mapping(self):
         print(f"Loading card_name_e.bin from {self.card_name_file}...")
@@ -46,6 +55,12 @@ class ROMProcessor:
 
         print(f"Loaded {len(konami_to_internal_id)} Konami code to internal ID mappings.")
         return konami_to_internal_id
+    
+    def load_config(self, config_file):
+        """Load the internal IDs and new pack IDs from the JSON config file."""
+        with open(config_file, 'r') as f:
+            data = json.load(f)
+        return data['cards']  # Return the list of card mappings
 
     # Read binary file
     def read_binary(self, file_path):
@@ -259,44 +274,37 @@ class ROMProcessor:
 
 
 
-    def modify_card_packs(self, packs):
+    def modify_card_packs(self, packs, config_file):
+        """Modify card packs using internal IDs and new pack IDs from the config file."""
         print(f"Modifying card packs in {self.pack_file}...")
 
-        # Define the internal IDs and their new pack IDs
-        target_internal_id_1 = 759  # The internal ID for the first card
-        target_internal_id_2 = 251  # The internal ID for the second card
-        new_pack_id_1 = 2          # New pack ID for the card with internal ID 759
-        new_pack_id_2 = 1          # New pack ID for the card with internal ID 251
+        # Load the card mappings from the JSON file
+        card_mappings = self.load_config(config_file)
 
         modified_packs = []  # List to store modified packs
 
         if packs:
-            print(f"\nSwitching pack IDs for internal IDs {target_internal_id_1} and {target_internal_id_2}...")
+            print(f"\nSwitching pack IDs based on the configurations...")
 
             # Iterate over the packs and modify the necessary values
-            for i in range(len(packs)):
-                pack_id, internal_id, card_name = packs[i]  # Unpack all three values
+            for pack in packs:
+                pack_id, internal_id, card_name = pack  # Unpack all three values
 
-                # Find the cards with internal ID 759 and 251
-                if internal_id == target_internal_id_1:
-                    # Fetch the pack data for internal ID 759 (target card)
-                    pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
-                    pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
-                    
-                    # Update the pack ID of card with internal ID 759 to new_pack_id_1
-                    pack_data[3] = new_pack_id_1  # Set the new pack_id at the 4th byte (index 3)
-                    modified_packs.append((new_pack_id_1, internal_id, card_name))  # Preserve internal ID and card name
+                # Check if the internal_id is in the mappings
+                for card_mapping in card_mappings:
+                    if internal_id == card_mapping['target_internal_id']:
+                        # Fetch the pack data for the target card
+                        pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
+                        pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
+                        
+                        # Update the pack ID based on the mapping
+                        new_pack_id = card_mapping['new_pack_id']
+                        pack_data[3] = new_pack_id  # Set the new pack_id at the 4th byte (index 3)
+                        
+                        # Add the modified pack to the list
+                        modified_packs.append((new_pack_id, internal_id, card_name))
 
-                elif internal_id == target_internal_id_2:
-                    # Fetch the pack data for internal ID 251 (target card)
-                    pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
-                    pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
-                    
-                    # Update the pack ID of card with internal ID 251 to new_pack_id_2
-                    pack_data[3] = new_pack_id_2  # Set the new pack_id at the 4th byte (index 3)
-                    modified_packs.append((new_pack_id_2, internal_id, card_name))  # Preserve internal ID and card name
-
-            print(f"Pack IDs switched for internal IDs {target_internal_id_1} and {target_internal_id_2}.")
+            print("Pack IDs switched based on the JSON configuration.")
 
         else:
             print("No packs to modify!")
@@ -396,7 +404,7 @@ if __name__ == "__main__":
     pack_mapping = processor.load_pack_mapping()
     packs = processor.read_card_packs()
     processor.write_packs_to_txt(packs)
-    modified_packs = processor.modify_card_packs(packs)
+    modified_packs = processor.modify_card_packs(packs, "config.json")
     processor.write_modified_packs_to_bin(modified_packs)
     processor.write_modified_cards_to_txt(modified_packs)
     
