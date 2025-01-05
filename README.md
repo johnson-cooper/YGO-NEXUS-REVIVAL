@@ -35,9 +35,9 @@ Contributions to the project are welcome! Feel free to submit issues or pull req
 ---
 
 ## Credits
-tereotis for hex offsets
-volvo for ideas and python changes
-opiter09 for unpacking pac files
+- tereotis for hex offsets
+- volvo for ideas and python changes
+- opiter09 for unpacking pac files
 
 ---
 ## Disclaimer
