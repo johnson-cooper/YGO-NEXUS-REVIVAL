@@ -1,4 +1,3 @@
-Pack ID: 0, Internal ID: 1, Card Name: Speed World 2
 Pack ID: 57, Internal ID: 2, Card Name: Speed Spell - Soul Release
 Pack ID: 59, Internal ID: 3, Card Name: Speed Spell - Confiscation
 Pack ID: 59, Internal ID: 4, Card Name: Speed Spell - The Forceful Sentry
@@ -33,7 +32,6 @@ Pack ID: 58, Internal ID: 32, Card Name: Speed Spell - Ancient Leaf
 Pack ID: 58, Internal ID: 33, Card Name: Speed Spell - Earthbound Whirlwind
 Pack ID: 58, Internal ID: 34, Card Name: Speed Spell - Moray of Greed
 Pack ID: 58, Internal ID: 35, Card Name: Speed Spell - Faustian Bargain
-Pack ID: 0, Internal ID: 36, Card Name: Speed Spell - Deceased Synchron
 Pack ID: 59, Internal ID: 37, Card Name: Speed Spell - Tyrant Force
 Pack ID: 59, Internal ID: 38, Card Name: Speed Spell - Ignition
 Pack ID: 59, Internal ID: 39, Card Name: Speed Spell - Speed Force
@@ -57,7 +55,6 @@ Pack ID: 59, Internal ID: 56, Card Name: Speed Spell - Pot of Duality
 Pack ID: 59, Internal ID: 57, Card Name: Speed Spell - Tuning
 Pack ID: 59, Internal ID: 58, Card Name: Speed Spell - Stardust Shimmer
 Pack ID: 59, Internal ID: 59, Card Name: Speed Spell - Forbidden Lance
-Pack ID: 0, Internal ID: 60, Card Name: Speed World
 Pack ID: 57, Internal ID: 61, Card Name: Speed Spell - Vision Wind
 Pack ID: 57, Internal ID: 62, Card Name: Speed Spell - Angel Baton
 Pack ID: 57, Internal ID: 63, Card Name: Speed Spell - Gap Storm
@@ -84,10 +81,7 @@ Pack ID: 59, Internal ID: 83, Card Name: Des Accelerator
 Pack ID: 59, Internal ID: 84, Card Name: Speed Spell - Speed Jammer
 Pack ID: 57, Internal ID: 85, Card Name: Speed Spell - Acceleration Limiter
 Pack ID: 58, Internal ID: 86, Card Name: Speed Spell - Slowdown Machine
-Pack ID: 0, Internal ID: 87, Card Name: Speed Spell - Wheelie Breaker
-Pack ID: 0, Internal ID: 88, Card Name: Speed Spell - Raigeki
 Pack ID: 57, Internal ID: 89, Card Name: Speed Spell - Tremendous Fire
-Pack ID: 0, Internal ID: 90, Card Name: Speed Spell - Harpie's Feather Duster
 Pack ID: 59, Internal ID: 91, Card Name: Speed Spell - Brain Control
 Pack ID: 57, Internal ID: 92, Card Name: Speed Spell - Mind Control
 Pack ID: 57, Internal ID: 93, Card Name: Speed Spell - Scapegoat
@@ -99,7 +93,6 @@ Pack ID: 59, Internal ID: 98, Card Name: Speed Spell - Last Will
 Pack ID: 59, Internal ID: 99, Card Name: Speed Spell - Heavy Storm
 Pack ID: 59, Internal ID: 100, Card Name: Speed Spell - Upstart Goblin
 Pack ID: 57, Internal ID: 101, Card Name: Speed Spell - Final Destiny
-Pack ID: 0, Internal ID: 102, Card Name: Speed Spell - Delinquent Duo
 Pack ID: 57, Internal ID: 103, Card Name: Speed Spell - Mystical Space Typhoon
 Pack ID: 58, Internal ID: 104, Card Name: Speed Spell - Giant Trunade
 Pack ID: 59, Internal ID: 105, Card Name: Speed Spell - Painful Choice
@@ -155,93 +148,7 @@ Pack ID: 58, Internal ID: 154, Card Name: Speed Spell - Summon Close
 Pack ID: 59, Internal ID: 155, Card Name: Speed Edge
 Pack ID: 59, Internal ID: 156, Card Name: Full Throttle
 Pack ID: 59, Internal ID: 157, Card Name: Slowdown Trap
-Pack ID: 0, Internal ID: 158, Card Name: Blue-Eyes White Dragon
-Pack ID: 0, Internal ID: 159, Card Name: Dark Magician
-Pack ID: 0, Internal ID: 160, Card Name: Red-Eyes B. Dragon
-Pack ID: 0, Internal ID: 161, Card Name: Dark Magician Girl
-Pack ID: 0, Internal ID: 162, Card Name: Gilford the Lightning
-Pack ID: 0, Internal ID: 163, Card Name: Winged Kuriboh
-Pack ID: 0, Internal ID: 164, Card Name: Cyber Dragon
-Pack ID: 0, Internal ID: 165, Card Name: Cyber End Dragon
-Pack ID: 0, Internal ID: 166, Card Name: Blue-Eyes White Dragon
-Pack ID: 0, Internal ID: 167, Card Name: Summoned Skull
-Pack ID: 0, Internal ID: 168, Card Name: Dark Magician
-Pack ID: 0, Internal ID: 169, Card Name: Red-Eyes B. Dragon
-Pack ID: 0, Internal ID: 170, Card Name: Buster Blader
-Pack ID: 0, Internal ID: 171, Card Name: Obelisk the Tormentor
-Pack ID: 0, Internal ID: 172, Card Name: The Winged Dragon of Ra
-Pack ID: 0, Internal ID: 173, Card Name: Insect Monster Token
-Pack ID: 0, Internal ID: 174, Card Name: Kuriboh Token
-Pack ID: 0, Internal ID: 175, Card Name: Sheep Token
-Pack ID: 0, Internal ID: 176, Card Name: Sheep Token
-Pack ID: 0, Internal ID: 177, Card Name: Sheep Token
-Pack ID: 0, Internal ID: 178, Card Name: Sheep Token
-Pack ID: 0, Internal ID: 179, Card Name: Army Ant Token
-Pack ID: 0, Internal ID: 180, Card Name: Slime Token
-Pack ID: 0, Internal ID: 181, Card Name: Wicked Token
-Pack ID: 0, Internal ID: 182, Card Name: Poisonous Snake Token
-Pack ID: 0, Internal ID: 183, Card Name: Lekunga Token
-Pack ID: 0, Internal ID: 184, Card Name: Clone Token
-Pack ID: 0, Internal ID: 185, Card Name: Wicked Plant Token
-Pack ID: 0, Internal ID: 186, Card Name: Mirage Token
-Pack ID: 0, Internal ID: 187, Card Name: Metal Fiend Token
-Pack ID: 0, Internal ID: 188, Card Name: Ojama Token
-Pack ID: 0, Internal ID: 189, Card Name: Ojama Token
-Pack ID: 0, Internal ID: 190, Card Name: Ojama Token
-Pack ID: 0, Internal ID: 191, Card Name: Lamb Token
-Pack ID: 0, Internal ID: 192, Card Name: Lamb Token
-Pack ID: 0, Internal ID: 193, Card Name: Tricky Token
-Pack ID: 0, Internal ID: 194, Card Name: Block Token
-Pack ID: 0, Internal ID: 195, Card Name: Emissary of Darkness Token
-Pack ID: 0, Internal ID: 196, Card Name: Phantasm Token
-Pack ID: 0, Internal ID: 197, Card Name: Phantasmal Martyr Token
-Pack ID: 0, Internal ID: 198, Card Name: Fluff Token
-Pack ID: 0, Internal ID: 199, Card Name: Fluff Token
-Pack ID: 0, Internal ID: 200, Card Name: Option Token
-Pack ID: 0, Internal ID: 201, Card Name: Double Dude Token
-Pack ID: 0, Internal ID: 202, Card Name: Fireball Token
-Pack ID: 0, Internal ID: 203, Card Name: Cloudian Token
-Pack ID: 0, Internal ID: 204, Card Name: Engine Token
-Pack ID: 0, Internal ID: 205, Card Name: Skyblaster Token
-Pack ID: 0, Internal ID: 206, Card Name: Grinder Token
-Pack ID: 0, Internal ID: 207, Card Name: Regenerating Rose Token
-Pack ID: 0, Internal ID: 208, Card Name: Thunder Option Token
-Pack ID: 0, Internal ID: 209, Card Name: Evil Token
-Pack ID: 0, Internal ID: 210, Card Name: Doomsday Token
-Pack ID: 0, Internal ID: 211, Card Name: Sinister Seed Token
-Pack ID: 0, Internal ID: 212, Card Name: Moon Token
-Pack ID: 0, Internal ID: 213, Card Name: Metabo Token
-Pack ID: 0, Internal ID: 214, Card Name: Oyster Token
-Pack ID: 0, Internal ID: 215, Card Name: Ice Coffin Token
-Pack ID: 0, Internal ID: 216, Card Name: Ivy Token
-Pack ID: 0, Internal ID: 217, Card Name: Horseytail Token
-Pack ID: 0, Internal ID: 218, Card Name: Rose Token
-Pack ID: 0, Internal ID: 219, Card Name: Gift Fiend Token
-Pack ID: 0, Internal ID: 220, Card Name: Plant Token
-Pack ID: 0, Internal ID: 221, Card Name: Seed Token
-Pack ID: 0, Internal ID: 222, Card Name: Needle Token
-Pack ID: 0, Internal ID: 223, Card Name: Nightmare Archfiend Token
-Pack ID: 0, Internal ID: 224, Card Name: Spinos Token
-Pack ID: 0, Internal ID: 225, Card Name: Rockstone Token
-Pack ID: 0, Internal ID: 226, Card Name: Asmo Token
-Pack ID: 0, Internal ID: 227, Card Name: Deus Token
-Pack ID: 0, Internal ID: 228, Card Name: Ghost Token
-Pack ID: 0, Internal ID: 229, Card Name: Jurrac Token
-Pack ID: 0, Internal ID: 230, Card Name: Worm Token
-Pack ID: 0, Internal ID: 231, Card Name: Multi Token
-Pack ID: 0, Internal ID: 232, Card Name: Reptilianne Token
-Pack ID: 0, Internal ID: 233, Card Name: Spider Token
-Pack ID: 0, Internal ID: 234, Card Name: Soul Token
-Pack ID: 0, Internal ID: 235, Card Name: Ceremonial Token
-Pack ID: 0, Internal ID: 236, Card Name: Grain Corn Token
-Pack ID: 0, Internal ID: 237, Card Name: Laval Token
-Pack ID: 0, Internal ID: 238, Card Name: Siphon Token
-Pack ID: 0, Internal ID: 239, Card Name: Waltz Token
-Pack ID: 0, Internal ID: 240, Card Name: Compass Token
-Pack ID: 0, Internal ID: 241, Card Name: Doppel Token
-Pack ID: 0, Internal ID: 242, Card Name: Nordic Beast Token
-Pack ID: 0, Internal ID: 243, Card Name: Einherjar Token
-Pack ID: 0, Internal ID: 244, Card Name: Malus Token
+Pack ID: 32, Internal ID: 245, Card Name: Blue-Eyes White Dragon
 Pack ID: 1, Internal ID: 245, Card Name: Blue-Eyes White Dragon
 Pack ID: 1, Internal ID: 246, Card Name: Mystical Elf
 Pack ID: 1, Internal ID: 247, Card Name: Hitotsu-Me Giant
@@ -257,11 +164,13 @@ Pack ID: 51, Internal ID: 256, Card Name: Tyhone
 Pack ID: 2, Internal ID: 257, Card Name: Battle Steer
 Pack ID: 1, Internal ID: 258, Card Name: Flame Swordsman
 Pack ID: 2, Internal ID: 259, Card Name: Time Wizard
+Pack ID: 36, Internal ID: 259, Card Name: Time Wizard
 Pack ID: 1, Internal ID: 260, Card Name: Right Leg of the Forbidden One
 Pack ID: 1, Internal ID: 261, Card Name: Left Leg of the Forbidden One
 Pack ID: 1, Internal ID: 262, Card Name: Right Arm of the Forbidden One
 Pack ID: 1, Internal ID: 263, Card Name: Left Arm of the Forbidden One
 Pack ID: 1, Internal ID: 264, Card Name: Exodia the Forbidden One
+Pack ID: 40, Internal ID: 265, Card Name: Summoned Skull
 Pack ID: 1, Internal ID: 265, Card Name: Summoned Skull
 Pack ID: 2, Internal ID: 266, Card Name: The Wicked Worm Beast
 Pack ID: 1, Internal ID: 267, Card Name: Skull Servant
@@ -274,6 +183,7 @@ Pack ID: 51, Internal ID: 273, Card Name: Koumori Dragon
 Pack ID: 2, Internal ID: 274, Card Name: Two-Headed King Rex
 Pack ID: 51, Internal ID: 275, Card Name: Judge Man
 Pack ID: 2, Internal ID: 276, Card Name: Saggi the Dark Clown
+Pack ID: 32, Internal ID: 277, Card Name: Dark Magician
 Pack ID: 1, Internal ID: 277, Card Name: Dark Magician
 Pack ID: 51, Internal ID: 278, Card Name: The Snake Hair
 Pack ID: 1, Internal ID: 279, Card Name: Gaia the Dragon Champion
@@ -297,6 +207,7 @@ Pack ID: 53, Internal ID: 296, Card Name: Gokibore
 Pack ID: 53, Internal ID: 297, Card Name: Giant Flea
 Pack ID: 1, Internal ID: 298, Card Name: Larvae Moth
 Pack ID: 2, Internal ID: 299, Card Name: Great Moth
+Pack ID: 32, Internal ID: 300, Card Name: Kuriboh
 Pack ID: 2, Internal ID: 300, Card Name: Kuriboh
 Pack ID: 1, Internal ID: 301, Card Name: Mammoth Graveyard
 Pack ID: 53, Internal ID: 302, Card Name: Great White
@@ -320,6 +231,7 @@ Pack ID: 2, Internal ID: 319, Card Name: Axe Raider
 Pack ID: 50, Internal ID: 320, Card Name: Megazowler
 Pack ID: 1, Internal ID: 321, Card Name: Uraby
 Pack ID: 53, Internal ID: 322, Card Name: Crawling Dragon #2
+Pack ID: 32, Internal ID: 323, Card Name: Red-Eyes B. Dragon
 Pack ID: 1, Internal ID: 323, Card Name: Red-Eyes B. Dragon
 Pack ID: 51, Internal ID: 324, Card Name: Castle of Dark Illusions
 Pack ID: 1, Internal ID: 325, Card Name: Reaper of the Cards
@@ -379,6 +291,7 @@ Pack ID: 46, Internal ID: 378, Card Name: Legendary Sword
 Pack ID: 49, Internal ID: 379, Card Name: Sword of Dark Destruction
 Pack ID: 46, Internal ID: 380, Card Name: Dark Energy
 Pack ID: 1, Internal ID: 381, Card Name: Axe of Despair
+Pack ID: 35, Internal ID: 381, Card Name: Axe of Despair
 Pack ID: 46, Internal ID: 382, Card Name: Laser Cannon Armor
 Pack ID: 46, Internal ID: 383, Card Name: Insect Armor with Laser Cannon
 Pack ID: 46, Internal ID: 384, Card Name: Elf's Light
@@ -386,6 +299,7 @@ Pack ID: 46, Internal ID: 385, Card Name: Beast Fangs
 Pack ID: 46, Internal ID: 386, Card Name: Steel Shell
 Pack ID: 46, Internal ID: 387, Card Name: Vile Germs
 Pack ID: 1, Internal ID: 388, Card Name: Black Pendant
+Pack ID: 33, Internal ID: 388, Card Name: Black Pendant
 Pack ID: 46, Internal ID: 389, Card Name: Silver Bow and Arrow
 Pack ID: 1, Internal ID: 390, Card Name: Horn of Light
 Pack ID: 1, Internal ID: 391, Card Name: Horn of the Unicorn
@@ -395,6 +309,7 @@ Pack ID: 49, Internal ID: 394, Card Name: Cyber Shield
 Pack ID: 1, Internal ID: 395, Card Name: Elegant Egotist
 Pack ID: 46, Internal ID: 396, Card Name: Mystical Moon
 Pack ID: 1, Internal ID: 397, Card Name: Stop Defense
+Pack ID: 32, Internal ID: 398, Card Name: Malevolent Nuzzler
 Pack ID: 1, Internal ID: 398, Card Name: Malevolent Nuzzler
 Pack ID: 46, Internal ID: 399, Card Name: Violet Crystal
 Pack ID: 46, Internal ID: 400, Card Name: Book of Secret Arts
@@ -481,6 +396,7 @@ Pack ID: 55, Internal ID: 480, Card Name: Pragtical
 Pack ID: 1, Internal ID: 481, Card Name: Ameba
 Pack ID: 55, Internal ID: 482, Card Name: Flower Wolf
 Pack ID: 2, Internal ID: 483, Card Name: Hoshiningen
+Pack ID: 40, Internal ID: 484, Card Name: Maha Vailo
 Pack ID: 1, Internal ID: 484, Card Name: Maha Vailo
 Pack ID: 55, Internal ID: 485, Card Name: Musician King
 Pack ID: 2, Internal ID: 486, Card Name: Dragon Seeker
@@ -520,12 +436,14 @@ Pack ID: 1, Internal ID: 519, Card Name: Invader of the Throne
 Pack ID: 47, Internal ID: 520, Card Name: Mystical Sheep #1
 Pack ID: 48, Internal ID: 521, Card Name: Gruesome Goo
 Pack ID: 48, Internal ID: 522, Card Name: Whiptail Crow
+Pack ID: 40, Internal ID: 523, Card Name: Kunai with Chain
 Pack ID: 47, Internal ID: 523, Card Name: Kunai with Chain
 Pack ID: 47, Internal ID: 524, Card Name: Magical Labyrinth
 Pack ID: 48, Internal ID: 525, Card Name: Warrior Elimination
 Pack ID: 48, Internal ID: 526, Card Name: Salamandra
 Pack ID: 1, Internal ID: 527, Card Name: Eternal Rest
 Pack ID: 1, Internal ID: 528, Card Name: Megamorph
+Pack ID: 38, Internal ID: 528, Card Name: Megamorph
 Pack ID: 34, Internal ID: 529, Card Name: Metalmorph
 Pack ID: 34, Internal ID: 530, Card Name: Acid Rain
 Pack ID: 72, Internal ID: 531, Card Name: Crush Card Virus
@@ -533,6 +451,7 @@ Pack ID: 53, Internal ID: 532, Card Name: Eradicating Aerosol
 Pack ID: 53, Internal ID: 533, Card Name: Breath of Light
 Pack ID: 53, Internal ID: 534, Card Name: Eternal Draught
 Pack ID: 53, Internal ID: 535, Card Name: Shine Palace
+Pack ID: 36, Internal ID: 536, Card Name: Shadow Spell
 Pack ID: 53, Internal ID: 536, Card Name: Shadow Spell
 Pack ID: 47, Internal ID: 537, Card Name: Black Luster Ritual
 Pack ID: 47, Internal ID: 538, Card Name: Zera Ritual
@@ -581,6 +500,7 @@ Pack ID: 48, Internal ID: 580, Card Name: Invitation to a Dark Sleep
 Pack ID: 46, Internal ID: 581, Card Name: Lord of D.
 Pack ID: 46, Internal ID: 582, Card Name: Red-Eyes Black Metal Dragon
 Pack ID: 2, Internal ID: 583, Card Name: Barrel Dragon
+Pack ID: 34, Internal ID: 583, Card Name: Barrel Dragon
 Pack ID: 76, Internal ID: 584, Card Name: Hannibal Necromancer
 Pack ID: 35, Internal ID: 585, Card Name: Panther Warrior
 Pack ID: 48, Internal ID: 586, Card Name: Three-Headed Geedo
@@ -611,11 +531,13 @@ Pack ID: 71, Internal ID: 610, Card Name: Dunames Dark Witch
 Pack ID: 48, Internal ID: 611, Card Name: Cyber-Tech Alligator
 Pack ID: 49, Internal ID: 612, Card Name: Gamma The Magnet Warrior
 Pack ID: 48, Internal ID: 613, Card Name: Time Machine
+Pack ID: 42, Internal ID: 614, Card Name: Copycat
 Pack ID: 46, Internal ID: 614, Card Name: Copycat
 Pack ID: 1, Internal ID: 615, Card Name: Toon World
 Pack ID: 5, Internal ID: 616, Card Name: Gorgon's Eye
 Pack ID: 2, Internal ID: 617, Card Name: Black Illusion Ritual
 Pack ID: 8, Internal ID: 618, Card Name: Brain Control
+Pack ID: 37, Internal ID: 618, Card Name: Brain Control
 Pack ID: 32, Internal ID: 619, Card Name: Negate Attack
 Pack ID: 48, Internal ID: 620, Card Name: Multiply
 Pack ID: 34, Internal ID: 621, Card Name: 7 Completed
@@ -639,7 +561,9 @@ Pack ID: 1, Internal ID: 638, Card Name: Insect Barrier
 Pack ID: 34, Internal ID: 639, Card Name: Magical Arm Shield
 Pack ID: 1, Internal ID: 640, Card Name: Fissure
 Pack ID: 1, Internal ID: 641, Card Name: Trap Hole
+Pack ID: 35, Internal ID: 641, Card Name: Trap Hole
 Pack ID: 1, Internal ID: 642, Card Name: Polymerization
+Pack ID: 38, Internal ID: 642, Card Name: Polymerization
 Pack ID: 50, Internal ID: 643, Card Name: Remove Trap
 Pack ID: 50, Internal ID: 644, Card Name: Two-Pronged Attack
 Pack ID: 50, Internal ID: 645, Card Name: Blue Medicine
@@ -664,6 +588,7 @@ Pack ID: 1, Internal ID: 663, Card Name: The Cheerful Coffin
 Pack ID: 53, Internal ID: 664, Card Name: Call of Darkness
 Pack ID: 1, Internal ID: 665, Card Name: Change of Heart
 Pack ID: 2, Internal ID: 666, Card Name: Solemn Judgment
+Pack ID: 32, Internal ID: 667, Card Name: Magic Jammer
 Pack ID: 2, Internal ID: 667, Card Name: Magic Jammer
 Pack ID: 2, Internal ID: 668, Card Name: Seven Tools of the Bandit
 Pack ID: 2, Internal ID: 669, Card Name: Horn of Heaven
@@ -681,6 +606,7 @@ Pack ID: 2, Internal ID: 680, Card Name: Robbin' Goblin
 Pack ID: 48, Internal ID: 681, Card Name: Germ Infection
 Pack ID: 48, Internal ID: 682, Card Name: Paralyzing Potion
 Pack ID: 48, Internal ID: 683, Card Name: Wall of Illusion
+Pack ID: 39, Internal ID: 683, Card Name: Wall of Illusion
 Pack ID: 48, Internal ID: 684, Card Name: Neo the Magic Swordsman
 Pack ID: 50, Internal ID: 685, Card Name: Baron of the Fiend Sword
 Pack ID: 50, Internal ID: 686, Card Name: Man-Eating Treasure Chest
@@ -689,6 +615,7 @@ Pack ID: 48, Internal ID: 688, Card Name: Last Will
 Pack ID: 37, Internal ID: 689, Card Name: Waboku
 Pack ID: 2, Internal ID: 690, Card Name: Mirror Force
 Pack ID: 2, Internal ID: 691, Card Name: Ring of Magnetism
+Pack ID: 33, Internal ID: 692, Card Name: Share the Pain
 Pack ID: 2, Internal ID: 692, Card Name: Share the Pain
 Pack ID: 50, Internal ID: 693, Card Name: Stim-Pack
 Pack ID: 2, Internal ID: 694, Card Name: Heavy Storm
@@ -706,10 +633,12 @@ Pack ID: 50, Internal ID: 705, Card Name: Darkness Approaches
 Pack ID: 1, Internal ID: 706, Card Name: Fairy's Hand Mirror
 Pack ID: 1, Internal ID: 707, Card Name: Tailor of the Fickle
 Pack ID: 1, Internal ID: 708, Card Name: Rush Recklessly
+Pack ID: 36, Internal ID: 708, Card Name: Rush Recklessly
 Pack ID: 1, Internal ID: 709, Card Name: The Reliable Guardian
 Pack ID: 1, Internal ID: 710, Card Name: The Forceful Sentry
 Pack ID: 1, Internal ID: 711, Card Name: Chain Energy
 Pack ID: 1, Internal ID: 712, Card Name: Mystical Space Typhoon
+Pack ID: 33, Internal ID: 712, Card Name: Mystical Space Typhoon
 Pack ID: 1, Internal ID: 713, Card Name: Giant Trunade
 Pack ID: 1, Internal ID: 714, Card Name: Painful Choice
 Pack ID: 50, Internal ID: 715, Card Name: Snake Fang
@@ -717,17 +646,22 @@ Pack ID: 1, Internal ID: 716, Card Name: Cyber Jar
 Pack ID: 1, Internal ID: 717, Card Name: Banisher of the Light
 Pack ID: 1, Internal ID: 718, Card Name: Giant Rat
 Pack ID: 1, Internal ID: 719, Card Name: Senju of the Thousand Hands
+Pack ID: 41, Internal ID: 719, Card Name: Senju of the Thousand Hands
 Pack ID: 1, Internal ID: 720, Card Name: UFO Turtle
 Pack ID: 1, Internal ID: 721, Card Name: Flash Assailant
 Pack ID: 1, Internal ID: 722, Card Name: Giant Germ
+Pack ID: 40, Internal ID: 723, Card Name: Nimble Momonga
 Pack ID: 1, Internal ID: 723, Card Name: Nimble Momonga
 Pack ID: 48, Internal ID: 724, Card Name: Spear Cretin
+Pack ID: 40, Internal ID: 724, Card Name: Spear Cretin
 Pack ID: 1, Internal ID: 725, Card Name: Shining Angel
 Pack ID: 1, Internal ID: 726, Card Name: Mother Grizzly
 Pack ID: 1, Internal ID: 727, Card Name: Flying Kamakiri #1
 Pack ID: 1, Internal ID: 728, Card Name: Ceremonial Bell
 Pack ID: 1, Internal ID: 729, Card Name: Sonic Bird
+Pack ID: 41, Internal ID: 729, Card Name: Sonic Bird
 Pack ID: 1, Internal ID: 730, Card Name: Mystic Tomato
+Pack ID: 42, Internal ID: 730, Card Name: Mystic Tomato
 Pack ID: 1, Internal ID: 731, Card Name: Kotodama
 Pack ID: 1, Internal ID: 732, Card Name: Gaia Power
 Pack ID: 1, Internal ID: 733, Card Name: Umiiruka
@@ -755,40 +689,46 @@ Pack ID: 1, Internal ID: 754, Card Name: Attack and Receive
 Pack ID: 51, Internal ID: 755, Card Name: Major Riot
 Pack ID: 1, Internal ID: 756, Card Name: Ceasefire
 Pack ID: 1, Internal ID: 757, Card Name: Light of Intervention
+Pack ID: 34, Internal ID: 757, Card Name: Light of Intervention
 Pack ID: 1, Internal ID: 758, Card Name: Respect Play
 Pack ID: 1, Internal ID: 759, Card Name: Imperial Order
 Pack ID: 1, Internal ID: 760, Card Name: Skull Invitation
 Pack ID: 1, Internal ID: 761, Card Name: Magical Hats
 Pack ID: 1, Internal ID: 762, Card Name: Nobleman of Crossout
+Pack ID: 36, Internal ID: 762, Card Name: Nobleman of Crossout
+Pack ID: 32, Internal ID: 763, Card Name: Nobleman of Extermination
 Pack ID: 1, Internal ID: 763, Card Name: Nobleman of Extermination
 Pack ID: 1, Internal ID: 764, Card Name: The Shallow Grave
+Pack ID: 37, Internal ID: 764, Card Name: The Shallow Grave
 Pack ID: 1, Internal ID: 765, Card Name: Premature Burial
 Pack ID: 51, Internal ID: 766, Card Name: Inspection
 Pack ID: 51, Internal ID: 767, Card Name: Prohibition
 Pack ID: 1, Internal ID: 768, Card Name: Morphing Jar #2
 Pack ID: 1, Internal ID: 769, Card Name: Bubonic Vermin
+Pack ID: 32, Internal ID: 770, Card Name: Buster Blader
 Pack ID: 1, Internal ID: 770, Card Name: Buster Blader
 Pack ID: 1, Internal ID: 771, Card Name: Time Seal
 Pack ID: 1, Internal ID: 772, Card Name: Graverobber
 Pack ID: 1, Internal ID: 773, Card Name: Gift of The Mystical Elf
 Pack ID: 1, Internal ID: 774, Card Name: The Eye of Truth
+Pack ID: 32, Internal ID: 775, Card Name: Dust Tornado
 Pack ID: 1, Internal ID: 775, Card Name: Dust Tornado
 Pack ID: 1, Internal ID: 776, Card Name: Call of the Haunted
 Pack ID: 51, Internal ID: 777, Card Name: Solomon's Lawbook
 Pack ID: 49, Internal ID: 778, Card Name: Earthshaker
 Pack ID: 1, Internal ID: 779, Card Name: Enchanted Javelin
 Pack ID: 1, Internal ID: 780, Card Name: Mirror Wall
-Pack ID: 0, Internal ID: 781, Card Name: Obelisk the Tormentor
-Pack ID: 0, Internal ID: 782, Card Name: Slifer the Sky Dragon
-Pack ID: 0, Internal ID: 783, Card Name: The Winged Dragon of Ra
 Pack ID: 49, Internal ID: 784, Card Name: Windstorm of Etaqua
 Pack ID: 49, Internal ID: 785, Card Name: Valkyrion the Magna Warrior
 Pack ID: 49, Internal ID: 786, Card Name: Alligator's Sword Dragon
+Pack ID: 39, Internal ID: 786, Card Name: Alligator's Sword Dragon
 Pack ID: 49, Internal ID: 787, Card Name: Vorse Raider
+Pack ID: 36, Internal ID: 787, Card Name: Vorse Raider
 Pack ID: 51, Internal ID: 788, Card Name: Ring of Destruction
 Pack ID: 68, Internal ID: 789, Card Name: Aqua Chorus
 Pack ID: 69, Internal ID: 790, Card Name: Sebek's Blessing
 Pack ID: 49, Internal ID: 791, Card Name: Anti-Spell Fragrance
+Pack ID: 39, Internal ID: 791, Card Name: Anti-Spell Fragrance
 Pack ID: 33, Internal ID: 792, Card Name: Riryoku
 Pack ID: 49, Internal ID: 793, Card Name: Sword of Dragon's Soul
 Pack ID: 49, Internal ID: 794, Card Name: Seal of the Ancients
@@ -818,9 +758,11 @@ Pack ID: 40, Internal ID: 817, Card Name: Slate Warrior
 Pack ID: 49, Internal ID: 818, Card Name: Shapesnatch
 Pack ID: 49, Internal ID: 819, Card Name: Electromagnetic Bagworm
 Pack ID: 49, Internal ID: 820, Card Name: Timeater
+Pack ID: 42, Internal ID: 820, Card Name: Timeater
 Pack ID: 2, Internal ID: 821, Card Name: Mucus Yolk
 Pack ID: 49, Internal ID: 822, Card Name: Servant of Catabolism
 Pack ID: 49, Internal ID: 823, Card Name: Rigorous Reaver
+Pack ID: 38, Internal ID: 823, Card Name: Rigorous Reaver
 Pack ID: 2, Internal ID: 824, Card Name: Moisture Creature
 Pack ID: 49, Internal ID: 825, Card Name: Boneheimer
 Pack ID: 49, Internal ID: 826, Card Name: Flame Dancer
@@ -835,6 +777,7 @@ Pack ID: 49, Internal ID: 834, Card Name: Rocket Warrior
 Pack ID: 1, Internal ID: 835, Card Name: The Legendary Fisherman
 Pack ID: 1, Internal ID: 836, Card Name: Shining Abyss
 Pack ID: 49, Internal ID: 837, Card Name: Archfiend of Gilfer
+Pack ID: 37, Internal ID: 837, Card Name: Archfiend of Gilfer
 Pack ID: 49, Internal ID: 838, Card Name: Gadget Soldier
 Pack ID: 1, Internal ID: 839, Card Name: Grand Tiki Elder
 Pack ID: 1, Internal ID: 840, Card Name: The Masked Beast
@@ -844,6 +787,7 @@ Pack ID: 49, Internal ID: 843, Card Name: Masked Beast Des Gardius
 Pack ID: 49, Internal ID: 844, Card Name: The Mask of Remnants
 Pack ID: 32, Internal ID: 845, Card Name: Soul Exchange
 Pack ID: 1, Internal ID: 846, Card Name: Chosen One
+Pack ID: 32, Internal ID: 847, Card Name: Mask of Weakness
 Pack ID: 1, Internal ID: 847, Card Name: Mask of Weakness
 Pack ID: 1, Internal ID: 848, Card Name: Curse of the Masked Beast
 Pack ID: 1, Internal ID: 849, Card Name: Mask of Dispel
@@ -858,6 +802,7 @@ Pack ID: 1, Internal ID: 857, Card Name: Fairy Box
 Pack ID: 1, Internal ID: 858, Card Name: Torrential Tribute
 Pack ID: 4, Internal ID: 859, Card Name: Multiplication of Ants
 Pack ID: 2, Internal ID: 860, Card Name: De-Fusion
+Pack ID: 39, Internal ID: 860, Card Name: De-Fusion
 Pack ID: 1, Internal ID: 861, Card Name: Jam Breeding Machine
 Pack ID: 72, Internal ID: 862, Card Name: Nightmare's Steelcage
 Pack ID: 1, Internal ID: 863, Card Name: Infinite Cards
@@ -868,13 +813,16 @@ Pack ID: 1, Internal ID: 867, Card Name: Solemn Wishes
 Pack ID: 1, Internal ID: 868, Card Name: Burning Land
 Pack ID: 75, Internal ID: 869, Card Name: Cold Wave
 Pack ID: 1, Internal ID: 870, Card Name: Fairy Meteor Crush
+Pack ID: 33, Internal ID: 870, Card Name: Fairy Meteor Crush
 Pack ID: 1, Internal ID: 871, Card Name: Limiter Removal
+Pack ID: 38, Internal ID: 871, Card Name: Limiter Removal
 Pack ID: 1, Internal ID: 872, Card Name: Shift
 Pack ID: 53, Internal ID: 873, Card Name: Insect Imitation
 Pack ID: 1, Internal ID: 874, Card Name: Dimensionhole
 Pack ID: 1, Internal ID: 875, Card Name: Magic Drain
 Pack ID: 1, Internal ID: 876, Card Name: Gravity Bind
 Pack ID: 1, Internal ID: 877, Card Name: Shadow of Eyes
+Pack ID: 33, Internal ID: 877, Card Name: Shadow of Eyes
 Pack ID: 1, Internal ID: 878, Card Name: Hayabusa Knight
 Pack ID: 1, Internal ID: 879, Card Name: Bombardment Beetle
 Pack ID: 1, Internal ID: 880, Card Name: 4-Starred Ladybug of Doom
@@ -888,7 +836,6 @@ Pack ID: 1, Internal ID: 887, Card Name: Type Zero Magic Crusher
 Pack ID: 4, Internal ID: 888, Card Name: Yellow Luster Shield
 Pack ID: 2, Internal ID: 889, Card Name: Creature Swap
 Pack ID: 2, Internal ID: 890, Card Name: Spring of Rebirth
-Pack ID: 0, Internal ID: 891, Card Name: Dark Magician
 Pack ID: 47, Internal ID: 892, Card Name: Thousand Knives
 Pack ID: 35, Internal ID: 893, Card Name: Mystic Box
 Pack ID: 1, Internal ID: 894, Card Name: Ground Collapse
@@ -906,6 +853,7 @@ Pack ID: 1, Internal ID: 905, Card Name: Marie the Fallen One
 Pack ID: 1, Internal ID: 906, Card Name: Jar of Greed
 Pack ID: 1, Internal ID: 907, Card Name: Scroll of Bewitchment
 Pack ID: 1, Internal ID: 908, Card Name: United We Stand
+Pack ID: 37, Internal ID: 908, Card Name: United We Stand
 Pack ID: 1, Internal ID: 909, Card Name: Mage Power
 Pack ID: 34, Internal ID: 910, Card Name: Offerings to the Doomed
 Pack ID: 7, Internal ID: 911, Card Name: Meteor of Destruction
@@ -915,6 +863,7 @@ Pack ID: 1, Internal ID: 914, Card Name: The Portrait's Secret
 Pack ID: 1, Internal ID: 915, Card Name: The Gross Ghost of Fled Dreams
 Pack ID: 1, Internal ID: 916, Card Name: Headless Knight
 Pack ID: 2, Internal ID: 917, Card Name: Dark Necrofear
+Pack ID: 35, Internal ID: 917, Card Name: Dark Necrofear
 Pack ID: 49, Internal ID: 918, Card Name: Magic Formula
 Pack ID: 2, Internal ID: 919, Card Name: Destiny Board
 Pack ID: 2, Internal ID: 920, Card Name: The Dark Door
@@ -929,6 +878,7 @@ Pack ID: 49, Internal ID: 928, Card Name: Makiu, the Magical Mist
 Pack ID: 49, Internal ID: 929, Card Name: Ancient Lamp
 Pack ID: 49, Internal ID: 930, Card Name: Cyber Harpie Lady
 Pack ID: 50, Internal ID: 931, Card Name: Mystical Beast of Serket
+Pack ID: 33, Internal ID: 932, Card Name: Swift Gaia the Fierce Knight
 Pack ID: 2, Internal ID: 932, Card Name: Swift Gaia the Fierce Knight
 Pack ID: 2, Internal ID: 933, Card Name: Obnoxious Celtic Guard
 Pack ID: 2, Internal ID: 934, Card Name: Zombyra the Dark
@@ -954,6 +904,7 @@ Pack ID: 2, Internal ID: 953, Card Name: Skull Lair
 Pack ID: 2, Internal ID: 954, Card Name: Graverobber's Retribution
 Pack ID: 50, Internal ID: 955, Card Name: Deal of Phantom
 Pack ID: 2, Internal ID: 956, Card Name: Destruction Punch
+Pack ID: 35, Internal ID: 956, Card Name: Destruction Punch
 Pack ID: 2, Internal ID: 957, Card Name: Blind Destruction
 Pack ID: 2, Internal ID: 958, Card Name: The Emperor's Holiday
 Pack ID: 2, Internal ID: 959, Card Name: Cyclon Laser
@@ -1000,6 +951,7 @@ Pack ID: 2, Internal ID: 999, Card Name: Array of Revealing Light
 Pack ID: 2, Internal ID: 1000, Card Name: The Warrior Returning Alive
 Pack ID: 49, Internal ID: 1001, Card Name: Ready for Intercepting
 Pack ID: 50, Internal ID: 1002, Card Name: A Feint Plan
+Pack ID: 41, Internal ID: 1003, Card Name: Tyrant Dragon
 Pack ID: 2, Internal ID: 1003, Card Name: Tyrant Dragon
 Pack ID: 2, Internal ID: 1004, Card Name: Spear Dragon
 Pack ID: 56, Internal ID: 1005, Card Name: The Dragon Dwelling in the Cave
@@ -1020,9 +972,11 @@ Pack ID: 3, Internal ID: 1019, Card Name: Mudora
 Pack ID: 3, Internal ID: 1020, Card Name: Cestus of Dagla
 Pack ID: 53, Internal ID: 1021, Card Name: Virus Cannon
 Pack ID: 52, Internal ID: 1022, Card Name: Exchange of the Spirit
+Pack ID: 41, Internal ID: 1023, Card Name: Kelbek
 Pack ID: 3, Internal ID: 1023, Card Name: Kelbek
 Pack ID: 5, Internal ID: 1024, Card Name: Null and Void
 Pack ID: 3, Internal ID: 1025, Card Name: Zolga
+Pack ID: 41, Internal ID: 1026, Card Name: Blast Held by a Tribute
 Pack ID: 3, Internal ID: 1026, Card Name: Blast Held by a Tribute
 Pack ID: 3, Internal ID: 1027, Card Name: Agido
 Pack ID: 50, Internal ID: 1028, Card Name: Silent Doom
@@ -1050,6 +1004,7 @@ Pack ID: 2, Internal ID: 1049, Card Name: Blast with Chain
 Pack ID: 2, Internal ID: 1050, Card Name: Disappear
 Pack ID: 2, Internal ID: 1051, Card Name: Bubble Crash
 Pack ID: 2, Internal ID: 1052, Card Name: Royal Oppression
+Pack ID: 38, Internal ID: 1052, Card Name: Royal Oppression
 Pack ID: 2, Internal ID: 1053, Card Name: Bottomless Trap Hole
 Pack ID: 2, Internal ID: 1054, Card Name: Ominous Fortunetelling
 Pack ID: 2, Internal ID: 1055, Card Name: Spirit's Invitation
@@ -1073,6 +1028,7 @@ Pack ID: 75, Internal ID: 1072, Card Name: Des Lacooda
 Pack ID: 2, Internal ID: 1073, Card Name: Book of Life
 Pack ID: 2, Internal ID: 1074, Card Name: Book of Taiyou
 Pack ID: 2, Internal ID: 1075, Card Name: Book of Moon
+Pack ID: 37, Internal ID: 1075, Card Name: Book of Moon
 Pack ID: 2, Internal ID: 1076, Card Name: Mirage of Nightmare
 Pack ID: 2, Internal ID: 1077, Card Name: Call of the Mummy
 Pack ID: 2, Internal ID: 1078, Card Name: Timidity
@@ -1086,6 +1042,7 @@ Pack ID: 2, Internal ID: 1085, Card Name: Statue of the Wicked
 Pack ID: 2, Internal ID: 1086, Card Name: Dark Coffin
 Pack ID: 2, Internal ID: 1087, Card Name: Needle Wall
 Pack ID: 2, Internal ID: 1088, Card Name: Trap Dustshoot
+Pack ID: 39, Internal ID: 1088, Card Name: Trap Dustshoot
 Pack ID: 53, Internal ID: 1089, Card Name: Pyro Clock of Destiny
 Pack ID: 2, Internal ID: 1090, Card Name: Reckless Greed
 Pack ID: 2, Internal ID: 1091, Card Name: Pharaoh's Treasure
@@ -1102,11 +1059,15 @@ Pack ID: 2, Internal ID: 1101, Card Name: Toon Goblin Attack Force
 Pack ID: 8, Internal ID: 1102, Card Name: Card of Sanctity
 Pack ID: 3, Internal ID: 1103, Card Name: Dark Designator
 Pack ID: 48, Internal ID: 1104, Card Name: Puppet Master
+Pack ID: 41, Internal ID: 1104, Card Name: Puppet Master
 Pack ID: 75, Internal ID: 1105, Card Name: Gernia
 Pack ID: 3, Internal ID: 1106, Card Name: Newdoria
+Pack ID: 36, Internal ID: 1106, Card Name: Newdoria
 Pack ID: 4, Internal ID: 1107, Card Name: Lord Poison
 Pack ID: 50, Internal ID: 1108, Card Name: Spell of Pain
+Pack ID: 36, Internal ID: 1108, Card Name: Spell of Pain
 Pack ID: 2, Internal ID: 1109, Card Name: Blade Knight
+Pack ID: 38, Internal ID: 1109, Card Name: Blade Knight
 Pack ID: 3, Internal ID: 1110, Card Name: Helpoemer
 Pack ID: 50, Internal ID: 1111, Card Name: Hidden Soldiers
 Pack ID: 50, Internal ID: 1112, Card Name: Gil Garth
@@ -1114,6 +1075,7 @@ Pack ID: 3, Internal ID: 1113, Card Name: Coffin Seller
 Pack ID: 73, Internal ID: 1114, Card Name: Malevolent Catastrophe
 Pack ID: 3, Internal ID: 1115, Card Name: Question
 Pack ID: 3, Internal ID: 1116, Card Name: Lava Golem
+Pack ID: 36, Internal ID: 1116, Card Name: Lava Golem
 Pack ID: 50, Internal ID: 1117, Card Name: Relieve Monster
 Pack ID: 6, Internal ID: 1118, Card Name: Machine Duplication
 Pack ID: 3, Internal ID: 1119, Card Name: Dark Jeroid
@@ -1121,6 +1083,7 @@ Pack ID: 48, Internal ID: 1120, Card Name: Dragon Master Knight
 Pack ID: 48, Internal ID: 1121, Card Name: Five-Headed Dragon
 Pack ID: 10, Internal ID: 1122, Card Name: Queen's Knight
 Pack ID: 3, Internal ID: 1123, Card Name: X-Head Cannon
+Pack ID: 34, Internal ID: 1124, Card Name: Enemy Controller
 Pack ID: 4, Internal ID: 1124, Card Name: Enemy Controller
 Pack ID: 3, Internal ID: 1125, Card Name: Master Kyonshee
 Pack ID: 3, Internal ID: 1126, Card Name: Kabazauls
@@ -1170,6 +1133,7 @@ Pack ID: 3, Internal ID: 1169, Card Name: D. Tribe
 Pack ID: 3, Internal ID: 1170, Card Name: Y-Dragon Head
 Pack ID: 3, Internal ID: 1171, Card Name: XY-Dragon Cannon
 Pack ID: 3, Internal ID: 1172, Card Name: Z-Metal Tank
+Pack ID: 41, Internal ID: 1173, Card Name: XYZ-Dragon Cannon
 Pack ID: 3, Internal ID: 1173, Card Name: XYZ-Dragon Cannon
 Pack ID: 50, Internal ID: 1174, Card Name: Soul Rope
 Pack ID: 10, Internal ID: 1175, Card Name: King's Knight
@@ -1219,11 +1183,13 @@ Pack ID: 3, Internal ID: 1218, Card Name: Secret Barrel
 Pack ID: 3, Internal ID: 1219, Card Name: Physical Double
 Pack ID: 3, Internal ID: 1220, Card Name: Rivalry of Warlords
 Pack ID: 3, Internal ID: 1221, Card Name: Formation Union
+Pack ID: 33, Internal ID: 1222, Card Name: Adhesion Trap Hole
 Pack ID: 3, Internal ID: 1222, Card Name: Adhesion Trap Hole
 Pack ID: 3, Internal ID: 1223, Card Name: XZ-Tank Cannon
 Pack ID: 3, Internal ID: 1224, Card Name: YZ-Tank Dragon
 Pack ID: 3, Internal ID: 1225, Card Name: Final Attack Orders
 Pack ID: 3, Internal ID: 1226, Card Name: Dark Paladin
+Pack ID: 36, Internal ID: 1226, Card Name: Dark Paladin
 Pack ID: 3, Internal ID: 1227, Card Name: Double Spell
 Pack ID: 7, Internal ID: 1228, Card Name: Spell Absorption
 Pack ID: 3, Internal ID: 1229, Card Name: Diffusion Wave-Motion
@@ -1262,6 +1228,7 @@ Pack ID: 3, Internal ID: 1261, Card Name: Mass Driver
 Pack ID: 3, Internal ID: 1262, Card Name: Senri Eye
 Pack ID: 3, Internal ID: 1263, Card Name: Emblem of Dragon Destroyer
 Pack ID: 3, Internal ID: 1264, Card Name: Jar Robber
+Pack ID: 40, Internal ID: 1265, Card Name: My Body as a Shield
 Pack ID: 3, Internal ID: 1265, Card Name: My Body as a Shield
 Pack ID: 3, Internal ID: 1266, Card Name: Pigeonholing Books of Spell
 Pack ID: 3, Internal ID: 1267, Card Name: Mega Ton Magical Cannon
@@ -1278,6 +1245,7 @@ Pack ID: 4, Internal ID: 1277, Card Name: Bowganian
 Pack ID: 75, Internal ID: 1278, Card Name: Magical Stone Excavation
 Pack ID: 4, Internal ID: 1279, Card Name: Granadora
 Pack ID: 3, Internal ID: 1280, Card Name: Different Dimension Dragon
+Pack ID: 38, Internal ID: 1280, Card Name: Different Dimension Dragon
 Pack ID: 3, Internal ID: 1281, Card Name: Shinato, King of a Higher Plane
 Pack ID: 3, Internal ID: 1282, Card Name: Dark Flare Knight
 Pack ID: 3, Internal ID: 1283, Card Name: Mirage Knight
@@ -1311,6 +1279,7 @@ Pack ID: 3, Internal ID: 1310, Card Name: Staunch Defender
 Pack ID: 3, Internal ID: 1311, Card Name: Ojama Trio
 Pack ID: 3, Internal ID: 1312, Card Name: Arsenal Robber
 Pack ID: 3, Internal ID: 1313, Card Name: Skill Drain
+Pack ID: 37, Internal ID: 1313, Card Name: Skill Drain
 Pack ID: 3, Internal ID: 1314, Card Name: Really Eternal Rest
 Pack ID: 75, Internal ID: 1315, Card Name: Soul Taker
 Pack ID: 66, Internal ID: 1316, Card Name: Magical Dimension
@@ -1356,9 +1325,11 @@ Pack ID: 3, Internal ID: 1355, Card Name: Dice Re-Roll
 Pack ID: 3, Internal ID: 1356, Card Name: Spell Vanishing
 Pack ID: 3, Internal ID: 1357, Card Name: Sakuretsu Armor
 Pack ID: 3, Internal ID: 1358, Card Name: Ray of Hope
+Pack ID: 38, Internal ID: 1359, Card Name: Nightmare Penguin
 Pack ID: 6, Internal ID: 1359, Card Name: Nightmare Penguin
 Pack ID: 6, Internal ID: 1360, Card Name: Perfect Machine King
 Pack ID: 7, Internal ID: 1361, Card Name: Chiron the Mage
+Pack ID: 32, Internal ID: 1362, Card Name: Ojama Yellow
 Pack ID: 4, Internal ID: 1362, Card Name: Ojama Yellow
 Pack ID: 4, Internal ID: 1363, Card Name: Ojama Black
 Pack ID: 4, Internal ID: 1364, Card Name: Big Koala
@@ -1371,6 +1342,7 @@ Pack ID: 4, Internal ID: 1370, Card Name: Chopman the Desperate Outlaw
 Pack ID: 4, Internal ID: 1371, Card Name: Sasuke Samurai #3
 Pack ID: 4, Internal ID: 1372, Card Name: D.D. Scout Plane
 Pack ID: 4, Internal ID: 1373, Card Name: Berserk Gorilla
+Pack ID: 42, Internal ID: 1374, Card Name: Freed the Brave Wanderer
 Pack ID: 4, Internal ID: 1374, Card Name: Freed the Brave Wanderer
 Pack ID: 4, Internal ID: 1375, Card Name: Chaos Necromancer
 Pack ID: 4, Internal ID: 1376, Card Name: Chaosrider Gustaph
@@ -1430,13 +1402,16 @@ Pack ID: 4, Internal ID: 1429, Card Name: Levia-Dragon - Daedalus
 Pack ID: 4, Internal ID: 1430, Card Name: Orca Mega-Fortress of Darkness
 Pack ID: 4, Internal ID: 1431, Card Name: Cannonball Spear Shellfish
 Pack ID: 4, Internal ID: 1432, Card Name: Mataza the Zapper
+Pack ID: 42, Internal ID: 1433, Card Name: Guardian Angel Joan
 Pack ID: 4, Internal ID: 1433, Card Name: Guardian Angel Joan
+Pack ID: 42, Internal ID: 1434, Card Name: Manju of the Ten Thousand Hands
 Pack ID: 4, Internal ID: 1434, Card Name: Manju of the Ten Thousand Hands
 Pack ID: 4, Internal ID: 1435, Card Name: Getsu Fuhma
 Pack ID: 4, Internal ID: 1436, Card Name: Ryu Kokki
 Pack ID: 4, Internal ID: 1437, Card Name: Gryphon's Feather Duster
 Pack ID: 4, Internal ID: 1438, Card Name: Stray Lambs
 Pack ID: 4, Internal ID: 1439, Card Name: Smashing Ground
+Pack ID: 36, Internal ID: 1439, Card Name: Smashing Ground
 Pack ID: 4, Internal ID: 1440, Card Name: Dimension Fusion
 Pack ID: 4, Internal ID: 1441, Card Name: Dedication through Light and Darkness
 Pack ID: 4, Internal ID: 1442, Card Name: Salvage
@@ -1446,12 +1421,15 @@ Pack ID: 4, Internal ID: 1445, Card Name: Jade Insect Whistle
 Pack ID: 4, Internal ID: 1446, Card Name: Destruction Ring
 Pack ID: 4, Internal ID: 1447, Card Name: Fiend's Hand Mirror
 Pack ID: 4, Internal ID: 1448, Card Name: Compulsory Evacuation Device
+Pack ID: 36, Internal ID: 1448, Card Name: Compulsory Evacuation Device
+Pack ID: 34, Internal ID: 1449, Card Name: A Hero Emerges
 Pack ID: 4, Internal ID: 1449, Card Name: A Hero Emerges
 Pack ID: 4, Internal ID: 1450, Card Name: Self-Destruct Button
 Pack ID: 4, Internal ID: 1451, Card Name: Curse of Darkness
 Pack ID: 4, Internal ID: 1452, Card Name: Begone, Knave!
 Pack ID: 4, Internal ID: 1453, Card Name: DNA Transplant
 Pack ID: 4, Internal ID: 1454, Card Name: Robbin' Zombie
+Pack ID: 34, Internal ID: 1455, Card Name: Trap Jammer
 Pack ID: 4, Internal ID: 1455, Card Name: Trap Jammer
 Pack ID: 56, Internal ID: 1456, Card Name: Twinheaded Beast
 Pack ID: 46, Internal ID: 1457, Card Name: Winged Rhynos
@@ -1487,15 +1465,18 @@ Pack ID: 4, Internal ID: 1486, Card Name: Solar Flare Dragon
 Pack ID: 4, Internal ID: 1487, Card Name: White Magician Pikeru
 Pack ID: 4, Internal ID: 1488, Card Name: Opti-Camouflage Armor
 Pack ID: 4, Internal ID: 1489, Card Name: Mystik Wok
+Pack ID: 32, Internal ID: 1490, Card Name: Burst Stream of Destruction
 Pack ID: 4, Internal ID: 1490, Card Name: Burst Stream of Destruction
 Pack ID: 4, Internal ID: 1491, Card Name: Monster Gate
 Pack ID: 4, Internal ID: 1492, Card Name: Weapon Change
 Pack ID: 4, Internal ID: 1493, Card Name: The Sanctuary in the Sky
+Pack ID: 34, Internal ID: 1494, Card Name: Earthquake
 Pack ID: 4, Internal ID: 1494, Card Name: Earthquake
 Pack ID: 4, Internal ID: 1495, Card Name: Goblin Thief
 Pack ID: 4, Internal ID: 1496, Card Name: Backfire
 Pack ID: 4, Internal ID: 1497, Card Name: Micro Ray
 Pack ID: 4, Internal ID: 1498, Card Name: Light of Judgment
+Pack ID: 42, Internal ID: 1499, Card Name: Wall of Revealing Light
 Pack ID: 4, Internal ID: 1499, Card Name: Wall of Revealing Light
 Pack ID: 4, Internal ID: 1500, Card Name: Solar Ray
 Pack ID: 4, Internal ID: 1501, Card Name: Ninjitsu Art of Transformation
@@ -1523,8 +1504,10 @@ Pack ID: 4, Internal ID: 1522, Card Name: Grave Protector
 Pack ID: 4, Internal ID: 1523, Card Name: Double Coston
 Pack ID: 4, Internal ID: 1524, Card Name: Regenerating Mummy
 Pack ID: 4, Internal ID: 1525, Card Name: Night Assailant
+Pack ID: 37, Internal ID: 1525, Card Name: Night Assailant
 Pack ID: 4, Internal ID: 1526, Card Name: Man-Thro' Tro'
 Pack ID: 4, Internal ID: 1527, Card Name: King of the Swamp
+Pack ID: 39, Internal ID: 1527, Card Name: King of the Swamp
 Pack ID: 4, Internal ID: 1528, Card Name: Special Hurricane
 Pack ID: 4, Internal ID: 1529, Card Name: Order to Charge
 Pack ID: 4, Internal ID: 1530, Card Name: Sword of the Soul-Eater
@@ -1536,6 +1519,7 @@ Pack ID: 4, Internal ID: 1535, Card Name: 7
 Pack ID: 4, Internal ID: 1536, Card Name: Level Limit - Area B
 Pack ID: 4, Internal ID: 1537, Card Name: Enchanting Fitting Room
 Pack ID: 4, Internal ID: 1538, Card Name: The Law of the Normal
+Pack ID: 32, Internal ID: 1539, Card Name: Dark Magic Attack
 Pack ID: 4, Internal ID: 1539, Card Name: Dark Magic Attack
 Pack ID: 4, Internal ID: 1540, Card Name: Delta Attacker
 Pack ID: 4, Internal ID: 1541, Card Name: Thousand Energy
@@ -1573,6 +1557,7 @@ Pack ID: 5, Internal ID: 1572, Card Name: Skull Dog Marron
 Pack ID: 5, Internal ID: 1573, Card Name: Ultimate Insect LV1
 Pack ID: 5, Internal ID: 1574, Card Name: Horus the Black Flame Dragon LV4
 Pack ID: 5, Internal ID: 1575, Card Name: Horus the Black Flame Dragon LV6
+Pack ID: 41, Internal ID: 1576, Card Name: Horus the Black Flame Dragon LV8
 Pack ID: 5, Internal ID: 1576, Card Name: Horus the Black Flame Dragon LV8
 Pack ID: 5, Internal ID: 1577, Card Name: Dark Mimic LV1
 Pack ID: 5, Internal ID: 1578, Card Name: Dark Mimic LV3
@@ -1580,6 +1565,7 @@ Pack ID: 5, Internal ID: 1579, Card Name: Mystic Swordsman LV2
 Pack ID: 5, Internal ID: 1580, Card Name: Mystic Swordsman LV4
 Pack ID: 5, Internal ID: 1581, Card Name: Armed Dragon LV3
 Pack ID: 5, Internal ID: 1582, Card Name: Armed Dragon LV5
+Pack ID: 41, Internal ID: 1583, Card Name: Armed Dragon LV7
 Pack ID: 5, Internal ID: 1583, Card Name: Armed Dragon LV7
 Pack ID: 5, Internal ID: 1584, Card Name: Red-Eyes B. Chick
 Pack ID: 5, Internal ID: 1585, Card Name: Malice Doll of Demise
@@ -1589,6 +1575,7 @@ Pack ID: 5, Internal ID: 1588, Card Name: Mobius the Frost Monarch
 Pack ID: 5, Internal ID: 1589, Card Name: Element Dragon
 Pack ID: 5, Internal ID: 1590, Card Name: Howling Insect
 Pack ID: 5, Internal ID: 1591, Card Name: Masked Dragon
+Pack ID: 39, Internal ID: 1591, Card Name: Masked Dragon
 Pack ID: 5, Internal ID: 1592, Card Name: Mind on Air
 Pack ID: 5, Internal ID: 1593, Card Name: Unshaven Angler
 Pack ID: 5, Internal ID: 1594, Card Name: The Trojan Horse
@@ -1596,10 +1583,12 @@ Pack ID: 5, Internal ID: 1595, Card Name: Enraged Muka Muka
 Pack ID: 5, Internal ID: 1596, Card Name: Ojama King
 Pack ID: 5, Internal ID: 1597, Card Name: Master of Oz
 Pack ID: 5, Internal ID: 1598, Card Name: Dark Factory of Mass Production
+Pack ID: 35, Internal ID: 1599, Card Name: Hammer Shot
 Pack ID: 5, Internal ID: 1599, Card Name: Hammer Shot
 Pack ID: 5, Internal ID: 1600, Card Name: Mind Wipe
 Pack ID: 5, Internal ID: 1601, Card Name: Abyssal Designator
 Pack ID: 5, Internal ID: 1602, Card Name: Level Up!
+Pack ID: 32, Internal ID: 1603, Card Name: Inferno Fire Blast
 Pack ID: 5, Internal ID: 1603, Card Name: Inferno Fire Blast
 Pack ID: 5, Internal ID: 1604, Card Name: The Graveyard in the Fourth Dimension
 Pack ID: 5, Internal ID: 1605, Card Name: Two-Man Cell Battle
@@ -1617,6 +1606,7 @@ Pack ID: 5, Internal ID: 1616, Card Name: Mind Crush
 Pack ID: 5, Internal ID: 1617, Card Name: Cemetary Bomb
 Pack ID: 5, Internal ID: 1618, Card Name: Hallowed Life Barrier
 Pack ID: 49, Internal ID: 1619, Card Name: The Tricky
+Pack ID: 41, Internal ID: 1619, Card Name: The Tricky
 Pack ID: 70, Internal ID: 1620, Card Name: Green Gadget
 Pack ID: 70, Internal ID: 1621, Card Name: Stronghold the Moving Fortress
 Pack ID: 70, Internal ID: 1622, Card Name: Red Gadget
@@ -1625,8 +1615,11 @@ Pack ID: 49, Internal ID: 1624, Card Name: Tricky Spell 4
 Pack ID: 12, Internal ID: 1625, Card Name: Shattered Axe
 Pack ID: 56, Internal ID: 1626, Card Name: Blockman
 Pack ID: 49, Internal ID: 1627, Card Name: Gold Sarcophagus
+Pack ID: 40, Internal ID: 1628, Card Name: Silent Swordsman LV3
 Pack ID: 6, Internal ID: 1628, Card Name: Silent Swordsman LV3
+Pack ID: 41, Internal ID: 1629, Card Name: Silent Swordsman LV5
 Pack ID: 7, Internal ID: 1629, Card Name: Silent Swordsman LV5
+Pack ID: 42, Internal ID: 1630, Card Name: Silent Swordsman LV7
 Pack ID: 46, Internal ID: 1630, Card Name: Silent Swordsman LV7
 Pack ID: 76, Internal ID: 1631, Card Name: Silent Magician LV4
 Pack ID: 76, Internal ID: 1632, Card Name: Magician's Circle
@@ -1641,6 +1634,7 @@ Pack ID: 6, Internal ID: 1640, Card Name: Mystic Swordsman LV6
 Pack ID: 6, Internal ID: 1641, Card Name: Heavy Mech Support Platform
 Pack ID: 6, Internal ID: 1642, Card Name: Roc from the Valley of Haze
 Pack ID: 6, Internal ID: 1643, Card Name: Sasuke Samurai #4
+Pack ID: 33, Internal ID: 1644, Card Name: Harpie Lady 1
 Pack ID: 6, Internal ID: 1644, Card Name: Harpie Lady 1
 Pack ID: 6, Internal ID: 1645, Card Name: Harpie Lady 2
 Pack ID: 6, Internal ID: 1646, Card Name: Harpie Lady 3
@@ -1666,9 +1660,11 @@ Pack ID: 6, Internal ID: 1665, Card Name: Flint
 Pack ID: 6, Internal ID: 1666, Card Name: Mokey Mokey Smackdown
 Pack ID: 6, Internal ID: 1667, Card Name: Back to Square One
 Pack ID: 6, Internal ID: 1668, Card Name: Monster Reincarnation
+Pack ID: 39, Internal ID: 1668, Card Name: Monster Reincarnation
 Pack ID: 6, Internal ID: 1669, Card Name: Ballista of Rampart Smashing
 Pack ID: 6, Internal ID: 1670, Card Name: Lighten the Load
 Pack ID: 6, Internal ID: 1671, Card Name: Malice Dispersion
+Pack ID: 38, Internal ID: 1672, Card Name: Divine Wrath
 Pack ID: 6, Internal ID: 1672, Card Name: Divine Wrath
 Pack ID: 6, Internal ID: 1673, Card Name: Xing Zhen Hu
 Pack ID: 6, Internal ID: 1674, Card Name: Rare Metalmorph
@@ -1685,7 +1681,9 @@ Pack ID: 48, Internal ID: 1684, Card Name: Owner's Seal
 Pack ID: 7, Internal ID: 1685, Card Name: Space Mambo
 Pack ID: 7, Internal ID: 1686, Card Name: Divine Dragon Ragnarok
 Pack ID: 7, Internal ID: 1687, Card Name: Insect Knight
+Pack ID: 42, Internal ID: 1688, Card Name: Sacred Phoenix of Nephthys
 Pack ID: 7, Internal ID: 1688, Card Name: Sacred Phoenix of Nephthys
+Pack ID: 42, Internal ID: 1689, Card Name: Hand of Nephthys
 Pack ID: 7, Internal ID: 1689, Card Name: Hand of Nephthys
 Pack ID: 7, Internal ID: 1690, Card Name: Ultimate Insect LV5
 Pack ID: 7, Internal ID: 1691, Card Name: Granmarg the Rock Monarch
@@ -1719,7 +1717,9 @@ Pack ID: 7, Internal ID: 1718, Card Name: Re-Fusion
 Pack ID: 7, Internal ID: 1719, Card Name: The Big March of Animals
 Pack ID: 7, Internal ID: 1720, Card Name: Cross Counter
 Pack ID: 7, Internal ID: 1721, Card Name: Penalty Game!
+Pack ID: 36, Internal ID: 1722, Card Name: Threatening Roar
 Pack ID: 7, Internal ID: 1722, Card Name: Threatening Roar
+Pack ID: 39, Internal ID: 1723, Card Name: Phoenix Wing Wind Blast
 Pack ID: 7, Internal ID: 1723, Card Name: Phoenix Wing Wind Blast
 Pack ID: 7, Internal ID: 1724, Card Name: Good Goblin Housekeeping
 Pack ID: 7, Internal ID: 1725, Card Name: Beast Soul Swap
@@ -1745,6 +1745,7 @@ Pack ID: 8, Internal ID: 1744, Card Name: Elemental Hero Burstinatrix
 Pack ID: 8, Internal ID: 1745, Card Name: Elemental Hero Clayman
 Pack ID: 8, Internal ID: 1746, Card Name: Elemental Hero Sparkman
 Pack ID: 8, Internal ID: 1747, Card Name: Winged Kuriboh
+Pack ID: 32, Internal ID: 1747, Card Name: Winged Kuriboh
 Pack ID: 8, Internal ID: 1748, Card Name: Ancient Gear Golem
 Pack ID: 8, Internal ID: 1749, Card Name: Ancient Gear Beast
 Pack ID: 8, Internal ID: 1750, Card Name: Ancient Gear Soldier
@@ -1761,15 +1762,19 @@ Pack ID: 8, Internal ID: 1760, Card Name: Medusa Worm
 Pack ID: 8, Internal ID: 1761, Card Name: D.D. Survivor
 Pack ID: 8, Internal ID: 1762, Card Name: White Ninja
 Pack ID: 8, Internal ID: 1763, Card Name: Aussa the Earth Charmer
+Pack ID: 40, Internal ID: 1763, Card Name: Aussa the Earth Charmer
 Pack ID: 8, Internal ID: 1764, Card Name: Eria the Water Charmer
+Pack ID: 42, Internal ID: 1764, Card Name: Eria the Water Charmer
 Pack ID: 8, Internal ID: 1765, Card Name: Hiita the Fire Charmer
 Pack ID: 8, Internal ID: 1766, Card Name: Wynn the Wind Charmer
+Pack ID: 41, Internal ID: 1766, Card Name: Wynn the Wind Charmer
 Pack ID: 8, Internal ID: 1767, Card Name: Batteryman AA
 Pack ID: 8, Internal ID: 1768, Card Name: Des Wombat
 Pack ID: 8, Internal ID: 1769, Card Name: King of the Skull Servants
 Pack ID: 8, Internal ID: 1770, Card Name: Reshef the Dark Being
 Pack ID: 8, Internal ID: 1771, Card Name: Elemental Mistress Doriado
 Pack ID: 8, Internal ID: 1772, Card Name: Elemental Hero Flame Wingman
+Pack ID: 36, Internal ID: 1772, Card Name: Elemental Hero Flame Wingman
 Pack ID: 8, Internal ID: 1773, Card Name: Elemental Hero Thunder Giant
 Pack ID: 8, Internal ID: 1774, Card Name: Gift of the Martyr
 Pack ID: 8, Internal ID: 1775, Card Name: Double Attack
@@ -1794,18 +1799,23 @@ Pack ID: 63, Internal ID: 1793, Card Name: Infernal Flame Emperor
 Pack ID: 77, Internal ID: 1794, Card Name: Divine Knight Ishzark
 Pack ID: 64, Internal ID: 1795, Card Name: Ocean Dragon Lord - Neo-Daedalus
 Pack ID: 49, Internal ID: 1796, Card Name: Green Baboon, Defender of the Forest
+Pack ID: 37, Internal ID: 1796, Card Name: Green Baboon, Defender of the Forest
 Pack ID: 9, Internal ID: 1797, Card Name: Patroid
 Pack ID: 9, Internal ID: 1798, Card Name: Gyroid
 Pack ID: 9, Internal ID: 1799, Card Name: Steamroid
 Pack ID: 9, Internal ID: 1800, Card Name: Drillroid
+Pack ID: 34, Internal ID: 1800, Card Name: Drillroid
 Pack ID: 9, Internal ID: 1801, Card Name: UFOroid
 Pack ID: 9, Internal ID: 1802, Card Name: Jetroid
+Pack ID: 32, Internal ID: 1803, Card Name: Cyber Dragon
 Pack ID: 9, Internal ID: 1803, Card Name: Cyber Dragon
 Pack ID: 9, Internal ID: 1804, Card Name: Wroughtweiler
 Pack ID: 9, Internal ID: 1805, Card Name: Elemental Hero Bubbleman
 Pack ID: 9, Internal ID: 1806, Card Name: Steam Gyroid
 Pack ID: 9, Internal ID: 1807, Card Name: UFOroid Fighter
 Pack ID: 9, Internal ID: 1808, Card Name: Cyber Twin Dragon
+Pack ID: 37, Internal ID: 1808, Card Name: Cyber Twin Dragon
+Pack ID: 40, Internal ID: 1809, Card Name: Cyber End Dragon
 Pack ID: 9, Internal ID: 1809, Card Name: Cyber End Dragon
 Pack ID: 9, Internal ID: 1810, Card Name: Power Bond
 Pack ID: 9, Internal ID: 1811, Card Name: Skyscraper
@@ -1854,11 +1864,13 @@ Pack ID: 9, Internal ID: 1853, Card Name: Dimension Wall
 Pack ID: 9, Internal ID: 1854, Card Name: Prepare to Strike Back
 Pack ID: 50, Internal ID: 1855, Card Name: The Selection
 Pack ID: 50, Internal ID: 1856, Card Name: Trap of Darkness
+Pack ID: 38, Internal ID: 1857, Card Name: Arcana Knight Joker
 Pack ID: 47, Internal ID: 1857, Card Name: Arcana Knight Joker
 Pack ID: 65, Internal ID: 1858, Card Name: Gilford the Legend
 Pack ID: 38, Internal ID: 1859, Card Name: Warrior Lady of the Wasteland
 Pack ID: 65, Internal ID: 1860, Card Name: Divine Sword - Phoenix Blade
 Pack ID: 10, Internal ID: 1861, Card Name: Elemental Hero Shining Flare Wingman
+Pack ID: 37, Internal ID: 1861, Card Name: Elemental Hero Shining Flare Wingman
 Pack ID: 10, Internal ID: 1862, Card Name: Level Modulation
 Pack ID: 10, Internal ID: 1863, Card Name: Ojamuscle
 Pack ID: 10, Internal ID: 1864, Card Name: Ojamagic
@@ -1914,6 +1926,8 @@ Pack ID: 10, Internal ID: 1913, Card Name: Non-Fusion Area
 Pack ID: 10, Internal ID: 1914, Card Name: Level Limit - Area A
 Pack ID: 10, Internal ID: 1915, Card Name: Armed Changer
 Pack ID: 48, Internal ID: 1916, Card Name: Tualatin
+Pack ID: 40, Internal ID: 1916, Card Name: Tualatin
+Pack ID: 38, Internal ID: 1917, Card Name: Elemental Hero Necroshade
 Pack ID: 46, Internal ID: 1917, Card Name: Elemental Hero Necroshade
 Pack ID: 51, Internal ID: 1918, Card Name: Hero Ring
 Pack ID: 51, Internal ID: 1919, Card Name: Elemental Hero Mudballman
@@ -1926,6 +1940,7 @@ Pack ID: 46, Internal ID: 1925, Card Name: Bubble Blaster
 Pack ID: 46, Internal ID: 1926, Card Name: Bubble Illusion
 Pack ID: 46, Internal ID: 1927, Card Name: Clay Charge
 Pack ID: 49, Internal ID: 1928, Card Name: Armed Dragon LV10
+Pack ID: 41, Internal ID: 1928, Card Name: Armed Dragon LV10
 Pack ID: 35, Internal ID: 1929, Card Name: Magical Mallet
 Pack ID: 48, Internal ID: 1930, Card Name: Inferno Reckless Summon
 Pack ID: 51, Internal ID: 1931, Card Name: Ring of Defense
@@ -1954,6 +1969,7 @@ Pack ID: 11, Internal ID: 1953, Card Name: Ancient Gear Castle
 Pack ID: 11, Internal ID: 1954, Card Name: Super Junior Confrontation
 Pack ID: 11, Internal ID: 1955, Card Name: Miracle Kids
 Pack ID: 11, Internal ID: 1956, Card Name: Damage Condenser
+Pack ID: 36, Internal ID: 1956, Card Name: Damage Condenser
 Pack ID: 51, Internal ID: 1957, Card Name: Treasure Map
 Pack ID: 51, Internal ID: 1958, Card Name: Hero Spirit
 Pack ID: 11, Internal ID: 1959, Card Name: Ancient Gear Cannon
@@ -1978,6 +1994,7 @@ Pack ID: 11, Internal ID: 1977, Card Name: Symbol of Heritage
 Pack ID: 11, Internal ID: 1978, Card Name: Trial of the Princesses
 Pack ID: 11, Internal ID: 1979, Card Name: End of the World
 Pack ID: 11, Internal ID: 1980, Card Name: Samsara
+Pack ID: 41, Internal ID: 1981, Card Name: Karma Cut
 Pack ID: 11, Internal ID: 1981, Card Name: Karma Cut
 Pack ID: 11, Internal ID: 1982, Card Name: Next to be Lost
 Pack ID: 11, Internal ID: 1983, Card Name: Generation Shift
@@ -1987,6 +2004,7 @@ Pack ID: 11, Internal ID: 1986, Card Name: Option Hunter
 Pack ID: 11, Internal ID: 1987, Card Name: Goblin Out of the Frying Pan
 Pack ID: 11, Internal ID: 1988, Card Name: Malfunction
 Pack ID: 51, Internal ID: 1989, Card Name: The Flute of Summoning Kuriboh
+Pack ID: 38, Internal ID: 1989, Card Name: The Flute of Summoning Kuriboh
 Pack ID: 46, Internal ID: 1990, Card Name: Elemental Hero Electrum
 Pack ID: 67, Internal ID: 1991, Card Name: Exxod, Master of The Guard
 Pack ID: 67, Internal ID: 1992, Card Name: Great Spirit
@@ -1997,6 +2015,7 @@ Pack ID: 51, Internal ID: 1996, Card Name: Golden Homunculus
 Pack ID: 51, Internal ID: 1997, Card Name: Helios - The Primordial Sun
 Pack ID: 51, Internal ID: 1998, Card Name: Helios Duo Megistus
 Pack ID: 51, Internal ID: 1999, Card Name: Helios Trice Megistus
+Pack ID: 32, Internal ID: 2000, Card Name: Elemental Hero Neos
 Pack ID: 13, Internal ID: 2000, Card Name: Elemental Hero Neos
 Pack ID: 47, Internal ID: 2001, Card Name: Dandylion
 Pack ID: 12, Internal ID: 2002, Card Name: Elemental Hero Phoenix Enforcer
@@ -2049,6 +2068,7 @@ Pack ID: 12, Internal ID: 2048, Card Name: Power Capsule
 Pack ID: 12, Internal ID: 2049, Card Name: Dimensional Fissure
 Pack ID: 12, Internal ID: 2050, Card Name: Life Equalizer
 Pack ID: 12, Internal ID: 2051, Card Name: Icarus Attack
+Pack ID: 38, Internal ID: 2051, Card Name: Icarus Attack
 Pack ID: 12, Internal ID: 2052, Card Name: Miraculous Descent
 Pack ID: 12, Internal ID: 2053, Card Name: Forced Back
 Pack ID: 68, Internal ID: 2054, Card Name: Simorgh, Bird of Divinity
@@ -2057,7 +2077,10 @@ Pack ID: 68, Internal ID: 2056, Card Name: Hysteric Party
 Pack ID: 56, Internal ID: 2057, Card Name: Puppet King
 Pack ID: 56, Internal ID: 2058, Card Name: Cyber Dinosaur
 Pack ID: 50, Internal ID: 2059, Card Name: Elemental Hero Woodsman
+Pack ID: 39, Internal ID: 2059, Card Name: Elemental Hero Woodsman
 Pack ID: 50, Internal ID: 2060, Card Name: Elemental Hero Terra Firma
+Pack ID: 39, Internal ID: 2060, Card Name: Elemental Hero Terra Firma
+Pack ID: 40, Internal ID: 2061, Card Name: Elemental Hero Ocean
 Pack ID: 50, Internal ID: 2061, Card Name: Elemental Hero Ocean
 Pack ID: 13, Internal ID: 2062, Card Name: Chimeratech Overdragon
 Pack ID: 18, Internal ID: 2063, Card Name: Expressroid
@@ -2067,6 +2090,7 @@ Pack ID: 13, Internal ID: 2066, Card Name: Super Vehicroid Jumbo Drill
 Pack ID: 18, Internal ID: 2067, Card Name: Stealthroid
 Pack ID: 18, Internal ID: 2068, Card Name: Truckroid
 Pack ID: 18, Internal ID: 2069, Card Name: No Entry!!
+Pack ID: 34, Internal ID: 2069, Card Name: No Entry!!
 Pack ID: 13, Internal ID: 2070, Card Name: Supercharge
 Pack ID: 13, Internal ID: 2071, Card Name: Vehicroid Connection Zone
 Pack ID: 13, Internal ID: 2072, Card Name: Wonder Garage
@@ -2094,13 +2118,16 @@ Pack ID: 13, Internal ID: 2093, Card Name: Neo-Spacian Flare Scarab
 Pack ID: 13, Internal ID: 2094, Card Name: Contact
 Pack ID: 13, Internal ID: 2095, Card Name: Neo Space
 Pack ID: 13, Internal ID: 2096, Card Name: Black Stego
+Pack ID: 35, Internal ID: 2097, Card Name: Ultimate Tyranno
 Pack ID: 13, Internal ID: 2097, Card Name: Ultimate Tyranno
 Pack ID: 13, Internal ID: 2098, Card Name: Rallis the Star Bird
 Pack ID: 13, Internal ID: 2099, Card Name: Fake Hero
 Pack ID: 13, Internal ID: 2100, Card Name: Common Soul
 Pack ID: 13, Internal ID: 2101, Card Name: Spell Calling
+Pack ID: 42, Internal ID: 2102, Card Name: Future Fusion
 Pack ID: 13, Internal ID: 2102, Card Name: Future Fusion
 Pack ID: 13, Internal ID: 2103, Card Name: Overload Fusion
+Pack ID: 37, Internal ID: 2104, Card Name: Elemental Hero Stratos
 Pack ID: 47, Internal ID: 2104, Card Name: Elemental Hero Stratos
 Pack ID: 51, Internal ID: 2105, Card Name: Hero's Bond
 Pack ID: 13, Internal ID: 2106, Card Name: Sabersaurus
@@ -2131,9 +2158,13 @@ Pack ID: 69, Internal ID: 2130, Card Name: Tail Swipe
 Pack ID: 69, Internal ID: 2131, Card Name: Jurassic World
 Pack ID: 69, Internal ID: 2132, Card Name: Volcanic Eruption
 Pack ID: 69, Internal ID: 2133, Card Name: Seismic Shockwave
+Pack ID: 38, Internal ID: 2134, Card Name: Cyberdark Horn
 Pack ID: 14, Internal ID: 2134, Card Name: Cyberdark Horn
 Pack ID: 14, Internal ID: 2135, Card Name: Cyberdark Edge
+Pack ID: 39, Internal ID: 2135, Card Name: Cyberdark Edge
+Pack ID: 40, Internal ID: 2136, Card Name: Cyberdark Keel
 Pack ID: 14, Internal ID: 2136, Card Name: Cyberdark Keel
+Pack ID: 41, Internal ID: 2137, Card Name: Cyberdark Dragon
 Pack ID: 14, Internal ID: 2137, Card Name: Cyberdark Dragon
 Pack ID: 18, Internal ID: 2138, Card Name: Super Vehicroid - Stealth Union
 Pack ID: 70, Internal ID: 2139, Card Name: Ancient Gear Engineer
@@ -2156,6 +2187,7 @@ Pack ID: 14, Internal ID: 2155, Card Name: Dark Lucius LV4
 Pack ID: 14, Internal ID: 2156, Card Name: Dark Lucius LV6
 Pack ID: 14, Internal ID: 2157, Card Name: Dark Lucius LV8
 Pack ID: 14, Internal ID: 2158, Card Name: Snipe Hunter
+Pack ID: 39, Internal ID: 2158, Card Name: Snipe Hunter
 Pack ID: 14, Internal ID: 2159, Card Name: Blast Asmodian
 Pack ID: 14, Internal ID: 2160, Card Name: Vanity's Fiend
 Pack ID: 14, Internal ID: 2161, Card Name: Barrier Statue of the Abyss
@@ -2171,6 +2203,7 @@ Pack ID: 14, Internal ID: 2170, Card Name: Corruption Cell "A"
 Pack ID: 14, Internal ID: 2171, Card Name: Flash of the Forbidden Spell
 Pack ID: 14, Internal ID: 2172, Card Name: Ritual Foregone
 Pack ID: 14, Internal ID: 2173, Card Name: Instant Fusion
+Pack ID: 39, Internal ID: 2173, Card Name: Instant Fusion
 Pack ID: 14, Internal ID: 2174, Card Name: Counter Cleaner
 Pack ID: 14, Internal ID: 2175, Card Name: Linear Accelerator Cannon
 Pack ID: 14, Internal ID: 2176, Card Name: Chain Strike
@@ -2180,6 +2213,7 @@ Pack ID: 14, Internal ID: 2179, Card Name: Level Down!?
 Pack ID: 14, Internal ID: 2180, Card Name: Degenerate Circuit
 Pack ID: 14, Internal ID: 2181, Card Name: Senet Switch
 Pack ID: 14, Internal ID: 2182, Card Name: Blasting Fuse
+Pack ID: 34, Internal ID: 2183, Card Name: Straight Flush
 Pack ID: 14, Internal ID: 2183, Card Name: Straight Flush
 Pack ID: 14, Internal ID: 2184, Card Name: Justi-Break
 Pack ID: 14, Internal ID: 2185, Card Name: Dimensional Inversion
@@ -2187,6 +2221,7 @@ Pack ID: 14, Internal ID: 2186, Card Name: Chain Healing
 Pack ID: 14, Internal ID: 2187, Card Name: Chain Detonation
 Pack ID: 14, Internal ID: 2188, Card Name: Accumulated Fortune
 Pack ID: 14, Internal ID: 2189, Card Name: Vanity's Call
+Pack ID: 33, Internal ID: 2190, Card Name: Black Horn of Heaven
 Pack ID: 14, Internal ID: 2190, Card Name: Black Horn of Heaven
 Pack ID: 56, Internal ID: 2191, Card Name: Goka, the Pyre of Malice
 Pack ID: 49, Internal ID: 2192, Card Name: Terra Firma Gravity
@@ -2199,6 +2234,7 @@ Pack ID: 70, Internal ID: 2198, Card Name: Ancient Gear Workshop
 Pack ID: 35, Internal ID: 2199, Card Name: Card Trooper
 Pack ID: 52, Internal ID: 2200, Card Name: Light Laser
 Pack ID: 51, Internal ID: 2201, Card Name: Burial from a Different Dimension
+Pack ID: 36, Internal ID: 2201, Card Name: Burial from a Different Dimension
 Pack ID: 52, Internal ID: 2202, Card Name: Edge Hammer
 Pack ID: 52, Internal ID: 2203, Card Name: Kid Guard
 Pack ID: 35, Internal ID: 2204, Card Name: Infernal Dragon
@@ -2206,7 +2242,9 @@ Pack ID: 52, Internal ID: 2205, Card Name: Ruthless Denial
 Pack ID: 52, Internal ID: 2206, Card Name: Return Soul
 Pack ID: 52, Internal ID: 2207, Card Name: Damage Polarizer
 Pack ID: 52, Internal ID: 2208, Card Name: Fusion Guard
+Pack ID: 37, Internal ID: 2209, Card Name: Destiny Hero - Malicious
 Pack ID: 47, Internal ID: 2209, Card Name: Destiny Hero - Malicious
+Pack ID: 37, Internal ID: 2210, Card Name: Destiny Draw
 Pack ID: 47, Internal ID: 2210, Card Name: Destiny Draw
 Pack ID: 47, Internal ID: 2211, Card Name: Over Destiny
 Pack ID: 47, Internal ID: 2212, Card Name: D - Counter
@@ -2231,6 +2269,7 @@ Pack ID: 15, Internal ID: 2230, Card Name: Kahkki, Guerilla of Dark World
 Pack ID: 15, Internal ID: 2231, Card Name: Gren, Tactician of Dark World
 Pack ID: 15, Internal ID: 2232, Card Name: Electric Virus
 Pack ID: 15, Internal ID: 2233, Card Name: Marionette Mite
+Pack ID: 40, Internal ID: 2234, Card Name: D.D. Crow
 Pack ID: 15, Internal ID: 2234, Card Name: D.D. Crow
 Pack ID: 15, Internal ID: 2235, Card Name: Alien Psychic
 Pack ID: 15, Internal ID: 2236, Card Name: Elemental Hero Glow Neos
@@ -2241,6 +2280,7 @@ Pack ID: 15, Internal ID: 2240, Card Name: C Chulainn the Awakened
 Pack ID: 15, Internal ID: 2241, Card Name: Neos Force
 Pack ID: 15, Internal ID: 2242, Card Name: "A" Cell Scatter Burst
 Pack ID: 15, Internal ID: 2243, Card Name: Ancient Rules
+Pack ID: 42, Internal ID: 2244, Card Name: Advanced Ritual Art
 Pack ID: 15, Internal ID: 2244, Card Name: Advanced Ritual Art
 Pack ID: 15, Internal ID: 2245, Card Name: Synthesis Spell
 Pack ID: 15, Internal ID: 2246, Card Name: Emblem of the Awakening
@@ -2281,6 +2321,7 @@ Pack ID: 71, Internal ID: 2280, Card Name: Aegis of Gaia
 Pack ID: 48, Internal ID: 2281, Card Name: Carrierroid
 Pack ID: 48, Internal ID: 2282, Card Name: Armoroid
 Pack ID: 48, Internal ID: 2283, Card Name: Elemental Hero Voltic
+Pack ID: 42, Internal ID: 2283, Card Name: Elemental Hero Voltic
 Pack ID: 56, Internal ID: 2284, Card Name: Mosaic Manticore
 Pack ID: 48, Internal ID: 2285, Card Name: Belial - Marquis of Darkness
 Pack ID: 16, Internal ID: 2286, Card Name: Crystal Beast Amethyst Cat
@@ -2291,6 +2332,7 @@ Pack ID: 16, Internal ID: 2290, Card Name: Crystal Beast Emerald Tortoise
 Pack ID: 16, Internal ID: 2291, Card Name: Crystal Beast Topaz Tiger
 Pack ID: 16, Internal ID: 2292, Card Name: Crystal Beast Cobalt Eagle
 Pack ID: 16, Internal ID: 2293, Card Name: Crystal Beast Sapphire Pegasus
+Pack ID: 33, Internal ID: 2293, Card Name: Crystal Beast Sapphire Pegasus
 Pack ID: 16, Internal ID: 2294, Card Name: Ancient City - Rainbow Ruins
 Pack ID: 16, Internal ID: 2295, Card Name: Rare Value
 Pack ID: 16, Internal ID: 2296, Card Name: Last Resort
@@ -2306,6 +2348,7 @@ Pack ID: 50, Internal ID: 2305, Card Name: The Wicked Avatar
 Pack ID: 50, Internal ID: 2306, Card Name: The Wicked Eraser
 Pack ID: 53, Internal ID: 2307, Card Name: Spell Striker
 Pack ID: 53, Internal ID: 2308, Card Name: Exploder Dragon
+Pack ID: 39, Internal ID: 2308, Card Name: Exploder Dragon
 Pack ID: 52, Internal ID: 2309, Card Name: Destiny Hero - Disk Commander
 Pack ID: 47, Internal ID: 2310, Card Name: Destiny Hero - Plasma
 Pack ID: 16, Internal ID: 2311, Card Name: Volcanic Slicer
@@ -2334,6 +2377,7 @@ Pack ID: 16, Internal ID: 2333, Card Name: Field Barrier
 Pack ID: 16, Internal ID: 2334, Card Name: "A" Cell Breeding Device
 Pack ID: 16, Internal ID: 2335, Card Name: Otherworld - The "A" Zone
 Pack ID: 16, Internal ID: 2336, Card Name: Crystal Raigeki
+Pack ID: 33, Internal ID: 2336, Card Name: Crystal Raigeki
 Pack ID: 16, Internal ID: 2337, Card Name: Volcanic Recharge
 Pack ID: 16, Internal ID: 2338, Card Name: Terrible Deal
 Pack ID: 16, Internal ID: 2339, Card Name: Breakthrough!
@@ -2347,6 +2391,7 @@ Pack ID: 16, Internal ID: 2346, Card Name: Mass Hypnosis
 Pack ID: 16, Internal ID: 2347, Card Name: Gem Flash Energy
 Pack ID: 52, Internal ID: 2348, Card Name: Voltic Kong
 Pack ID: 52, Internal ID: 2349, Card Name: Botanical Lion
+Pack ID: 38, Internal ID: 2349, Card Name: Botanical Lion
 Pack ID: 43, Internal ID: 2350, Card Name: Grandmaster of the Six Samurai
 Pack ID: 72, Internal ID: 2351, Card Name: Diabolos, King of the Abyss
 Pack ID: 72, Internal ID: 2352, Card Name: Lich Lord, King of the Underworld
@@ -2373,13 +2418,16 @@ Pack ID: 17, Internal ID: 2372, Card Name: Damage = Reptile
 Pack ID: 17, Internal ID: 2373, Card Name: Snake Deity's Command
 Pack ID: 17, Internal ID: 2374, Card Name: Rise of the Snake Deity
 Pack ID: 17, Internal ID: 2375, Card Name: Mirror Gate
+Pack ID: 40, Internal ID: 2376, Card Name: Rainbow Dragon
 Pack ID: 17, Internal ID: 2376, Card Name: Rainbow Dragon
 Pack ID: 17, Internal ID: 2377, Card Name: Chrysalis Larva
 Pack ID: 17, Internal ID: 2378, Card Name: Chrysalis Mole
 Pack ID: 17, Internal ID: 2379, Card Name: Neo-Spacian Marine Dolphin
 Pack ID: 17, Internal ID: 2380, Card Name: Elemental Hero Marine Neos
 Pack ID: 17, Internal ID: 2381, Card Name: Elemental Hero Darkbright
+Pack ID: 38, Internal ID: 2381, Card Name: Elemental Hero Darkbright
 Pack ID: 17, Internal ID: 2382, Card Name: Elemental Hero Magma Neos
+Pack ID: 40, Internal ID: 2383, Card Name: Necro Gardna
 Pack ID: 17, Internal ID: 2383, Card Name: Necro Gardna
 Pack ID: 17, Internal ID: 2384, Card Name: Ojama Knight
 Pack ID: 17, Internal ID: 2385, Card Name: Venom Snake
@@ -2415,6 +2463,7 @@ Pack ID: 17, Internal ID: 2414, Card Name: Dark Effigy
 Pack ID: 17, Internal ID: 2415, Card Name: Zombie Master
 Pack ID: 17, Internal ID: 2416, Card Name: Cocoon Rebirth
 Pack ID: 17, Internal ID: 2417, Card Name: Cyberdark Impact!
+Pack ID: 41, Internal ID: 2417, Card Name: Cyberdark Impact!
 Pack ID: 17, Internal ID: 2418, Card Name: Flint Missile
 Pack ID: 17, Internal ID: 2419, Card Name: Double Summon
 Pack ID: 17, Internal ID: 2420, Card Name: Summoner's Art
@@ -2434,6 +2483,7 @@ Pack ID: 17, Internal ID: 2433, Card Name: Trap Reclamation
 Pack ID: 17, Internal ID: 2434, Card Name: Gift Card
 Pack ID: 17, Internal ID: 2435, Card Name: The Gift of Greed
 Pack ID: 17, Internal ID: 2436, Card Name: Counter Counter
+Pack ID: 41, Internal ID: 2437, Card Name: Volcanic Rocket
 Pack ID: 43, Internal ID: 2437, Card Name: Volcanic Rocket
 Pack ID: 73, Internal ID: 2438, Card Name: Felgrand Dragon
 Pack ID: 73, Internal ID: 2439, Card Name: Darkblaze Dragon
@@ -2528,6 +2578,8 @@ Pack ID: 43, Internal ID: 2527, Card Name: Il Blud
 Pack ID: 43, Internal ID: 2528, Card Name: Blazewing Butterfly
 Pack ID: 50, Internal ID: 2529, Card Name: Armityle the Chaos Phantom
 Pack ID: 52, Internal ID: 2530, Card Name: White Night Dragon
+Pack ID: 38, Internal ID: 2530, Card Name: White Night Dragon
+Pack ID: 42, Internal ID: 2531, Card Name: Arcana Force EX - The Light Ruler
 Pack ID: 51, Internal ID: 2531, Card Name: Arcana Force EX - The Light Ruler
 Pack ID: 51, Internal ID: 2532, Card Name: Beast King Barbaros
 Pack ID: 48, Internal ID: 2533, Card Name: Splendid Venus
@@ -2558,6 +2610,7 @@ Pack ID: 47, Internal ID: 2557, Card Name: Revoke Fusion
 Pack ID: 52, Internal ID: 2558, Card Name: Hero's Rule 2
 Pack ID: 48, Internal ID: 2559, Card Name: Phantom Skyblaster
 Pack ID: 52, Internal ID: 2560, Card Name: Grave Squirmer
+Pack ID: 39, Internal ID: 2560, Card Name: Grave Squirmer
 Pack ID: 52, Internal ID: 2561, Card Name: Grinder Golem
 Pack ID: 52, Internal ID: 2562, Card Name: Crystal Counter
 Pack ID: 52, Internal ID: 2563, Card Name: Crystal Pair
@@ -2582,6 +2635,7 @@ Pack ID: 19, Internal ID: 2581, Card Name: Yubel - The Ultimate Nightmare
 Pack ID: 19, Internal ID: 2582, Card Name: Armored Cybern
 Pack ID: 19, Internal ID: 2583, Card Name: Cyber Valley
 Pack ID: 19, Internal ID: 2584, Card Name: Cyber Ouroboros
+Pack ID: 41, Internal ID: 2585, Card Name: Volcanic Counter
 Pack ID: 19, Internal ID: 2585, Card Name: Volcanic Counter
 Pack ID: 19, Internal ID: 2586, Card Name: Destiny Hero - Dunker
 Pack ID: 19, Internal ID: 2587, Card Name: Destiny Hero - Departed
@@ -2632,6 +2686,7 @@ Pack ID: 19, Internal ID: 2631, Card Name: Rainbow Path
 Pack ID: 19, Internal ID: 2632, Card Name: Rainbow Life
 Pack ID: 19, Internal ID: 2633, Card Name: Sinister Seeds
 Pack ID: 19, Internal ID: 2634, Card Name: Hate Buster
+Pack ID: 39, Internal ID: 2634, Card Name: Hate Buster
 Pack ID: 19, Internal ID: 2635, Card Name: Chain Material
 Pack ID: 19, Internal ID: 2636, Card Name: Alchemy Cycle
 Pack ID: 19, Internal ID: 2637, Card Name: Cybernetic Hidden Technology
@@ -2639,10 +2694,12 @@ Pack ID: 19, Internal ID: 2638, Card Name: Dark Spirit Art - Greed
 Pack ID: 19, Internal ID: 2639, Card Name: Dark Illusion
 Pack ID: 19, Internal ID: 2640, Card Name: Escape from the Dark Dimension
 Pack ID: 19, Internal ID: 2641, Card Name: Gemini Trap Hole
+Pack ID: 42, Internal ID: 2642, Card Name: Drastic Drop Off
 Pack ID: 19, Internal ID: 2642, Card Name: Drastic Drop Off
 Pack ID: 19, Internal ID: 2643, Card Name: All-Out Attacks
 Pack ID: 19, Internal ID: 2644, Card Name: Double Tag Team
 Pack ID: 19, Internal ID: 2645, Card Name: Offering to the Snake Deity
+Pack ID: 37, Internal ID: 2645, Card Name: Offering to the Snake Deity
 Pack ID: 19, Internal ID: 2646, Card Name: Cry Havoc!
 Pack ID: 19, Internal ID: 2647, Card Name: Transmigration Break
 Pack ID: 19, Internal ID: 2648, Card Name: Fine
@@ -2658,9 +2715,12 @@ Pack ID: 43, Internal ID: 2657, Card Name: Veil of Darkness
 Pack ID: 43, Internal ID: 2658, Card Name: Security Orb
 Pack ID: 19, Internal ID: 2659, Card Name: Fire Trooper
 Pack ID: 50, Internal ID: 2660, Card Name: Elemental Hero Prisma
+Pack ID: 36, Internal ID: 2660, Card Name: Elemental Hero Prisma
+Pack ID: 40, Internal ID: 2661, Card Name: Card Ejector
 Pack ID: 53, Internal ID: 2661, Card Name: Card Ejector
 Pack ID: 47, Internal ID: 2662, Card Name: Hidden Armory
 Pack ID: 53, Internal ID: 2663, Card Name: Assault Armor
+Pack ID: 39, Internal ID: 2663, Card Name: Assault Armor
 Pack ID: 53, Internal ID: 2664, Card Name: Evil Blast
 Pack ID: 52, Internal ID: 2665, Card Name: Ice Queen
 Pack ID: 48, Internal ID: 2666, Card Name: Gaap the Divine Soldier
@@ -2702,6 +2762,7 @@ Pack ID: 32, Internal ID: 2701, Card Name: Detonate
 Pack ID: 32, Internal ID: 2702, Card Name: Berserker Crush
 Pack ID: 32, Internal ID: 2703, Card Name: Evolution Burst
 Pack ID: 46, Internal ID: 2704, Card Name: Red-Eyes Darkness Metal Dragon
+Pack ID: 39, Internal ID: 2704, Card Name: Red-Eyes Darkness Metal Dragon
 Pack ID: 47, Internal ID: 2705, Card Name: Gaia Plate the Earth Giant
 Pack ID: 47, Internal ID: 2706, Card Name: Sauropod Brachion
 Pack ID: 50, Internal ID: 2707, Card Name: Tethys, Goddess of Light
@@ -2716,6 +2777,7 @@ Pack ID: 43, Internal ID: 2715, Card Name: Lonefire Blossom
 Pack ID: 43, Internal ID: 2716, Card Name: Aztekipede, the Worm Warrior
 Pack ID: 43, Internal ID: 2717, Card Name: Allure of Darkness
 Pack ID: 50, Internal ID: 2718, Card Name: Athena
+Pack ID: 42, Internal ID: 2718, Card Name: Athena
 Pack ID: 50, Internal ID: 2719, Card Name: Hecatrice
 Pack ID: 50, Internal ID: 2720, Card Name: Valhalla, Hall of the Fallen
 Pack ID: 20, Internal ID: 2721, Card Name: Honest
@@ -2725,6 +2787,7 @@ Pack ID: 20, Internal ID: 2724, Card Name: Destiny Hero - Dread Servant
 Pack ID: 20, Internal ID: 2725, Card Name: Volcanic Queen
 Pack ID: 20, Internal ID: 2726, Card Name: Jinzo - Returner
 Pack ID: 20, Internal ID: 2727, Card Name: Jinzo - Lord
+Pack ID: 42, Internal ID: 2728, Card Name: Arcana Force 0 - The Fool
 Pack ID: 20, Internal ID: 2728, Card Name: Arcana Force 0 - The Fool
 Pack ID: 20, Internal ID: 2729, Card Name: Arcana Force I - The Magician
 Pack ID: 20, Internal ID: 2730, Card Name: Arcana Force III - The Empress
@@ -2753,6 +2816,7 @@ Pack ID: 20, Internal ID: 2752, Card Name: Batteryman Micro-Cell
 Pack ID: 20, Internal ID: 2753, Card Name: Interplanetary Invader "A"
 Pack ID: 20, Internal ID: 2754, Card Name: Diskblade Rider
 Pack ID: 20, Internal ID: 2755, Card Name: Golden Ladybug
+Pack ID: 37, Internal ID: 2755, Card Name: Golden Ladybug
 Pack ID: 20, Internal ID: 2756, Card Name: DUCKER Mobile Cannon
 Pack ID: 20, Internal ID: 2757, Card Name: The Lady in Wight
 Pack ID: 20, Internal ID: 2758, Card Name: Simorgh, Bird of Ancestry
@@ -2760,6 +2824,7 @@ Pack ID: 20, Internal ID: 2759, Card Name: Cloudian - Storm Dragon
 Pack ID: 20, Internal ID: 2760, Card Name: Phantom Dragon
 Pack ID: 20, Internal ID: 2761, Card Name: Destiny End Dragoon
 Pack ID: 20, Internal ID: 2762, Card Name: Ultimate Ancient Gear Golem
+Pack ID: 36, Internal ID: 2762, Card Name: Ultimate Ancient Gear Golem
 Pack ID: 20, Internal ID: 2763, Card Name: Gladiator Beast Gyzarus
 Pack ID: 20, Internal ID: 2764, Card Name: Hero Mask
 Pack ID: 20, Internal ID: 2765, Card Name: Space Gift
@@ -2797,6 +2862,7 @@ Pack ID: 20, Internal ID: 2796, Card Name: Sanguine Swamp
 Pack ID: 20, Internal ID: 2797, Card Name: Lucky Chance
 Pack ID: 20, Internal ID: 2798, Card Name: Summon Limit
 Pack ID: 20, Internal ID: 2799, Card Name: Dice Try!
+Pack ID: 41, Internal ID: 2800, Card Name: Emperor Sem
 Pack ID: 52, Internal ID: 2800, Card Name: Emperor Sem
 Pack ID: 49, Internal ID: 2801, Card Name: Kuraz the Light Monarch
 Pack ID: 44, Internal ID: 2802, Card Name: Maiden of Macabre
@@ -2838,22 +2904,29 @@ Pack ID: 81, Internal ID: 2837, Card Name: Junk Warrior
 Pack ID: 54, Internal ID: 2838, Card Name: Gaia Knight, the Force of Earth
 Pack ID: 54, Internal ID: 2839, Card Name: Colossal Fighter
 Pack ID: 21, Internal ID: 2840, Card Name: Turbo Booster
+Pack ID: 33, Internal ID: 2841, Card Name: Nitro Synchron
 Pack ID: 21, Internal ID: 2841, Card Name: Nitro Synchron
 Pack ID: 21, Internal ID: 2842, Card Name: Quillbolt Hedgehog
+Pack ID: 33, Internal ID: 2843, Card Name: Ghost Gardna
 Pack ID: 21, Internal ID: 2843, Card Name: Ghost Gardna
 Pack ID: 21, Internal ID: 2844, Card Name: Shield Warrior
 Pack ID: 21, Internal ID: 2845, Card Name: Small Piece Golem
 Pack ID: 21, Internal ID: 2846, Card Name: Medium Piece Golem
+Pack ID: 33, Internal ID: 2847, Card Name: Big Piece Golem
 Pack ID: 21, Internal ID: 2847, Card Name: Big Piece Golem
 Pack ID: 21, Internal ID: 2848, Card Name: Sinister Sprocket
+Pack ID: 33, Internal ID: 2849, Card Name: Dark Resonator
 Pack ID: 21, Internal ID: 2849, Card Name: Dark Resonator
 Pack ID: 21, Internal ID: 2850, Card Name: Twin-Shield Defender
 Pack ID: 21, Internal ID: 2851, Card Name: Jutte Fighter
+Pack ID: 33, Internal ID: 2852, Card Name: Handcuffs Dragon
 Pack ID: 21, Internal ID: 2852, Card Name: Handcuffs Dragon
+Pack ID: 35, Internal ID: 2853, Card Name: Montage Dragon
 Pack ID: 21, Internal ID: 2853, Card Name: Montage Dragon
 Pack ID: 21, Internal ID: 2854, Card Name: Gonogo
 Pack ID: 21, Internal ID: 2855, Card Name: Mind Master
 Pack ID: 21, Internal ID: 2856, Card Name: Doctor Cranium
+Pack ID: 41, Internal ID: 2857, Card Name: Krebons
 Pack ID: 21, Internal ID: 2857, Card Name: Krebons
 Pack ID: 21, Internal ID: 2858, Card Name: Mind Protector
 Pack ID: 21, Internal ID: 2859, Card Name: Psychic Commander
@@ -2871,11 +2944,17 @@ Pack ID: 21, Internal ID: 2870, Card Name: Yamato-no-Kami
 Pack ID: 21, Internal ID: 2871, Card Name: Silent Strider
 Pack ID: 21, Internal ID: 2872, Card Name: Noisy Gnat
 Pack ID: 21, Internal ID: 2873, Card Name: Multiple Piece Golem
+Pack ID: 33, Internal ID: 2874, Card Name: Nitro Warrior
 Pack ID: 21, Internal ID: 2874, Card Name: Nitro Warrior
+Pack ID: 37, Internal ID: 2875, Card Name: Stardust Dragon
 Pack ID: 21, Internal ID: 2875, Card Name: Stardust Dragon
+Pack ID: 37, Internal ID: 2876, Card Name: Red Dragon Archfiend
 Pack ID: 21, Internal ID: 2876, Card Name: Red Dragon Archfiend
+Pack ID: 33, Internal ID: 2877, Card Name: Goyo Guardian
 Pack ID: 21, Internal ID: 2877, Card Name: Goyo Guardian
+Pack ID: 41, Internal ID: 2878, Card Name: Magical Android
 Pack ID: 21, Internal ID: 2878, Card Name: Magical Android
+Pack ID: 41, Internal ID: 2879, Card Name: Thought Ruler Archfiend
 Pack ID: 21, Internal ID: 2879, Card Name: Thought Ruler Archfiend
 Pack ID: 21, Internal ID: 2880, Card Name: Fighting Spirit
 Pack ID: 21, Internal ID: 2881, Card Name: Domino Effect
@@ -2982,17 +3061,22 @@ Pack ID: 44, Internal ID: 2981, Card Name: Grapple Blocker
 Pack ID: 44, Internal ID: 2982, Card Name: Telekinetic Charging Cell
 Pack ID: 44, Internal ID: 2983, Card Name: Charge of the Light Brigade
 Pack ID: 22, Internal ID: 2984, Card Name: Healing Wave Generator
+Pack ID: 34, Internal ID: 2985, Card Name: Turbo Synchron
 Pack ID: 22, Internal ID: 2985, Card Name: Turbo Synchron
+Pack ID: 34, Internal ID: 2986, Card Name: Mad Archfiend
 Pack ID: 22, Internal ID: 2986, Card Name: Mad Archfiend
 Pack ID: 22, Internal ID: 2987, Card Name: Wall of Ivy
 Pack ID: 22, Internal ID: 2988, Card Name: Copy Plant
+Pack ID: 34, Internal ID: 2989, Card Name: Morphtronic Celfon
 Pack ID: 22, Internal ID: 2989, Card Name: Morphtronic Celfon
 Pack ID: 22, Internal ID: 2990, Card Name: Morphtronic Magnen
 Pack ID: 22, Internal ID: 2991, Card Name: Morphtronic Datatron
+Pack ID: 35, Internal ID: 2992, Card Name: Morphtronic Boomboxen
 Pack ID: 22, Internal ID: 2992, Card Name: Morphtronic Boomboxen
 Pack ID: 22, Internal ID: 2993, Card Name: Morphtronic Cameran
 Pack ID: 22, Internal ID: 2994, Card Name: Morphtronic Radion
 Pack ID: 22, Internal ID: 2995, Card Name: Morphtronic Clocken
+Pack ID: 34, Internal ID: 2996, Card Name: Gadget Hauler
 Pack ID: 22, Internal ID: 2996, Card Name: Gadget Hauler
 Pack ID: 22, Internal ID: 2997, Card Name: Gadget Driver
 Pack ID: 22, Internal ID: 2998, Card Name: Search Striker
@@ -3010,11 +3094,13 @@ Pack ID: 34, Internal ID: 3009, Card Name: Fabled Raven
 Pack ID: 22, Internal ID: 3010, Card Name: Comrade Swordsman of Landstar
 Pack ID: 22, Internal ID: 3011, Card Name: Tiger Dragon
 Pack ID: 22, Internal ID: 3012, Card Name: Turbo Warrior
+Pack ID: 35, Internal ID: 3013, Card Name: Black Rose Dragon
 Pack ID: 22, Internal ID: 3013, Card Name: Black Rose Dragon
 Pack ID: 22, Internal ID: 3014, Card Name: Iron Chain Dragon
 Pack ID: 22, Internal ID: 3015, Card Name: Psychic Lifetrancer
 Pack ID: 22, Internal ID: 3016, Card Name: Card Rotator
 Pack ID: 22, Internal ID: 3017, Card Name: Seed of Deception
+Pack ID: 35, Internal ID: 3018, Card Name: Mark of the Rose
 Pack ID: 22, Internal ID: 3018, Card Name: Mark of the Rose
 Pack ID: 22, Internal ID: 3019, Card Name: Black Garden
 Pack ID: 22, Internal ID: 3020, Card Name: Factory of 100 Machines
@@ -3034,10 +3120,12 @@ Pack ID: 22, Internal ID: 3033, Card Name: Battle Mania
 Pack ID: 22, Internal ID: 3034, Card Name: Confusion Chaff
 Pack ID: 22, Internal ID: 3035, Card Name: Urgent Tuning
 Pack ID: 22, Internal ID: 3036, Card Name: Synchro Strike
+Pack ID: 35, Internal ID: 3037, Card Name: Prideful Roar
 Pack ID: 22, Internal ID: 3037, Card Name: Prideful Roar
 Pack ID: 22, Internal ID: 3038, Card Name: Revival Gift
 Pack ID: 22, Internal ID: 3039, Card Name: Lineage of Destruction
 Pack ID: 22, Internal ID: 3040, Card Name: Doppelganger
+Pack ID: 34, Internal ID: 3041, Card Name: Morphtransition
 Pack ID: 22, Internal ID: 3041, Card Name: Morphtransition
 Pack ID: 22, Internal ID: 3042, Card Name: Morphtronic Monitron
 Pack ID: 22, Internal ID: 3043, Card Name: Psychic Trigger
@@ -3091,24 +3179,31 @@ Pack ID: 53, Internal ID: 3090, Card Name: Tuningware
 Pack ID: 53, Internal ID: 3091, Card Name: Armory Arm
 Pack ID: 53, Internal ID: 3092, Card Name: Give and Take
 Pack ID: 53, Internal ID: 3093, Card Name: Limiter Overload
+Pack ID: 37, Internal ID: 3094, Card Name: Shield Wing
 Pack ID: 53, Internal ID: 3094, Card Name: Shield Wing
+Pack ID: 37, Internal ID: 3095, Card Name: Vice Dragon
 Pack ID: 53, Internal ID: 3095, Card Name: Vice Dragon
 Pack ID: 23, Internal ID: 3096, Card Name: Summon Reactor SK
 Pack ID: 23, Internal ID: 3097, Card Name: Flying Fortress SKY FIRE
 Pack ID: 23, Internal ID: 3098, Card Name: Trap Reactor Y FI
+Pack ID: 41, Internal ID: 3099, Card Name: Black Salvo
 Pack ID: 23, Internal ID: 3099, Card Name: Black Salvo
 Pack ID: 23, Internal ID: 3100, Card Name: Spell Reactor RE
 Pack ID: 24, Internal ID: 3101, Card Name: Rose Tentacles
 Pack ID: 23, Internal ID: 3102, Card Name: Turret Warrior
+Pack ID: 37, Internal ID: 3103, Card Name: Debris Dragon
 Pack ID: 23, Internal ID: 3103, Card Name: Debris Dragon
+Pack ID: 35, Internal ID: 3104, Card Name: Hyper Synchron
 Pack ID: 23, Internal ID: 3104, Card Name: Hyper Synchron
 Pack ID: 23, Internal ID: 3105, Card Name: Red Dragon Archfiend/Assault Mode
 Pack ID: 23, Internal ID: 3106, Card Name: Trap Eater
 Pack ID: 23, Internal ID: 3107, Card Name: Twin-Sword Marauder
 Pack ID: 23, Internal ID: 3108, Card Name: Dark Tinker
 Pack ID: 23, Internal ID: 3109, Card Name: Blackwing - Gale the Whirlwind
+Pack ID: 36, Internal ID: 3110, Card Name: Blackwing - Bora the Spear
 Pack ID: 23, Internal ID: 3110, Card Name: Blackwing - Bora the Spear
 Pack ID: 23, Internal ID: 3111, Card Name: Blackwing - Sirocco the Dawn
+Pack ID: 35, Internal ID: 3112, Card Name: Twilight Rose Knight
 Pack ID: 23, Internal ID: 3112, Card Name: Twilight Rose Knight
 Pack ID: 23, Internal ID: 3113, Card Name: Morphtronic Boarden
 Pack ID: 23, Internal ID: 3114, Card Name: Morphtronic Slingen
@@ -3137,6 +3232,7 @@ Pack ID: 23, Internal ID: 3136, Card Name: Arcanite Magician
 Pack ID: 23, Internal ID: 3137, Card Name: Cosmic Fortress Gol'gar
 Pack ID: 23, Internal ID: 3138, Card Name: Prevention Star
 Pack ID: 23, Internal ID: 3139, Card Name: Vengeful Servant
+Pack ID: 41, Internal ID: 3140, Card Name: Star Blast
 Pack ID: 23, Internal ID: 3140, Card Name: Star Blast
 Pack ID: 23, Internal ID: 3141, Card Name: Raptor Wing Strike
 Pack ID: 23, Internal ID: 3142, Card Name: Morphtronic Rusty Engine
@@ -3160,6 +3256,7 @@ Pack ID: 23, Internal ID: 3159, Card Name: Shining Silver Force
 Pack ID: 23, Internal ID: 3160, Card Name: Half or Nothing
 Pack ID: 23, Internal ID: 3161, Card Name: Nightmare Archfiends
 Pack ID: 23, Internal ID: 3162, Card Name: Ebon Arrow
+Pack ID: 35, Internal ID: 3163, Card Name: Ivy Shackles
 Pack ID: 23, Internal ID: 3163, Card Name: Ivy Shackles
 Pack ID: 23, Internal ID: 3164, Card Name: Fake Explosion
 Pack ID: 23, Internal ID: 3165, Card Name: Morphtronic Forcefield
@@ -3186,6 +3283,7 @@ Pack ID: 53, Internal ID: 3185, Card Name: Ido the Supreme Magical Force
 Pack ID: 46, Internal ID: 3186, Card Name: Violet Witch
 Pack ID: 50, Internal ID: 3187, Card Name: Tragoedia
 Pack ID: 25, Internal ID: 3188, Card Name: Ancient Fairy Dragon
+Pack ID: 37, Internal ID: 3188, Card Name: Ancient Fairy Dragon
 Pack ID: 53, Internal ID: 3189, Card Name: Stardust Dragon/Assault Mode
 Pack ID: 35, Internal ID: 3190, Card Name: Fabled Lurrie
 Pack ID: 35, Internal ID: 3191, Card Name: Fabled Grimro
@@ -3217,6 +3315,7 @@ Pack ID: 35, Internal ID: 3216, Card Name: Jurrac Giganoto
 Pack ID: 35, Internal ID: 3217, Card Name: Naturia Leodrake
 Pack ID: 35, Internal ID: 3218, Card Name: Windmill Genex
 Pack ID: 35, Internal ID: 3219, Card Name: Mist Valley Thunder Lord
+Pack ID: 42, Internal ID: 3220, Card Name: Elemental Hero Gaia
 Pack ID: 53, Internal ID: 3220, Card Name: Elemental Hero Gaia
 Pack ID: 53, Internal ID: 3221, Card Name: Elemental Hero Ice Edge
 Pack ID: 52, Internal ID: 3222, Card Name: Elemental Hero Absolute Zero
@@ -3226,6 +3325,7 @@ Pack ID: 76, Internal ID: 3225, Card Name: Defender, the Magical Knight
 Pack ID: 76, Internal ID: 3226, Card Name: Magical Citadel of Endymion
 Pack ID: 76, Internal ID: 3227, Card Name: Spell Power Grasp
 Pack ID: 24, Internal ID: 3228, Card Name: Power Tool Dragon
+Pack ID: 37, Internal ID: 3228, Card Name: Power Tool Dragon
 Pack ID: 44, Internal ID: 3229, Card Name: Colossal Fighter/Assault Mode
 Pack ID: 44, Internal ID: 3230, Card Name: Dark Voltanis
 Pack ID: 44, Internal ID: 3231, Card Name: Prime Material Falcon
@@ -3305,6 +3405,7 @@ Pack ID: 24, Internal ID: 3304, Card Name: Delta Crow - Anti Reverse
 Pack ID: 24, Internal ID: 3305, Card Name: Level Retuner
 Pack ID: 24, Internal ID: 3306, Card Name: Fake Feather
 Pack ID: 24, Internal ID: 3307, Card Name: Trap Stun
+Pack ID: 40, Internal ID: 3307, Card Name: Trap Stun
 Pack ID: 24, Internal ID: 3308, Card Name: Morphtronic Bind
 Pack ID: 24, Internal ID: 3309, Card Name: Reckoned Power
 Pack ID: 24, Internal ID: 3310, Card Name: Automatic Laser
@@ -3348,7 +3449,6 @@ Pack ID: 54, Internal ID: 3347, Card Name: Snowman Eater
 Pack ID: 55, Internal ID: 3348, Card Name: Ojama Red
 Pack ID: 55, Internal ID: 3349, Card Name: Ojama Blue
 Pack ID: 55, Internal ID: 3350, Card Name: Ojama Country
-Pack ID: 0, Internal ID: 3351, Card Name: Shiba-Warrior Taro
 Pack ID: 54, Internal ID: 3352, Card Name: Supersonic Skull Flame
 Pack ID: 54, Internal ID: 3353, Card Name: Skull Flame
 Pack ID: 54, Internal ID: 3354, Card Name: Burning Skull Head
@@ -3366,6 +3466,7 @@ Pack ID: 55, Internal ID: 3365, Card Name: Darklord Asmodeus
 Pack ID: 55, Internal ID: 3366, Card Name: Darklord Superbia
 Pack ID: 55, Internal ID: 3367, Card Name: Darklord Edeh Arae
 Pack ID: 25, Internal ID: 3368, Card Name: Kuribon
+Pack ID: 37, Internal ID: 3368, Card Name: Kuribon
 Pack ID: 25, Internal ID: 3369, Card Name: Sunny Pixie
 Pack ID: 25, Internal ID: 3370, Card Name: Sunlight Unicorn
 Pack ID: 25, Internal ID: 3371, Card Name: Blackwing - Mistral the Silver Shield
@@ -3373,6 +3474,7 @@ Pack ID: 25, Internal ID: 3372, Card Name: Blackwing - Vayu the Emblem of Honor
 Pack ID: 25, Internal ID: 3373, Card Name: Blackwing - Fane the Steel Chain
 Pack ID: 25, Internal ID: 3374, Card Name: Morphtronic Magnen Bar
 Pack ID: 25, Internal ID: 3375, Card Name: Jester Lord
+Pack ID: 38, Internal ID: 3375, Card Name: Jester Lord
 Pack ID: 25, Internal ID: 3376, Card Name: Jester Confit
 Pack ID: 25, Internal ID: 3377, Card Name: Fortune Lady Light
 Pack ID: 25, Internal ID: 3378, Card Name: Fortune Lady Fire
@@ -3426,12 +3528,15 @@ Pack ID: 25, Internal ID: 3425, Card Name: Sword of Sparkles
 Pack ID: 25, Internal ID: 3426, Card Name: Rekindling
 Pack ID: 25, Internal ID: 3427, Card Name: Ancient Leaf
 Pack ID: 25, Internal ID: 3428, Card Name: Fossil Dig
+Pack ID: 40, Internal ID: 3429, Card Name: Skill Successor
 Pack ID: 25, Internal ID: 3429, Card Name: Skill Successor
 Pack ID: 25, Internal ID: 3430, Card Name: Reinforce Truth
 Pack ID: 25, Internal ID: 3431, Card Name: Pixie Ring
+Pack ID: 37, Internal ID: 3431, Card Name: Pixie Ring
 Pack ID: 25, Internal ID: 3432, Card Name: Fairy Wind
 Pack ID: 25, Internal ID: 3433, Card Name: Imperial Custom
 Pack ID: 25, Internal ID: 3434, Card Name: Discord
+Pack ID: 38, Internal ID: 3434, Card Name: Discord
 Pack ID: 25, Internal ID: 3435, Card Name: Slip of Fortune
 Pack ID: 25, Internal ID: 3436, Card Name: Depth Amulet
 Pack ID: 25, Internal ID: 3437, Card Name: Damage Translation
@@ -3500,10 +3605,12 @@ Pack ID: 26, Internal ID: 3499, Card Name: Majestic Dragon
 Pack ID: 26, Internal ID: 3500, Card Name: Stardust Xiaolong
 Pack ID: 26, Internal ID: 3501, Card Name: Max Warrior
 Pack ID: 26, Internal ID: 3502, Card Name: Quickdraw Synchron
+Pack ID: 40, Internal ID: 3503, Card Name: Level Eater
 Pack ID: 26, Internal ID: 3503, Card Name: Level Eater
 Pack ID: 26, Internal ID: 3504, Card Name: Zero Gardna
 Pack ID: 26, Internal ID: 3505, Card Name: Regulus
 Pack ID: 26, Internal ID: 3506, Card Name: Infernity Necromancer
+Pack ID: 39, Internal ID: 3506, Card Name: Infernity Necromancer
 Pack ID: 26, Internal ID: 3507, Card Name: Fortune Lady Wind
 Pack ID: 26, Internal ID: 3508, Card Name: Fortune Lady Water
 Pack ID: 26, Internal ID: 3509, Card Name: Fortune Lady Dark
@@ -3535,6 +3642,7 @@ Pack ID: 26, Internal ID: 3534, Card Name: Oshaleon
 Pack ID: 26, Internal ID: 3535, Card Name: Djinn Releaser of Rituals
 Pack ID: 26, Internal ID: 3536, Card Name: Djinn Presider of Rituals
 Pack ID: 26, Internal ID: 3537, Card Name: Divine Grace - Northwemko
+Pack ID: 40, Internal ID: 3538, Card Name: Majestic Star Dragon
 Pack ID: 26, Internal ID: 3538, Card Name: Majestic Star Dragon
 Pack ID: 26, Internal ID: 3539, Card Name: Blackwing - Silverwind the Ascendant
 Pack ID: 26, Internal ID: 3540, Card Name: Reptilianne Hydra
@@ -3663,6 +3771,7 @@ Pack ID: 27, Internal ID: 3662, Card Name: Bicular
 Pack ID: 27, Internal ID: 3663, Card Name: Tricular
 Pack ID: 27, Internal ID: 3664, Card Name: Drill Synchron
 Pack ID: 27, Internal ID: 3665, Card Name: Ogre of the Scarlet Sorrow
+Pack ID: 42, Internal ID: 3666, Card Name: Battle Fader
 Pack ID: 27, Internal ID: 3666, Card Name: Battle Fader
 Pack ID: 27, Internal ID: 3667, Card Name: Power Supplier
 Pack ID: 27, Internal ID: 3668, Card Name: Magic Hole Golem
@@ -3697,6 +3806,7 @@ Pack ID: 27, Internal ID: 3696, Card Name: Oilman
 Pack ID: 27, Internal ID: 3697, Card Name: Djinn Cursenchanter of Rituals
 Pack ID: 27, Internal ID: 3698, Card Name: Djinn Prognosticator of Rituals
 Pack ID: 27, Internal ID: 3699, Card Name: Garlandolf, King of Destruction
+Pack ID: 40, Internal ID: 3700, Card Name: Majestic Red Dragon
 Pack ID: 27, Internal ID: 3700, Card Name: Majestic Red Dragon
 Pack ID: 27, Internal ID: 3701, Card Name: Drill Warrior
 Pack ID: 27, Internal ID: 3702, Card Name: Sun Dragon Inti

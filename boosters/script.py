@@ -226,8 +226,13 @@ class ROMProcessor:
             if len(pack_entry) < 8:
                 continue  # Skip incomplete entries
 
-            pack_id = pack_entry[3]  # 4th byte is the pack ID
-            internal_id = internal_id // 8  # Calculate internal ID
+            # Extract all unique non-zero pack IDs
+            pack_ids = set([i for i in pack_entry[3:] if i != 0])
+
+            # Calculate internal ID
+            internal_id = internal_id // 8
+
+            # Get the card name for the internal ID
             _, card_name = self.get_internal_card_id(internal_id)
 
             # Skip empty names
@@ -235,8 +240,10 @@ class ROMProcessor:
                 skipped_packs += 1
                 continue
 
-            packs.append((pack_id, internal_id, card_name))
-            total_packs += 1
+            # Append each pack ID with the card details
+            for pack_id in pack_ids:
+                packs.append((pack_id, internal_id, card_name))
+                total_packs += 1
 
         print(f"Total packs processed: {total_packs}")
         print(f"Total skipped packs: {skipped_packs}")
