@@ -12,6 +12,8 @@ for users without python, download the zip in this repository, and open !pack-ed
 
 to prevent crashing the rom, make sure to replace only pack id.
 
+the overall goal of this is to edit the card_pack.bin and other bins that affect booster packs, use the editor for a streamlined process, once you've patched the rom, and saved pack names, use tinke to put the bin.pac and bin2.pac back into the original rom.
+
 ## Button Overview and Order
 
 The editor operates in a sequential process. Each button corresponds to a step in the editing and patching workflow. Below is an explanation of each button and its function:
