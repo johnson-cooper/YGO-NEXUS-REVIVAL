@@ -44,7 +44,7 @@ The editor operates in a sequential process. Each button corresponds to a step i
      - **Important**: Without this step, the changes you make will not be saved for patching.
 
 ### 5. **Patch ROM**
-   - **Purpose**: This button runs the script to patch the ROM with the values from the configuration file.
+   - **Purpose**: This button runs the script to patch the ROM's card_pack.bin with the values from the configuration file. It doesn't patch the original ROM.
    - **How to Use**:
      - After saving the changes to the config file, click this button to apply the changes and patch the ROM.
      - The patching process will modify the ROM according to the saved configuration, resulting in an updated ROM file with the modifications you made.
