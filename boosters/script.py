@@ -227,7 +227,7 @@ class ROMProcessor:
                 continue  # Skip incomplete entries
 
             # Extract all unique non-zero pack IDs
-            pack_ids = set([i for i in pack_entry[3:] if i != 0])
+            pack_ids = set(pack_entry[3:])
 
             # Calculate internal ID
             internal_id = internal_id // 8
