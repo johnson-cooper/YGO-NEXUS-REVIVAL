@@ -308,24 +308,25 @@ def rebuild_name_callback(sender, app_data, user_data):
     input_text = dpg.get_value("arguments_input").strip()
 
     # Validate input format
-    args = input_text.split(" ", 1)  # Split input into two parts (pack_id and new_name)
-    if len(args) < 2:
-        
+    args = input_text.split(" ", 2)  # Split input into three parts (pack_id, new_name, new_description)
+    if len(args) < 3:
+        dpg.set_value("output_text", "Error: Missing arguments. Usage: <pack_id> <new_name> <new_description>")
         return
 
     try:
         pack_id = int(args[0])  # Ensure pack_id is an integer
-        new_name = args[1]  # The second part is the new_name
+        new_name = args[1]      # The second part is the new_name
+        new_description = args[2]  # The third part is the new_description
     except ValueError:
-       
+        dpg.set_value("output_text", "Error: Pack ID must be an integer.")
         return
 
     try:
         # Run the script with arguments
-        subprocess.run(["python", "pack-name.py", str(pack_id), new_name], check=True)
+        subprocess.run(["python", "pack-name.py", str(pack_id), new_name, new_description], check=True)
+        print ("pack and description changed successfully")
     except subprocess.CalledProcessError as e:
-        print("output_text", f"Error: {e}")
-
+        print ("error")
   
 
 # Modified function for "Modify and Save to Config"
@@ -359,7 +360,7 @@ with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=1280
      # Button to patch the ROM by executing the script.py
     dpg.add_button(label="PATCH ROM", callback=patch_rom_callback)
     dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
-    dpg.add_input_text(label= "Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName", width=400)
+    dpg.add_input_text(label= "Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName Description", width=400)
     dpg.add_button(label="Submit", callback=rebuild_name_callback)
     dpg.add_combo(["Pack ID", "Internal ID", "Card Name"], label="Sort by", default_value="Pack ID", tag="sort_dropdown", callback=on_sort_change)
     
