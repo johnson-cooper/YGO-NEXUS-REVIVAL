@@ -1,64 +1,44 @@
-# ROM Editor README
+# Nexus Revival Pack Editor
 
-## Overview
+The Nexus Revival Pack Editor allows you to edit booster packs from the game "Over the Nexus 2011." Follow the steps below to get started.
 
-This ROM editor allows you to modify and patch a ROM file by following a series of steps. The editor has 5 buttons that must be pressed in a specific order to ensure the correct changes are made and applied. Follow the instructions below to guide you through each step.
+## Prerequisites
 
-The ROM file must be named "rom.nds" in the same directory in order for this to work.
+Ensure the ROM file is named `rom.nds` and is placed in the same directory as the editor.
 
-pip install -r requirements.txt
+### Python Users
 
-for users without python, download the zip in this repository, and open !pack-editor.bat to run with embeddable python. 
+1. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-to prevent crashing the rom, make sure to replace only pack id.
+### Non-Python Users
 
-the overall goal of this is to edit the card_pack.bin and other bins that affect booster packs, use the editor for a streamlined process, once you've patched the rom, and saved pack names, use tinke to put the bin.pac and bin2.pac back into the original rom.
+1. Download the ZIP file from this repository.
+2. Open `!pack-editor.bat` to run the editor with embeddable Python.
 
-## Button Overview and Order
+## Important Notes
 
-The editor operates in a sequential process. Each button corresponds to a step in the editing and patching workflow. Below is an explanation of each button and its function:
+- To prevent crashing the ROM, ensure you only replace the pack ID.
+- The overall goal is to edit `card_pack.bin` and other BIN files that affect booster packs.
+- Use the editor for a streamlined process. Once you've patched the ROM and saved pack names, use Tinke to reinsert `bin.pac` and `bin2.pac` back into the original ROM.
 
-### 1. **Unpack ROM**
-   - **Purpose**: This button unpacks the necessary files from the ROM for editing.
-   - **How to Use**: 
-     - Click this button to extract the necessary files from the ROM. These files will be used in later steps to load, modify, and patch the ROM.
-     - This step is essential as it prepares the ROM for modifications.
+## Program Buttons
 
-### 2. **Load File**
-   - **Purpose**: This button loads the original packs and their cards into the GUI.
-   - **How to Use**:
-     - After unpacking the ROM, click this button to load the extracted files and their card data into the editor.
-     - This step is important to ensure that the data you wish to edit is available in the editor.
+The program has five main buttons:
 
-### 3. **Save Project**
-   - **Purpose**: This button saves your current progress and ensures changes can be made to the ROM.
-   - **How to Use**:
-     - After loading the files, click this button to save your current project.
-     - This step is necessary before making any modifications to the ROM, as it stores the data you will later modify.
+1. **Unpack ROM**: Unpacks the ROM, `bin2.pac`, and `bin.pac` to the `rom_work` folder in the same directory.
+2. **Open Project**: Opens a text file that will be saved to `config.json`. This is required to make changes. Use `pack_and_cards` as a template starter project for the repository; it only accepts TXT files.
+3. **Patch ROM**: Patches the `card_pack.bin` file inside `bin2.pac` folder.
+4. **Rebuild bin2.pac**: Rebuilds `bin2.pac` for reinsertion back into the ROM with Tinke.
+5. **Edit Pack Names**: Usage: 
+    ```sh
+    packid "new pack name" "this is a description"
+    ```
+    to edit pack names and their descriptions.
 
-### 4. **Modify and Save Changes to Config**
-   - **Purpose**: This button saves the changes to a configuration file, which will be used later to patch the ROM.
-   - **How to Use**:
-     - Make the changes you want to the ROM data (e.g., modifying cards, packs, etc.).
-     - Once you're done, click this button to save those changes to a configuration file. This file will act as the "blueprint" for patching the ROM in the next step.
-     - **Important**: Without this step, the changes you make will not be saved for patching.
+## Conclusion
 
-### 5. **Patch ROM**
-   - **Purpose**: This button runs the script to patch the ROM's card_pack.bin with the values from the configuration file. It doesn't patch the original ROM.
-   - **How to Use**:
-     - After saving the changes to the config file, click this button to apply the changes and patch the ROM.
-     - The patching process will modify the ROM according to the saved configuration, resulting in an updated ROM file with the modifications you made.
+By following these steps, you'll be able to customize booster packs in "Over the Nexus 2011" seamlessly. Enjoy your editing!
 
-## Step-by-Step Guide
-
-1. **Unpack ROM**: Click the **Unpack ROM** button to extract necessary files from the ROM. This will prepare the ROM for editing.
-2. **Load File**: After unpacking the ROM, click the **Load File** button to load the extracted files and their data into the editor.
-3. **Save Project**: Once the files are loaded, click the **Save Project** button to save the project. This step is required before you can modify the ROM.
-4. **Modify and Save Changes to Config**: After saving the project, modify the data as needed (e.g., change cards, packs, etc.), then click **Modify and Save Changes to Config** to save your changes.
-5. **Patch ROM**: Finally, click the **Patch ROM** button to apply your modifications to the ROM, creating a modified version of the original.
-
-## Notes
-
-- It is important to follow the order of these steps, as skipping any step may cause errors or result in lost changes.
-- Ensure that all paths (ROM file, working directory, etc.) are set correctly before starting the process.
-- Save your work frequently, especially after major changes to avoid losing your progress.
