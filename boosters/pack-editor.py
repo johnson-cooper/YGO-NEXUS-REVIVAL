@@ -5,32 +5,6 @@ import os
 import subprocess
 import math
 
-# Function to sort cards based on selected option
-def sort_cards(cards, sort_by):
-    if sort_by == "Pack ID":
-        return sorted(cards, key=lambda card: card[0])
-    elif sort_by == "Internal ID":
-        return sorted(cards, key=lambda card: card[1])
-    elif sort_by == "Card Name":
-        return sorted(cards, key=lambda card: card[2].lower())  # Case insensitive
-    return cards  # Return unsorted if no valid option is selected
-
-# Function to load the cards into the text editor
-def load_cards_to_text_editor():
-    sort_by = dpg.get_value("sort_dropdown")  # Get the selected sorting option
-    sorted_cards = sort_cards(cards, sort_by)  # Sort the cards based on the selection
-
-    content = ""
-    for card in sorted_cards:
-        content += f"Pack ID: {card[0]}, Internal ID: {card[1]}, Card Name: {card[2]}\n"
-    
-    dpg.set_value("card_text_editor", content)  # Update the text editor with sorted cards
-
-# Function to handle the dropdown change event
-def on_sort_change(sender, app_data):
-    load_cards_to_text_editor()  # Reload cards based on the new sorting option
-
-
 def unpack_rom(rom_file, ndstool_path, work_dir):
     print(f"Unpacking ROM file: {rom_file}...")
     subprocess.run([ndstool_path, "-x", rom_file, "-9", os.path.join(work_dir, "arm9.bin"),
@@ -169,7 +143,6 @@ def read_binary(pac_file):
     with open(pac_file, "rb") as f:
         return f.read()
 
-
 # Dear PyGui button callback to start the unpacking
 def on_unpack_button_click(sender, app_data):
     rom_file = "rom.nds"  # Change this to your actual ROM file path
@@ -177,8 +150,6 @@ def on_unpack_button_click(sender, app_data):
     work_dir = "rom_work"  # Change this to your working directory
     os.makedirs(work_dir, exist_ok=True)
     unpack_rom(rom_file, ndstool_path, work_dir)
-
-
 
 # Function to read the cards from the pack_and_cards.txt file
 def read_cards_from_file(filename):
@@ -193,107 +164,70 @@ def read_cards_from_file(filename):
                 cards.append((pack_id, internal_id, card_name))
     return cards
 
-# Organize cards by Pack ID and count them
-def organize_and_count_cards(cards):
-    packs = {}
-    counts = {}
-    for card in cards:
-        pack_id, internal_id, card_name = card
-        if pack_id not in packs:
-            packs[pack_id] = []
-            counts[pack_id] = 0
-        packs[pack_id].append(card)
-        counts[pack_id] += 1
-    return packs, counts
-
-# Save changes to a temporary file
-def save_to_temp_file(cards, temp_filename="temp_cards.txt"):
-    with open(temp_filename, 'w') as file:
-        for card in cards:
-            file.write(f"Pack ID: {card[0]}, Internal ID: {card[1]}, Card Name: {card[2]}\n")
-
-# Check for over-limit cards
-# Function to check for over-limit cards and update the temporary file
-# Function to check for over-limit and under-limit cards and update the temporary file
-import re
-
-def update_temp_file_with_limits(original_counts, temp_filename="temp_cards.txt"):
-    # Open the file and read all lines
-    with open(temp_filename, 'r') as file:
-        lines = file.readlines()
-    
-    pack_counts = {}
-    updated_lines = []
-
-    # Count cards per pack in the temporary file
-    for line in lines:
-        match = re.match(r"Pack ID: (\d+), Internal ID: (\d+), Card Name: (.+)", line.strip())
-        if match:
-            pack_id = int(match.group(1))
-            if pack_id not in pack_counts:
-                pack_counts[pack_id] = 0
-            pack_counts[pack_id] += 1
-
-    # Check for over-limit and under-limit, and mark the lines accordingly
-    for line in lines:
-        # Remove old markers if present
-        line = re.sub(r' \[.*\]', '', line.strip())  # This removes any previous markers like [OVER LIMIT]
-        
-        match = re.match(r"Pack ID: (\d+), Internal ID: (\d+), Card Name: (.+)", line)
-        if match:
-            pack_id = int(match.group(1))
-            original_limit = original_counts.get(pack_id, 0)
-            # Check if the count is over, under, or within the limit
-            if pack_counts[pack_id] > original_limit:
-                updated_lines.append(f"{line} [OVER LIMIT]\n")
-            elif pack_counts[pack_id] < original_limit:
-                updated_lines.append(f"{line} [UNDER LIMIT]\n")
-            else:
-                updated_lines.append(f"{line}\n")
-
-    # Write the updated lines back to the file
-    with open(temp_filename, 'w') as file:
-        file.writelines(updated_lines)
-
 # Save the modified pack information to config.json
-def save_config(temp_filename="temp_cards.txt", config_filename="config.json"):
+# Save config function
+# Save config function
+# Save config function
+def save_config(cards, config_filename="config.json"):
     config_data = {"cards": []}
-    with open(temp_filename, 'r') as file:
-        for line in file:
-            match = re.match(r"Pack ID: (\d+), Internal ID: (\d+), Card Name: (.+)", line.strip())
-            if match:
-                target_internal_id = int(match.group(2))
-                new_pack_id = int(match.group(1))
-                config_data["cards"].append({"target_internal_id": target_internal_id, "new_pack_id": new_pack_id})
+    
+    # Debug output to ensure cards are correctly formatted
+    print("Cards to save:", cards)
+    
+    # Store the card data in the required format with integers
+    for pack_id, internal_id in cards:
+        config_data["cards"].append({
+            "target_internal_id": int(internal_id),  # Convert to integer
+            "new_pack_id": int(pack_id)  # Convert to integer
+        })
 
+    # Write the config data to config.json
     with open(config_filename, 'w') as json_file:
         json.dump(config_data, json_file, indent=4)
+    print(f"Config saved to {config_filename}!")
 
-    # Remove the temporary file after saving
-    if os.path.exists(temp_filename):
-        os.remove(temp_filename)
-
-def load_file_callback():
-    save_to_temp_file(cards)  # Save initial data to temp file
-    update_temp_file_with_limits(original_counts)  # Pass original_counts
-    with open("temp_cards.txt", 'r') as file:
-        content = file.read()
-    dpg.set_value("card_text_editor", content)
-
-# New function for "Save Project" that saves only the updated temporary file
-def save_project_callback():
-    # Write current text editor content to temp file
-    content = dpg.get_value("card_text_editor")
-    with open("temp_cards.txt", 'w') as file:
-        file.write(content)
+# Callback for processing the selected file
+# Callback for processing the selected file
+# Callback for processing the selected file
+def callback(sender, app_data, user_data):
+    selected_file = app_data["file_name"]
     
-    # Update temp file with limits (adds "[OVER LIMIT]" where necessary)
-    update_temp_file_with_limits(original_counts)  # Pass original_counts
+    # Check if a file is selected
+    if selected_file:
+        cards = []
+        
+        # Open and read the selected file
+        with open(selected_file, 'r') as file:
+            for line in file:
+                # Debug output for each line read
+                print("Processing line:", line.strip())
+                
+                # Parse the input format: Pack ID, , Internal ID, Card Name
+                parts = line.strip().split(",")
+                
+                # Ensure the line is in the correct format
+                if len(parts) == 4:  # Expecting 4 parts based on your format
+                    # Extracting values and removing labels
+                    pack_id = parts[0].replace("Pack ID: ", "").strip()
+                    internal_id = parts[2].replace("Internal ID: ", "").strip()
+                    
+                    # Add to cards list
+                    cards.append((pack_id, internal_id))
+                else:
+                    print(f"Skipping invalid line: {line.strip()}")
 
-    # Reload the updated temp file into the text editor
-    with open("temp_cards.txt", 'r') as file:
-        updated_content = file.read()
-    dpg.set_value("card_text_editor", updated_content)
+        # Debug output to verify the cards list
+        print("Extracted cards:", cards)
+        
+        # Save the extracted card data to config.json
+        save_config(cards)
+        
+        # Notify the user
+        dpg.set_value("output_text", "Config saved successfully to config.json!")
+        print("Config saved successfully!")
+    else:
+        dpg.set_value("output_text", "No file selected!")
+
 
 # Function to execute another Python script when PATCH ROM button is clicked
 def patch_rom_callback():
@@ -332,7 +266,7 @@ def rebuild_name_callback(sender, app_data, user_data):
 # Modified function for "Modify and Save to Config"
 def modify_and_save_to_config_callback():
     # Ensure the temporary file is updated
-    save_project_callback()
+    
 
     # Save to config.json from the updated temporary file
     save_config()
@@ -340,35 +274,25 @@ def modify_and_save_to_config_callback():
 # Initialize DearPyGui
 dpg.create_context()
 
-# Read cards from the text file
-cards = read_cards_from_file('packs_and_cards.txt')
-
-# Organize cards and get original counts
-organized_cards, original_counts = organize_and_count_cards(cards)
-
 # Create the main window
-with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=1280, height=720):
+with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=600, height=400):
     # Button to load the file content
     dpg.add_button(label="Unpack ROM", callback=on_unpack_button_click)
-    dpg.add_button(label="Load File", callback=load_file_callback)
-    
-    # Button to save only the temporary file updates (Save Project)
-    dpg.add_button(label="Save Project", callback=save_project_callback)
-    
+    dpg.add_button(label="Open Project (.txt)", callback=lambda: dpg.show_item("file_dialog_id"))  
+    dpg.add_text("Output will be shown here:", tag="output_text") 
     # Button to save both the updates and the config.json file
-    dpg.add_button(label="Modify and Save Changes to Config", callback=modify_and_save_to_config_callback)
      # Button to patch the ROM by executing the script.py
     dpg.add_button(label="PATCH ROM", callback=patch_rom_callback)
     dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
     dpg.add_input_text(label= "Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName Description", width=400)
     dpg.add_button(label="Submit", callback=rebuild_name_callback)
-    dpg.add_combo(["Pack ID", "Internal ID", "Card Name"], label="Sort by", default_value="Pack ID", tag="sort_dropdown", callback=on_sort_change)
-    
-    # Scrollable text editor to display the file content
-    dpg.add_input_text(tag="card_text_editor", multiline=True, readonly=False, height=-1, width=-1)
+# File dialog to select a .txt file
+with dpg.file_dialog(directory_selector=False, show=False, callback=callback, id="file_dialog_id", width=600 ,height=400):
+    dpg.add_file_extension(".txt", color=(255, 0, 0, 255))  # Only allow .txt files
 
+    
 # Create and set the viewport to be the primary window
-dpg.create_viewport(title="Card Pack Modifier", width=1280, height=720)
+dpg.create_viewport(title="Card Pack Modifier", width=800, height=600)
 
 # Set the primary window before starting the DearPyGui application
 dpg.set_primary_window("Card Pack Modifier", True)

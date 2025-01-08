@@ -226,13 +226,11 @@ class ROMProcessor:
             if len(pack_entry) < 8:
                 continue  # Skip incomplete entries
 
-            # Extract all unique non-zero pack IDs
-            pack_ids = set(pack_entry[3:])
-
-            # Calculate internal ID
-            internal_id = internal_id // 8
-
-            # Get the card name for the internal ID
+            # Read both pack IDs (byte 3 and byte 5)
+            pack_id_1 = pack_entry[3]  # 4th byte is the first pack ID
+            pack_id_2 = pack_entry[4]  # 6th byte is the second pack ID, if it exists
+            
+            internal_id = internal_id // 8  # Calculate internal ID
             _, card_name = self.get_internal_card_id(internal_id)
 
             # Skip empty names
@@ -240,10 +238,9 @@ class ROMProcessor:
                 skipped_packs += 1
                 continue
 
-            # Append each pack ID with the card details
-            for pack_id in pack_ids:
-                packs.append((pack_id, internal_id, card_name))
-                total_packs += 1
+            # Add both pack IDs to the pack tuple
+            packs.append((pack_id_1, pack_id_2, internal_id, card_name))
+            total_packs += 1
 
         print(f"Total packs processed: {total_packs}")
         print(f"Total skipped packs: {skipped_packs}")
@@ -274,8 +271,8 @@ class ROMProcessor:
     def write_packs_to_txt(self, packs):
         print(f"Writing card packs to {self.output_file}...")
         with open(self.output_file, "w") as file:
-            for pack_id, internal_id, card_name in packs:
-                file.write(f"Pack ID: {pack_id}, Internal ID: {internal_id}, Card Name: {card_name}\n")
+            for pack_id1, pack_id2, internal_id, card_name in packs:
+                file.write(f"Pack ID: {pack_id1}, , Internal ID: {internal_id}, Card Name: {card_name}\n")
         print(f"Packs and cards written to {self.output_file}.")
 
 
@@ -295,7 +292,7 @@ class ROMProcessor:
 
             # Iterate over the packs and modify the necessary values
             for pack in packs:
-                pack_id, internal_id, card_name = pack  # Unpack all three values
+                pack_id_1, pack_id_2, internal_id, card_name = pack  # Unpack all three values
 
                 # Check if the internal_id is in the mappings
                 for card_mapping in card_mappings:
@@ -304,12 +301,14 @@ class ROMProcessor:
                         pack_data_offset = 8 * internal_id  # Multiply internal ID by 8 to get the offset in the card_pack file
                         pack_data = self.read_binary(self.pack_file)[pack_data_offset:pack_data_offset + 8]
                         
-                        # Update the pack ID based on the mapping
+                        # Update the pack ID and set the 5th byte (index 4) to 0
                         new_pack_id = card_mapping['new_pack_id']
+                        new_pack_idzero = 0
                         pack_data[3] = new_pack_id  # Set the new pack_id at the 4th byte (index 3)
+                        pack_data[4] = 0  # Set the 5th byte (index 4) to 0
                         
                         # Add the modified pack to the list
-                        modified_packs.append((new_pack_id, internal_id, card_name))
+                        modified_packs.append((new_pack_id, new_pack_idzero, internal_id, card_name))
 
             print("Pack IDs switched based on the JSON configuration.")
 
@@ -340,10 +339,11 @@ class ROMProcessor:
 
     
     def write_modified_packs_to_bin(self, modified_packs):
+        """Write the modified card packs back to the binary file."""
         print(f"Writing modified card packs to {self.pack_file}...")
 
         with open(self.pack_file, "r+b") as file:  # Open in read-write binary mode
-            for new_pack_id, internal_id, card_name in modified_packs:
+            for new_pack_id, new_pack_idzero, internal_id, card_name in modified_packs:
                 # Ensure the new pack ID is within the byte range (0-255)
                 if not (0 <= new_pack_id <= 255):
                     raise ValueError(f"Invalid pack ID: {new_pack_id}. It must be between 0 and 255.")
@@ -360,9 +360,10 @@ class ROMProcessor:
                 # Check the current data (debugging line)
                 print(f"Current data at offset {pack_data_offset}: {pack_data.hex()}")
 
-                # Modify the 4th byte (index 3) to the new pack ID
+                # Modify the 4th byte (index 3) and 5th byte (index 4)
                 pack_data = bytearray(pack_data)  # Convert to bytearray for mutability
                 pack_data[3] = new_pack_id  # Update the pack ID byte
+                pack_data[4] = new_pack_idzero # Set the 5th byte to 0
 
                 # Check the modified data (debugging line)
                 print(f"Modified data: {pack_data.hex()}")
@@ -379,7 +380,7 @@ class ROMProcessor:
 
         # Open the file for writing
         with open(self.modified_cardstxt, "w") as file:
-            for pack_id, internal_id, new_card_name in modified_packs:
+            for pack_id, pack_id_2, internal_id, new_card_name in modified_packs:
                 # Write the modified information to the text file
                 file.write(f"Pack ID: {pack_id}, Internal ID: {internal_id}, Modified Card Name: {new_card_name}\n")
 
