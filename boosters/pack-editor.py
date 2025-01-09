@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import math
+from dearpygui_ext.themes import create_theme_imgui_dark
 
 
 def unpack_rom(rom_file, ndstool_path, work_dir):
@@ -229,6 +230,41 @@ def callback(sender, app_data, user_data):
     else:
         dpg.set_value("output_text", "No file selected!")
 
+def rebuild_rarity_callback(sender, app_data, user_data):
+    # Retrieve input from the textbox
+    input_text2 = dpg.get_value("arguments_input2").strip()
+
+    # Regex to capture <internal_id> <new_rarity>
+    pattern = r'^(\d+)\s+(\d+)$'
+    match = re.match(pattern, input_text2)
+
+    if not match:
+        dpg.set_value(
+            "output_text",
+            "Error: Invalid input format. Use: <internal_id> <new_rarity>"
+        )
+        return
+
+    try:
+        # Extract values from regex groups
+        internal_id = int(match.group(1))
+        new_rarity = int(match.group(2))
+    except ValueError:
+        dpg.set_value("output_text", "Error: Both internal_id and new_rarity must be numbers.")
+        return
+
+    try:
+        # Run the script with extracted arguments
+        subprocess.run(
+            ["python", "rarity-change.py", str(internal_id), str(new_rarity)],
+            check=True,
+        )
+        dpg.set_value(
+            "output_text",
+            f"Internal ID {internal_id} updated successfully with new rarity: {new_rarity}."
+        )
+    except subprocess.CalledProcessError as e:
+        dpg.set_value("output_text", f"Error occurred while running the script: {e}")
 
 # Function to execute another Python script when PATCH ROM button is clicked
 def patch_rom_callback():
@@ -287,30 +323,52 @@ def modify_and_save_to_config_callback():
 # Initialize DearPyGui
 dpg.create_context()
 
-# Create the main window
-with dpg.window(label="Card Pack Modifier", tag="Card Pack Modifier", width=600, height=400):
-    # Button to load the file content
-    dpg.add_button(label="Unpack ROM", callback=on_unpack_button_click)
-    dpg.add_button(label="Open Project (.txt)", callback=lambda: dpg.show_item("file_dialog_id"))  
-    dpg.add_text("Output will be shown here:", tag="output_text") 
-    # Button to save both the updates and the config.json file
-     # Button to patch the ROM by executing the script.py
-    dpg.add_button(label="PATCH ROM", callback=patch_rom_callback)
-    dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
-    dpg.add_input_text(label= "Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName Description", width=400)
-    dpg.add_button(label="Submit", callback=rebuild_name_callback)
+
+
+# Bind the theme to the application
+light_theme = create_theme_imgui_dark()
+dpg.bind_theme(light_theme)
+
+# Create the main window and menu bar
+with dpg.handler_registry():
+    with dpg.window(label="Main Window", tag="MAIN WINDOW", width=800, height=600):
+        with dpg.menu_bar():
+            with dpg.menu(label="File"):
+                dpg.add_button(label="Unpack ROM", callback=on_unpack_button_click)
+                dpg.add_button(label="Open Project (.txt)", callback=lambda: dpg.show_item("file_dialog_id"))
+                dpg.add_button(label="PATCH CARD_BIN", callback=patch_rom_callback)
+                dpg.add_button(label="REBUILD BIN2.PAC", callback=rebuild_rom_callback)
+                
+
+            #with dpg.menu(label="Edit"):
+                
+
+        # Tab bar for PACK INFO and other information
+        with dpg.tab_bar(label="Main Tab Bar"):
+            # Create a tab for "PACK INFO"
+            with dpg.tab(label="PACK INFO"):
+                # Inside this tab, add the "Edit Pack Names" input
+                dpg.add_input_text(label="Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName Description", width=400)
+                dpg.add_button(label="Submit", callback=rebuild_name_callback)
+                dpg.add_text("Output will be shown here:", tag="output_text")
+
+            # Add additional tabs if necessary
+            with dpg.tab(label="CARD RARITY"):
+                dpg.add_input_text(label="Edit Rarity", tag="arguments_input2", hint="Example: <internal number> <rarity>, includes multiple inputs", width=400)
+                dpg.add_button(label="Submit", callback=rebuild_rarity_callback)
+                dpg.add_text("Try rarity numbers 0-2 where 0 is common")
+
+        
+
 # File dialog to select a .txt file
-with dpg.file_dialog(directory_selector=False, show=False, callback=callback, id="file_dialog_id", width=600 ,height=400):
+with dpg.file_dialog(directory_selector=False, show=False, callback=lambda s, p: print(f"File selected: {p}"), id="file_dialog_id", width=600, height=400):
     dpg.add_file_extension(".txt", color=(255, 0, 0, 255))  # Only allow .txt files
 
-    
 # Create and set the viewport to be the primary window
-dpg.create_viewport(title="Card Pack Modifier", width=800, height=600)
+dpg.create_viewport(title="NEXUS REVIVAL - PACK EDITOR", width=800, height=600)
 
-# Set the primary window before starting the DearPyGui application
-dpg.set_primary_window("Card Pack Modifier", True)
-
-# Show the main window as the primary window
+dpg.set_primary_window("MAIN WINDOW", True)
+# Show the viewport
 dpg.show_viewport()
 
 # Start the DearPyGui application
