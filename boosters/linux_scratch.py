@@ -162,7 +162,7 @@ class ROMProcessor:
         self.ndstool_path = ndstool_path
         self.rom_file = rom_file
         self.work_dir = work_dir
-        rom_work_dir = os.path.join('work_dir', 'unpacked')
+        rom_work_dir = os.path.join(self.work_dir, 'unpacked')
         os.makedirs(rom_work_dir, exist_ok=True)
         self.rom_work_dir = rom_work_dir    
 
@@ -205,7 +205,7 @@ def run():
     import shutil
     handle = RP('ndstool', 'rom.nds', 'rom_work')
     handle.unpack_rom()
-    pac = PP(file='./work_dir/unpacked/data/Data_arc_pac/deck.pac')
+    pac = PP(file='./rom_work/unpacked/data/Data_arc_pac/deck.pac')
     pac.unpack(out_path='here')
     # Overwrite moja.dek with tomato.dek (as a test...)
     shutil.copyfile('./here/wcs002_tomabo.ydc', './here/Pwcs001_moja.ydc')
