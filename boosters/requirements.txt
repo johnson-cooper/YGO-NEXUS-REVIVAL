@@ -1,1 +1,2 @@
 dearpygui==2.0.0
+dearpygui-ext==2.0.0
