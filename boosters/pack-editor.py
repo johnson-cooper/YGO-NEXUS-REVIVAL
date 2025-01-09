@@ -5,6 +5,7 @@ import os
 import subprocess
 import math
 
+
 def unpack_rom(rom_file, ndstool_path, work_dir):
     print(f"Unpacking ROM file: {rom_file}...")
     subprocess.run([ndstool_path, "-x", rom_file, "-9", os.path.join(work_dir, "arm9.bin"),
@@ -241,26 +242,38 @@ def rebuild_name_callback(sender, app_data, user_data):
     # Retrieve input from the textbox
     input_text = dpg.get_value("arguments_input").strip()
 
-    # Validate input format
-    args = input_text.split(" ", 2)  # Split input into three parts (pack_id, new_name, new_description)
-    if len(args) < 3:
-        dpg.set_value("output_text", "Error: Missing arguments. Usage: <pack_id> <new_name> <new_description>")
+    # Regex to capture <pack_id> "<new_name>" "<new_description>"
+    pattern = r'^(\d+)\s+"([^"]+)"\s+"([^"]+)"$'
+    match = re.match(pattern, input_text)
+
+    if not match:
+        dpg.set_value(
+            "output_text",
+            "Error: Invalid input format. Use: <pack_id> \"<new_name>\" \"<new_description>\""
+        )
         return
 
     try:
-        pack_id = int(args[0])  # Ensure pack_id is an integer
-        new_name = args[1]      # The second part is the new_name
-        new_description = args[2]  # The third part is the new_description
+        # Extract values from regex groups
+        pack_id = int(match.group(1))
+        new_name = match.group(2).strip()
+        new_description = match.group(3).strip()
     except ValueError:
-        dpg.set_value("output_text", "Error: Pack ID must be an integer.")
+        dpg.set_value("output_text", "Error: Pack ID must be a number.")
         return
 
     try:
-        # Run the script with arguments
-        subprocess.run(["python", "pack-name.py", str(pack_id), new_name, new_description], check=True)
-        print ("pack and description changed successfully")
+        # Run the script with extracted arguments
+        subprocess.run(
+            ["python", "pack-name.py", str(pack_id), new_name, new_description],
+            check=True,
+        )
+        dpg.set_value(
+            "output_text",
+            f"Pack ID {pack_id} updated successfully:\nName: '{new_name}'\nDescription: '{new_description}'."
+        )
     except subprocess.CalledProcessError as e:
-        print ("error")
+        dpg.set_value("output_text", f"Error occurred while running the script: {e}")
   
 
 # Modified function for "Modify and Save to Config"

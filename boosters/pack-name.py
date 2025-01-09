@@ -63,13 +63,22 @@ class PackNameManager:
             print(f"Invalid name offset for Pack ID {pack_id}.")
             return False
 
-        new_name_bytes = new_name.encode("utf-8") + b"\x00"
-        if len(new_name_bytes) > len(pack_names_data) - name_offset:
-            print(f"New name '{new_name}' is too long for Pack ID {pack_id}.")
+        # Ensure the new name fits within the allocated space
+        name_end = pack_names_data.find(b'\x00', name_offset)
+        if name_end == -1:
+            name_end = len(pack_names_data)  # Assume end of file if no null terminator
+        max_length = name_end - name_offset
+
+        new_name_bytes = new_name.encode("utf-8") + b'\x00'
+        if len(new_name_bytes) > max_length:
+            print(f"New name '{new_name}' is too long for Pack ID {pack_id}. Max length: {max_length}")
             return False
 
+        # Clear existing name data and write the new name
+        pack_names_data[name_offset:name_offset + max_length] = b'\x00' * max_length  # Clear existing data
         pack_names_data[name_offset:name_offset + len(new_name_bytes)] = new_name_bytes
         self.write_binary(self.pack_name_file, pack_names_data)
+
         print(f"Pack ID {pack_id} name successfully changed to '{new_name}'.")
         return True
 
