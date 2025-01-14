@@ -266,10 +266,46 @@ def rebuild_rarity_callback(sender, app_data, user_data):
     except subprocess.CalledProcessError as e:
         dpg.set_value("output_text", f"Error occurred while running the script: {e}")
 
+def rebuild_any_pac(sender, app_data, user_data):
+    # Retrieve input from the textbox
+    input_text3 = dpg.get_value("arguments_input3").strip()
+
+    # Regex to capture <input_pac_file> <output_directory>
+    # This allows alphanumeric characters, periods (.), underscores (_), and hyphens (-)
+    pattern = r'^(.+\.pac)\s+(.+)$'
+    match = re.match(pattern, input_text3)
+
+    if not match:
+        dpg.set_value("output_text", "Error: Input must be in the format '<input_pac_file> <output_directory>'.")
+        return
+
+    try:
+        # Extract values from regex groups
+        input_pac_file = match.group(1)
+        output_directory = match.group(2)
+    except IndexError:
+        dpg.set_value("output_text", "Error: Failed to parse input. Ensure the format is correct.")
+        return
+
+    try:
+        # Run the script with extracted arguments
+        subprocess.run(
+            ["python", "pac-repacker.py", input_pac_file, output_directory],
+            check=True,
+        )
+        dpg.set_value("output_text", f"Successfully processed PAC file: {input_pac_file} into directory: {output_directory}")
+    except subprocess.CalledProcessError as e:
+        dpg.set_value("output_text", f"Error occurred while running the script: {e}")    
+
 # Function to execute another Python script when PATCH ROM button is clicked
 def patch_rom_callback():
     # Run the script.py
     subprocess.run(["python", "script.py"], check=True)
+
+def compression_callback():
+    # Run the script.py
+    subprocess.run(["python", "compression.py"], check=True)
+
 def rebuild_rom_callback():
     # Run the script.py
     subprocess.run(["python", "repack.py"], check=True)  
@@ -352,17 +388,30 @@ with dpg.handler_registry():
                 dpg.add_button(label="Submit", callback=rebuild_name_callback)
                 dpg.add_text("Output will be shown here:", tag="output_text")
 
+
             # Add additional tabs if necessary
             with dpg.tab(label="CARD RARITY"):
                 dpg.add_input_text(label="Edit Rarity", tag="arguments_input2", hint="Example: <internal number> <rarity>, includes multiple inputs", width=400)
                 dpg.add_button(label="Submit", callback=rebuild_rarity_callback)
                 dpg.add_text("Try rarity numbers 0-2 where 0 is common")
+            
+            with dpg.tab(label="ADVANCED"):
+                
+                dpg.add_input_text(label="UNIVERSAL PAC REPACKER", tag="arguments_input3", hint="Example: <original pac> <folder to repack to pac>", width=400)
+                dpg.add_text("the original pac and folder to repack must be in same directory as this script.") 
+                dpg.add_text("the output will be named converted-pac.pac") 
+                dpg.add_button(label="Submit", callback=rebuild_any_pac)
+                dpg.add_button(label="UNPACKING PACK.PAC / COMPRESSION", callback=compression_callback)
+                dpg.add_text("Watch the console, must unpack rom first, unpack = unpacking pack.pac, compress = compress .5bg") 
+                dpg.add_text("files into .lz5bg from specified folder inside main directory") 
+                   
 
         
 
 # File dialog to select a .txt file
 with dpg.file_dialog(directory_selector=False, show=False, callback=lambda s, p: print(f"File selected: {p}"), id="file_dialog_id", width=600, height=400):
     dpg.add_file_extension(".txt", color=(255, 0, 0, 255))  # Only allow .txt files
+
 
 # Create and set the viewport to be the primary window
 dpg.create_viewport(title="NEXUS REVIVAL - PACK EDITOR", width=800, height=600)
