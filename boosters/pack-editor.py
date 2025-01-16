@@ -311,41 +311,49 @@ def rebuild_rom_callback():
     subprocess.run(["python", "repack.py"], check=True)  
 
 def rebuild_name_callback(sender, app_data, user_data):
-    # Retrieve input from the textbox
+    # Retrieve input from the textbox (multiline)
     input_text = dpg.get_value("arguments_input").strip()
 
-    # Regex to capture <pack_id> "<new_name>" "<new_description>"
+    # Split input into lines
+    lines = input_text.splitlines()
+
+    results = []
     pattern = r'^(\d+)\s+"([^"]+)"\s+"([^"]+)"$'
-    match = re.match(pattern, input_text)
 
-    if not match:
-        dpg.set_value(
-            "output_text",
-            "Error: Invalid input format. Use: <pack_id> \"<new_name>\" \"<new_description>\""
-        )
-        return
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
 
-    try:
-        # Extract values from regex groups
-        pack_id = int(match.group(1))
-        new_name = match.group(2).strip()
-        new_description = match.group(3).strip()
-    except ValueError:
-        dpg.set_value("output_text", "Error: Pack ID must be a number.")
-        return
+        match = re.match(pattern, line)
 
-    try:
-        # Run the script with extracted arguments
-        subprocess.run(
-            ["python", "pack-name.py", str(pack_id), new_name, new_description],
-            check=True,
-        )
-        dpg.set_value(
-            "output_text",
-            f"Pack ID {pack_id} updated successfully:\nName: '{new_name}'\nDescription: '{new_description}'."
-        )
-    except subprocess.CalledProcessError as e:
-        dpg.set_value("output_text", f"Error occurred while running the script: {e}")
+        if not match:
+            results.append(f"Error: Invalid format for line: {line}")
+            continue
+
+        try:
+            # Extract values from regex groups
+            pack_id = int(match.group(1))
+            new_name = match.group(2).strip()
+            new_description = match.group(3).strip()
+        except ValueError:
+            results.append(f"Error: Pack ID must be a number in line: {line}")
+            continue
+
+        try:
+            # Run the script with extracted arguments
+            subprocess.run(
+                ["python", "pack-name.py", str(pack_id), new_name, new_description],
+                check=True,
+            )
+            results.append(
+                f"Pack ID {pack_id} updated successfully:\nName: '{new_name}'\nDescription: '{new_description}'."
+            )
+        except subprocess.CalledProcessError as e:
+            results.append(f"Error occurred for Pack ID {pack_id}: {e}")
+
+    # Display results in the output
+    dpg.set_value("output_text", "\n".join(results))
   
 
 # Modified function for "Modify and Save to Config"
@@ -384,9 +392,10 @@ with dpg.handler_registry():
             # Create a tab for "PACK INFO"
             with dpg.tab(label="PACK INFO"):
                 # Inside this tab, add the "Edit Pack Names" input
-                dpg.add_input_text(label="Edit Pack Names", tag="arguments_input", hint="Example: 42 NewPackName Description", width=400)
+                dpg.add_text("Example: 42 NewPackName Description")
+                dpg.add_input_text(label="Edit Pack Names", multiline=True, tag="arguments_input", hint="Example: 42 NewPackName Description", width=400, height=300)
                 dpg.add_button(label="Submit", callback=rebuild_name_callback)
-                dpg.add_text("Output will be shown here:", tag="output_text")
+                
 
 
             # Add additional tabs if necessary

@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 
+
 class PackNameManager:
     def __init__(self):
         self.work_dir = "rom_work"  # Hardcoded working directory
@@ -113,26 +114,27 @@ class PackNameManager:
     def rebuild_rom_callback(self):
         subprocess.run(["python", "repack-name.py"], check=True)
 
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
-        print("Usage: python modify_pack.py <pack_id> <new_name> <new_description>")
+    if len(sys.argv) < 2 or len(sys.argv[1:]) % 3 != 0:
+        print("Usage: python modify_pack.py <pack_id1> <new_name1> <new_description1> [<pack_id2> <new_name2> <new_description2> ...]")
         sys.exit(1)
 
-    try:
-        pack_id = int(sys.argv[1])
-    except ValueError:
-        print("Error: Pack ID must be an integer.")
-        sys.exit(1)
-
-    new_name = sys.argv[2]
-    new_description = sys.argv[3]
-
+    inputs = sys.argv[1:]
     manager = PackNameManager()
     manager.run()
     manager.rebuild_rom_callback()
 
-    if not manager.modify_pack_name(pack_id, new_name):
-        print("Failed to modify the pack name.")
+    for i in range(0, len(inputs), 3):
+        try:
+            pack_id = int(inputs[i])
+            new_name = inputs[i + 1]
+            new_description = inputs[i + 2]
 
-    if not manager.modify_pack_description(pack_id, new_description):
-        print("Failed to modify the pack description.")
+            if not manager.modify_pack_name(pack_id, new_name):
+                print(f"Failed to modify the pack name for Pack ID {pack_id}.")
+            if not manager.modify_pack_description(pack_id, new_description):
+                print(f"Failed to modify the pack description for Pack ID {pack_id}.")
+        except ValueError:
+            print(f"Error: Pack ID '{inputs[i]}' must be an integer.")
+            continue
