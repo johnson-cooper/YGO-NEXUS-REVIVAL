@@ -1,7 +1,7 @@
 # Yu-Gi-Oh! World Championship 2011 - Nexus Revival Patch
 
 ## About
-This project provides an **XDELTA patch** for modifying the game *Yu-Gi-Oh! World Championship 2011*. The patch introduces new card packs, custom graphic changes, and more to enhance your gameplay experience.
+This project provides an **XDELTA patch** for modifying the game *Yu-Gi-Oh! World Championship 2011*. The patch introduces new card packs, custom graphic changes, new cpu decks, and more to enhance your gameplay experience.
 
 ---
 
@@ -15,19 +15,6 @@ This project provides an **XDELTA patch** for modifying the game *Yu-Gi-Oh! Worl
 
 ---
 
-## Changelog
-
-### Version 0.1
-- **Randomized Card Packs and Structure Decks**  
-  Card packs and structure decks have been randomized using the seed `"REVIVAL"`.
-
-### Version 0.0
-- **Graphic Changes**  
-  - Modified intro graphics.  
-  - Updated home wallpaper and more.  
-  - Custom duel field added.  
-
----
 
 ## Contributing
 Contributions to the project are welcome! Feel free to submit issues or pull requests for feedback, bug fixes, or suggestions.
@@ -38,6 +25,7 @@ Contributions to the project are welcome! Feel free to submit issues or pull req
 - tereotis for hex offsets
 - volo for ideas and python changes, card to pack mapping
 - opiter09 for unpacking pac files
+- jovel, g30rgi, dongtae26, & more for decks
 
 ---
 ## Disclaimer
