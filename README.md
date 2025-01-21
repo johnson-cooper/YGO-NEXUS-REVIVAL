@@ -23,7 +23,7 @@ Contributions to the project are welcome! Feel free to submit issues or pull req
 
 ## Credits
 - tereotis for hex offsets
-- volo for ideas and python changes, card to pack mapping
+- volo for ideas and python changes, card to pack mapping, decks
 - opiter09 for unpacking pac files
 - jovel, g30rgi, dongtae26, & more for decks
 
